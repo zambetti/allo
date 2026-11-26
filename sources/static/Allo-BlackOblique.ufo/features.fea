@@ -277,8 +277,6 @@ feature cv05 {
   sub zero.tf.slash by zero.tf.dot;
 } cv05;
 
-
-# BEGIN g_features ss04
 feature ss04 {
   featureNames { name "Double-storey g"; };
   sub g by g.ss04;
@@ -287,4 +285,3 @@ feature ss04 {
   sub gdotaccent by gdotaccent.ss04;
   sub gcommaaccent by gcommaaccent.ss04;
 } ss04;
-# END g_features ss04

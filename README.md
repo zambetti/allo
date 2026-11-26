@@ -15,9 +15,14 @@ arrows that appear when you type them, a host of alternates and symbols, as well
 ![Allo: the typeface, and its character set](documentation/readme-row1.png)
 ![Allo: OpenType features, and interface icons and symbols](documentation/readme-row2.png)
 
-**This fork’s double-storey g:** [Interactive tester](https://zambetti.github.io/allo/) ·
-[Download Allo Custom](https://zambetti.github.io/allo/AlloCustom-1.1.0.zip).
-Enable `ss04`; the original single-storey g remains the default. This is a separate-name fork build, not an upstream release.
+**This fork’s optional double-storey g:** [Interactive demo](https://zambetti.github.io/allo/) ·
+[Download Allo Custom](AlloCustom-1.1.0.zip). Enable `ss04` (CSS: `font-feature-settings: "ss04" 1`);
+the original g remains default and `ss01` remains independent. The saved UFOs include the alternate and its accents
+across all variable masters and static styles. The shipped `fonts/` remain the upstream release.
+
+The standalone `index.html` and separately named Allo Custom ZIP are preview snapshots; normal builds use the
+upstream build process and family names, and do not refresh those snapshots. GitHub Pages serves the branch root
+with `.nojekyll`; no website build or generator is needed.
 
 ## Download
 
@@ -83,8 +88,8 @@ body {
 | Weight | `wght` | 100–900 | 400 | Thin 100 to Black 900 |
 | Roundness | `ROND` | 0–100 | 50 | 0 Sharp, 50 Friendly, 100 Round |
 
-Display (32) is tighter, with stronger optical corrections. Below 14 only the spacing changes. The static fonts use
-Text / Friendly proportions (opsz 14, ROND 50), but are separately edited sources, not exact variable instances.
+Display (32) is tighter, with stronger optical corrections. Below 14 only the spacing changes. The static fonts are
+the variable font at opsz 14, ROND 50.
 
 ## OpenType features
 
@@ -93,7 +98,7 @@ Text / Friendly proportions (opsz 14, ROND 50), but are separately edited source
 | `ss01` Single-story a | ɑ-shaped a |
 | `ss02` Disambiguation | Serifed I, tailed l, footed 1, slashed zero |
 | `ss03` Open figures | Open 4, 6 and 9 |
-| `ss04` Double-storey g | Optional g, ĝ, ğ, ġ and ģ; current sources and new builds only |
+| `ss04` Double-storey g | Optional g, ĝ, ğ, ġ and ģ; this fork's sources and preview build only |
 | `cv01`–`cv04` | Footed 1, slashed zero, tailed l, serifed I, separately |
 | `cv05` | Dotted zero |
 | `tnum` | Tabular figures |
@@ -108,17 +113,6 @@ Text / Friendly proportions (opsz 14, ROND 50), but are separately edited source
 `clig` and `calt` are on by default. `font-feature-settings: "clig" 0` turns off only the typed arrows (for code, say),
 `"calt" 0` only the raised brackets and signs. Browsers turn ligatures off when letter-spacing is set.
 
-`ss04` is available in the current sources and newly compiled fonts; untouched shipped `fonts/`, npm packages and
-upstream releases do not gain it. The existing single-storey `g` remains the default. `ss01` controls `a` independently;
-using the [custom-build CSS](#separate-name-custom-build), enable both with:
-
-```css
-.alternates {
-  font-family: "Allo Custom", system-ui, sans-serif;
-  font-feature-settings: "ss01" 1, "ss04" 1;
-}
-```
-
 ## Build
 
 Python 3.9 or newer:
@@ -131,105 +125,16 @@ python3 -m venv .venv
 
 Writes `fonts/` (variable TTF and WOFF2; 18 static OTFs and WOFF2s, autohinted with AFDKO), `fonts/SHA256SUMS` and
 `Allo-1.1.0.zip`. Dependencies are pinned and `release.json` fixes the timestamp, so builds are reproducible.
-For local alternate-g work, prefer `--custom` below to keep the shipped fonts available as comparison references.
-
-### Separate-name custom build
-
-To use a modified build alongside an installed Allo release, use the same environment with:
-
-```sh
-.venv/bin/python build.py --custom
-```
-
-This compiles the current sources, including optional `ss04`, into the ignored `build/custom/` directory, without
-changing `sources/`, the shipped `fonts/`, or the normal release archive. No authoring regeneration is needed to
-build. Running `build.py` without `--custom` retains the release-output behavior above and also compiles the
-current sources; custom naming itself does not add the alternate.
-
-| Custom output | Family / use |
-|---|---|
-| `build/custom/fonts/otf/AlloCustom-*.otf` | **Allo Custom**, 18 static styles including obliques |
-| `build/custom/fonts/variable/AlloCustomVariable.ttf` | **Allo Custom Variable**, all three axes |
-| `build/custom/fonts/webfonts/AlloCustom*.woff2` | Web versions, including **Allo Custom Variable Friendly** |
-| `build/custom/variable-proof.html` | Self-contained, offline variable-font pair proof |
-| `build/custom/AlloCustom-1.1.0.zip` | Fonts, CSS, license, README, checksums, naming-validation report, and `variable-proof.html` |
-
-Install the custom OTFs and/or variable TTF manually, then select **Allo Custom** or **Allo Custom Variable** in
-an app; the installed release keeps its existing name. No fonts are installed automatically. For websites, use
-`build/custom/allo-custom.css` **or** `build/custom/allo-custom-friendly.css` with `font-family: "Allo Custom"`;
-keep the adjacent `fonts/` directory when copying the CSS.
-
-The custom mode changes internal family, full, unique, PostScript, CFF, and variable-instance identities—not just
-filenames—while preserving style names, axis/feature labels, and original attribution/license metadata. It checks
-saved font identities against the shipped release files and writes `build/custom/naming-validation.json` and
-`build/custom/fonts/SHA256SUMS`. Keep the shipped `fonts/` tree available as the comparison reference.
-
-#### Offline variable proof
-
-Open `build/custom/variable-proof.html` directly in a browser, including offline via `file://`. It embeds the full
-`build/custom/fonts/webfonts/AlloCustomVariable.woff2`, not the roundness-pinned Friendly font. No server, network
-access or font installation is needed; JavaScript must be enabled. The custom ZIP includes the same proof.
-The source at `templates/variable-proof.html.template` is a build input, not a page to open directly;
-`variable_proof.py` fills it with the font and axis metadata.
-
-- Enter any two characters or combining-mark clusters in the editable fields. They are joined without a separator
-  as one shaped text run, so actual kerning and mark attachment apply, rather than separate character spans.
-- Adjust the three axis sliders: `opsz`, `wght` and `ROND`. A separate preview-size slider changes CSS pixels only,
-  not optical size. There is no `slnt` axis; obliques remain separate static fonts.
-- Switch `ss04`, `ss01` and kerning independently, and show or hide the default-g comparison. Both previews share
-  axes, size, `ss01` and kerning; the comparison forces only `ss04` off. The page starts with `ss04` on for inspection,
-  without changing the font's default.
-
-Watch the font-loading and character-coverage messages: unsupported characters may use fallback fonts. See the
-[authoring notes](sources/alternates/double-storey-g/README.md#baseline-and-provenance) for the approved Text / Friendly
-controls, subsequent interactive review, and its scope.
-
-#### Published preview
-
-The root `index.html` is a generated snapshot of the full custom variable font with a link to the adjacent
-`AlloCustom-1.1.0.zip`. It runs at <https://zambetti.github.io/allo/>. The ZIP includes the installable fonts and
-an offline proof without a download link, so it does not depend on the website.
-
-GitHub Pages publishes **`feature/double-storey-g` → `/`** with `.nojekyll`; no custom Actions workflow or font
-build runs on GitHub. `main` remains aligned with upstream. `build/custom/` stays ignored and is not the publishing
-source. To refresh the two published files after font changes, run from this branch:
-
-```sh
-.venv/bin/python build.py --custom
-cp build/custom/AlloCustom-1.1.0.zip AlloCustom-1.1.0.zip
-.venv/bin/python variable_proof.py build/custom/fonts/webfonts/AlloCustomVariable.woff2 index.html --download AlloCustom-1.1.0.zip
-```
-
-Commit and push the updated `index.html` and ZIP on this branch; Pages redeploys the static snapshot. If the custom
-build version changes, update the ZIP filename and download link together. Publishing from the repository root
-also makes its other tracked files available on the Pages site; ignored local files are not uploaded.
-
-### Checks
-
-With the build environment above and HarfBuzz's `hb-shape` on `PATH`, run the source/layout, naming/build-mode and
-proof-generation regression tests (no font installation or release rebuild). Keep the shipped and historical study
-fonts available as fixtures:
-
-```sh
-.venv/bin/python -m unittest discover -s tests -v
-```
-
-See [compiled-font and real-browser checks](sources/alternates/double-storey-g/README.md#validation) for their
-prerequisites and commands.
 
 ## Sources
 
 `sources/Allo.designspace` (designspace 5, UFO) has 48 masters: opsz 9, 14, 20, 32 × wght 100, 400, 580, 900 ×
-ROND 0, 50, 100, plus sparse roundness layers. The opsz 9 masters are the opsz 14 masters with wider spacing
-(`release.json` "smallShift"). Corners are rounded in the outlines; the build compiles
+ROND 0, 50, 100, plus eight sparse layers at ROND 10 and 30 for heavy joins. The opsz 9 masters are the opsz 14
+masters with wider spacing (`release.json` "smallShift"). Corners are rounded in the outlines; the build compiles
 the sources as they are. Keep points compatible across masters.
 
 `sources/static` holds the 18 static fonts' sources: cut from the variable masters at opsz 14, ROND 50, then edited
 separately. The obliques are separate drawings, not a slant axis.
-
-The [double-storey-g authoring notes](sources/alternates/double-storey-g/README.md) document the canonical control
-GLIFs, regeneration and its overwrite scope, geometry and spacing models, accents, obliques, and review limits.
-Normal builds consume the saved UFOs, not the historical proof builders or the authoring generator.
 
 ## Contributing
 

@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
 """Compile Allo from its editable, finished UFO masters. No drawing tools required."""
-import argparse
 import hashlib
 import json
 import os
 from pathlib import Path
-import shutil
 import time
 import zipfile
 
@@ -18,40 +16,31 @@ from fontTools.pens.recordingPen import DecomposingRecordingPen
 from fontTools.ttLib import TTFont
 from ufo2ft import compileOTF, compileVariableTTF
 import ufoLib2
-from custom_names import rename_for_custom, validate_custom_fonts
-from variable_proof import write_variable_proof
 
 
-def save(font, path, web_dir=None):
+def save(font, path):
     path.parent.mkdir(parents=True, exist_ok=True)
     font.save(path)
     font.flavor = 'woff2'
-    web = (web_dir if web_dir is not None else ROOT / 'fonts/webfonts') / (path.stem + '.woff2')
+    web = ROOT / 'fonts/webfonts' / (path.stem + '.woff2')
     web.parent.mkdir(parents=True, exist_ok=True)
     font.save(web)
     return [path, web]
 
 
-def friendly_web(variable, web_dir=None, prefix='Allo', family='Allo'):
+def friendly_web(variable):
     """The lighter web font (Josh, 2026-11-14): the variable font with roundness fixed at Friendly (50), keeping
     optical size and weight; about half the size. Its own family, "Allo Variable Friendly", so it never stands in
     for the full font. Web only (fonts/webfonts/AlloVariableFriendly.woff2)."""
     from fontTools.varLib.instancer import instantiateVariableFont
     font = instantiateVariableFont(variable, {'ROND': 50})
-    identity_ids = {1, 3, 4, 6, 16, 18, 21, 25}
-    identity_ids.update(instance.postscriptNameID for instance in font['fvar'].instances
-                        if instance.postscriptNameID != 65535)
     for record in font['name'].names:
-        if record.nameID not in identity_ids:
-            continue
         text = record.toUnicode()
-        new = text.replace(prefix + 'Variable', prefix + 'VariableFriendly').replace(
-            family + ' Variable', family + ' Variable Friendly')
+        new = text.replace('AlloVariable', 'AlloVariableFriendly').replace('Allo Variable', 'Allo Variable Friendly')
         if new != text:
             record.string = new
     font.flavor = 'woff2'
-    web = (web_dir if web_dir is not None else ROOT / 'fonts/webfonts') / (prefix + 'VariableFriendly.woff2')
-    web.parent.mkdir(parents=True, exist_ok=True)
+    web = ROOT / 'fonts/webfonts/AlloVariableFriendly.woff2'
     font.save(web)
     return web
 
@@ -357,78 +346,7 @@ ZIP_README = '''
 '''
 
 
-def custom_output_root():
-    """Keep generated custom files in one ignored tree, never through a symlink."""
-    output = ROOT / 'build/custom'
-    for path in (ROOT / 'build', output):
-        if path.is_symlink():
-            raise ValueError(f'Custom output must not be a symlink: {path}')
-    if output.exists():
-        if not output.is_dir():
-            raise ValueError(f'Custom output must be a directory: {output}')
-        for path in output.rglob('*'):
-            if path.is_symlink():
-                raise ValueError(f'Custom output contains a symlink: {path}')
-    return output
-
-
-def file_hashes(directory):
-    return {str(path.relative_to(directory)): hashlib.sha256(path.read_bytes()).hexdigest()
-            for path in sorted(directory.rglob('*')) if path.is_file()}
-
-
-def custom_readme(readme):
-    text = (readme.replace('ALLO  ', 'ALLO CUSTOM  ', 1)
-            .replace('AlloVariable', 'AlloCustomVariable')
-            .replace('Allo Variable', 'Allo Custom Variable')
-            .replace('"Allo"', '"Allo Custom"'))
-    return ("ALLO CUSTOM — separate-name development build, not an upstream release.\n"
-            "Built from the current project sources; naming alone adds no glyphs or features.\n"
-            "The existing single-storey g remains default. Enable ss04 for the double-storey alternate.\n"
-            "Open variable-proof.html for offline axis sliders and an editable two-character proof.\n"
-            "Static family: Allo Custom. Variable family: Allo Custom Variable.\n"
-            "These identities are distinct from the Allo release. No fonts are installed automatically.\n"
-            "Web: use allo-custom.css OR allo-custom-friendly.css with font-family: Allo Custom.\n"
-            "See naming-validation.json for identity checks and fonts/SHA256SUMS for font checksums.\n"
-            "Original attribution and SIL Open Font License are retained below and in OFL.txt.\n"
-            + text)
-
-
-def custom_support_files(output):
-    files = []
-    for source, destination in (('allo.css', 'allo-custom.css'),
-                                ('allo-friendly.css', 'allo-custom-friendly.css')):
-        text = ((ROOT / source).read_text()
-                .replace('/* Allo ', '/* Allo Custom (modified build) ', 1)
-                .replace('"Allo"', '"Allo Custom"')
-                .replace('./fonts/webfonts/Allo', './fonts/webfonts/AlloCustom'))
-        path = output / destination
-        path.write_text(text)
-        files.append(path)
-    license_path = output / 'OFL.txt'
-    shutil.copyfile(ROOT / 'OFL.txt', license_path)
-    files.append(license_path)
-    return files
-
-
-def main(argv=None):
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--custom', action='store_true',
-                        help='build separately named Allo Custom fonts under build/custom/; leave release outputs untouched')
-    args = parser.parse_args(argv)
-    output = custom_output_root() if args.custom else ROOT
-    prefix = 'AlloCustom' if args.custom else 'Allo'
-    family = 'Allo Custom' if args.custom else 'Allo'
-    web_dir = output / 'fonts/webfonts'
-    if args.custom:
-        # A failed rebuild must not leave a previous success report beside partial outputs.
-        (output / 'naming-validation.json').unlink(missing_ok=True)
-        references = sorted(path for path in (ROOT / 'fonts').rglob('*')
-                            if path.suffix.lower() in ('.otf', '.ttf', '.woff2'))
-        if not references:
-            raise ValueError('Custom naming checks require the release reference fonts in fonts/')
-        release_hashes = file_hashes(ROOT / 'fonts')
-        print('Building Allo Custom from sources; release fonts and source names remain untouched.', flush=True)
+def main():
     ds = DesignSpaceDocument.fromfile(ROOT / 'sources/Allo.designspace')
     ds.loadSourceFonts(ufoLib2.Font.open)
     for instance in ds.instances:
@@ -438,67 +356,37 @@ def main(argv=None):
     win = (default.openTypeOS2WinAscent, default.openTypeOS2WinDescent)
     assert all((f.info.openTypeOS2WinAscent, f.info.openTypeOS2WinDescent) == win for f in [s.font for s in ds.sources] + list(statics.values())), 'Windows metrics differ between sources'
     check_win([s.font for s in ds.sources] + list(statics.values()), win)
-    if args.custom:
-        print('Compiling variable font…', flush=True)
     variable = compileVariableTTF(ds, useProductionNames=False, flattenComponents=True)
     if CONFIG.get('smallShift'):
         exact_small(variable, CONFIG['smallShift'])
     drop_unreachable(variable)
     smooth_unhinted(variable)
-    if args.custom:
-        rename_for_custom(variable)
-    variable_path = output / 'fonts/variable' / (prefix + 'Variable.ttf')
-    files = save(variable, variable_path, web_dir)
-    with TTFont(variable_path) as saved_variable:
-        files.append(friendly_web(saved_variable, web_dir, prefix, family))
+    files = save(variable, ROOT / 'fonts/variable/AlloVariable.ttf')
+    files.append(friendly_web(TTFont(ROOT / 'fonts/variable/AlloVariable.ttf')))
     otfs = {}
     for stem, ufo in statics.items():
-        target_stem = prefix + stem[len('Allo'):] if args.custom else stem
-        otfs[stem] = output / 'fonts/otf' / (target_stem + '.otf')
+        otfs[stem] = ROOT / 'fonts/otf' / (stem + '.otf')
         otfs[stem].parent.mkdir(parents=True, exist_ok=True)
-        if args.custom:
-            print(f'Compiling {target_stem}…', flush=True)
         otf = compileOTF(ufo, removeOverlaps=False, useProductionNames=False)
         drop_unreachable(otf)
-        if args.custom:
-            rename_for_custom(otf)
         otf.save(otfs[stem])
-    if args.custom:
-        print('Autohinting static OTFs…', flush=True)
     hint_otfs({w: (otfs[f'Allo-{w}'], otfs['Allo-' + ('' if w == 'Regular' else w) + 'Oblique']) for w in WEIGHT_NAMES})
     for path in otfs.values():
-        with TTFont(path) as font:
-            files += save(font, path, web_dir)
-    hashes = {str(p.relative_to(output)): hashlib.sha256(p.read_bytes()).hexdigest() for p in files}
-    sums_path = output / 'fonts/SHA256SUMS'
-    sums_path.write_text(''.join(f'{digest}  {name}\n' for name, digest in sorted(hashes.items())))
-    readme = ZIP_README.replace('{version}', CONFIG['version']).replace('{characters}', str(len(variable.getBestCmap())))
-    if args.custom:
-        report = validate_custom_fonts(files, references)
-        if file_hashes(ROOT / 'fonts') != release_hashes:
-            raise RuntimeError('Release reference files changed during the custom build')
-        report['release_files_unchanged'] = True
-        report['font_sha256'] = hashes
-        report_path = output / 'naming-validation.json'
-        report_path.write_text(json.dumps(report, indent=2, ensure_ascii=False) + '\n')
-        proof_path = write_variable_proof(web_dir / (prefix + 'Variable.woff2'), output / 'variable-proof.html')
-        files += [report_path, sums_path, proof_path, *custom_support_files(output)]
-        readme = custom_readme(readme)
-        (output / 'README.txt').write_text(readme)
-    else:
-        files += [sums_path, ROOT / 'OFL.txt']
-    archive = output / f"{prefix}-{CONFIG['version']}.zip"
+        files += save(TTFont(path), path)
+    hashes = {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in files}
+    (ROOT / 'fonts/SHA256SUMS').write_text(''.join(f'{digest}  {name}\n' for name, digest in sorted(hashes.items())))
+    files += [ROOT / 'fonts/SHA256SUMS', ROOT / 'OFL.txt']
+    archive = ROOT / f"Allo-{CONFIG['version']}.zip"
     date = time.gmtime(int(os.environ['SOURCE_DATE_EPOCH']))[:6]
-    entries = {str(p.relative_to(output)): p.read_bytes() for p in files
-               if args.custom or p.name != 'SHA256SUMS'}
-    entries['README.txt'] = readme.encode()
+    entries = {str(path.relative_to(ROOT)): path.read_bytes() for path in files if path.name != 'SHA256SUMS'}
+    entries['README.txt'] = ZIP_README.replace('{version}', CONFIG['version']).replace('{characters}', str(len(variable.getBestCmap()))).encode()
     with zipfile.ZipFile(archive, 'w', zipfile.ZIP_DEFLATED) as z:
         for name, data in sorted(entries.items()):
-            info = zipfile.ZipInfo(prefix + '-' + CONFIG['version'] + '/' + name, date)
+            info = zipfile.ZipInfo('Allo-' + CONFIG['version'] + '/' + name, date)
             info.compress_type = zipfile.ZIP_DEFLATED
             info.external_attr = 0o644 << 16
             z.writestr(info, data)
-    print(f'{len(hashes)} font files built; {archive.relative_to(ROOT)}')
+    print(f'{len(hashes)} font files built; {archive.name}')
 
 
 if __name__ == '__main__':
