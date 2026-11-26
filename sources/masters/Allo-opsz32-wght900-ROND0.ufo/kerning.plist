@@ -2,6 +2,191 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
   <dict>
+    <key>A</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-50</integer>
+    </dict>
+    <key>Aacute</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-50</integer>
+    </dict>
+    <key>Abreve</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-50</integer>
+    </dict>
+    <key>Abreveacute</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-50</integer>
+    </dict>
+    <key>Abrevedotbelow</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-50</integer>
+    </dict>
+    <key>Abrevegrave</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-50</integer>
+    </dict>
+    <key>Abrevehookabove</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-50</integer>
+    </dict>
+    <key>Abrevetilde</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-50</integer>
+    </dict>
+    <key>Acircumflex</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-50</integer>
+    </dict>
+    <key>Acircumflexacute</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-50</integer>
+    </dict>
+    <key>Acircumflexdotbelow</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-50</integer>
+    </dict>
+    <key>Acircumflexgrave</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-50</integer>
+    </dict>
+    <key>Acircumflexhookabove</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-50</integer>
+    </dict>
+    <key>Acircumflextilde</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-50</integer>
+    </dict>
+    <key>Adieresis</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-50</integer>
+    </dict>
+    <key>Adotbelow</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-50</integer>
+    </dict>
+    <key>Agrave</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-50</integer>
+    </dict>
+    <key>Ahookabove</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-50</integer>
+    </dict>
+    <key>Amacron</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-50</integer>
+    </dict>
+    <key>Aogonek</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-50</integer>
+    </dict>
+    <key>Aring</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-50</integer>
+    </dict>
+    <key>Atilde</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-50</integer>
+    </dict>
+    <key>B</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
+    </dict>
+    <key>C</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-28</integer>
+    </dict>
+    <key>Cacute</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-28</integer>
+    </dict>
+    <key>Ccaron</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-28</integer>
+    </dict>
+    <key>Ccedilla</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-28</integer>
+    </dict>
+    <key>Ccircumflex</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-28</integer>
+    </dict>
+    <key>Cdotaccent</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-28</integer>
+    </dict>
+    <key>D</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
+    </dict>
+    <key>Dbar1</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
+    </dict>
+    <key>Dcaron</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
+    </dict>
+    <key>Dcroat</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
+    </dict>
+    <key>Eth</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
+    </dict>
+    <key>F</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-10</integer>
+    </dict>
+    <key>K</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-80</integer>
+    </dict>
+    <key>Kcommaaccent</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-80</integer>
+    </dict>
     <key>Lacute</key>
     <dict>
       <key>public.kern2.asciicircum</key>
@@ -35,30 +220,192 @@
       <key>public.kern2.quotedblright</key>
       <integer>-68</integer>
     </dict>
+    <key>O</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
+    </dict>
+    <key>Oacute</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
+    </dict>
+    <key>Obreve</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
+    </dict>
+    <key>Ocircumflex</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
+    </dict>
+    <key>Ocircumflexacute</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
+    </dict>
     <key>Ocircumflexdotbelow</key>
     <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
       <key>public.kern2.quotedblleft</key>
       <integer>4</integer>
     </dict>
+    <key>Ocircumflexgrave</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
+    </dict>
+    <key>Ocircumflexhookabove</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
+    </dict>
+    <key>Ocircumflextilde</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
+    </dict>
+    <key>Odieresis</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
+    </dict>
     <key>Odotbelow</key>
     <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
       <key>public.kern2.quotedblleft</key>
       <integer>4</integer>
+    </dict>
+    <key>Ograve</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
+    </dict>
+    <key>Ohookabove</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
+    </dict>
+    <key>Ohorn</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>7</integer>
+    </dict>
+    <key>Ohornacute</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>7</integer>
+    </dict>
+    <key>Ohorndotbelow</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>7</integer>
+    </dict>
+    <key>Ohorngrave</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>7</integer>
+    </dict>
+    <key>Ohornhookabove</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>7</integer>
+    </dict>
+    <key>Ohorntilde</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>7</integer>
+    </dict>
+    <key>Ohungarumlaut</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
+    </dict>
+    <key>Omacron</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
+    </dict>
+    <key>Oslash</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
+    </dict>
+    <key>Otilde</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
+    </dict>
+    <key>P</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-50</integer>
     </dict>
     <key>Q</key>
     <dict>
       <key>public.kern2.A</key>
       <integer>-37</integer>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
+    </dict>
+    <key>R</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-59</integer>
+    </dict>
+    <key>Racute</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-59</integer>
+    </dict>
+    <key>Rcaron</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-59</integer>
+    </dict>
+    <key>Rcommaaccent</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-59</integer>
+    </dict>
+    <key>T</key>
+    <dict>
+      <key>gbreve.ss04</key>
+      <integer>-183</integer>
+      <key>gcircumflex.ss04</key>
+      <integer>-193</integer>
+      <key>public.kern2.g.ss04</key>
+      <integer>-322</integer>
     </dict>
     <key>Tbar</key>
     <dict>
       <key>public.kern2.J</key>
       <integer>-142</integer>
+      <key>public.kern2.g.ss04</key>
+      <integer>-119</integer>
       <key>public.kern2.o</key>
       <integer>-119</integer>
     </dict>
+    <key>Tcaron</key>
+    <dict>
+      <key>gbreve.ss04</key>
+      <integer>-183</integer>
+      <key>gcircumflex.ss04</key>
+      <integer>-193</integer>
+      <key>public.kern2.g.ss04</key>
+      <integer>-322</integer>
+    </dict>
     <key>Tcommaaccent</key>
     <dict>
+      <key>gbreve.ss04</key>
+      <integer>-183</integer>
+      <key>gcircumflex.ss04</key>
+      <integer>-193</integer>
+      <key>public.kern2.g.ss04</key>
+      <integer>-322</integer>
       <key>public.kern2.x</key>
       <integer>-68</integer>
     </dict>
@@ -81,20 +428,102 @@
       <key>public.kern2.quotedblleft</key>
       <integer>-115</integer>
     </dict>
+    <key>V</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-178</integer>
+    </dict>
+    <key>W</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-118</integer>
+    </dict>
+    <key>Wacute</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-118</integer>
+    </dict>
+    <key>Wcircumflex</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-118</integer>
+    </dict>
+    <key>Wdieresis</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-118</integer>
+    </dict>
+    <key>Wgrave</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-118</integer>
+    </dict>
+    <key>X</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-57</integer>
+    </dict>
+    <key>Y</key>
+    <dict>
+      <key>gbreve.ss04</key>
+      <integer>-139</integer>
+      <key>public.kern2.g.ss04</key>
+      <integer>-294</integer>
+    </dict>
+    <key>Yacute</key>
+    <dict>
+      <key>gbreve.ss04</key>
+      <integer>-139</integer>
+      <key>public.kern2.g.ss04</key>
+      <integer>-294</integer>
+    </dict>
+    <key>Ycircumflex</key>
+    <dict>
+      <key>gbreve.ss04</key>
+      <integer>-139</integer>
+      <key>public.kern2.g.ss04</key>
+      <integer>-294</integer>
+    </dict>
+    <key>Ydieresis</key>
+    <dict>
+      <key>gbreve.ss04</key>
+      <integer>-139</integer>
+      <key>public.kern2.g.ss04</key>
+      <integer>-294</integer>
+    </dict>
     <key>Ydotbelow</key>
     <dict>
+      <key>gbreve.ss04</key>
+      <integer>-139</integer>
       <key>public.kern2.comma</key>
       <integer>-68</integer>
+      <key>public.kern2.g.ss04</key>
+      <integer>-294</integer>
+    </dict>
+    <key>Ygrave</key>
+    <dict>
+      <key>gbreve.ss04</key>
+      <integer>-139</integer>
+      <key>public.kern2.g.ss04</key>
+      <integer>-294</integer>
     </dict>
     <key>Yhookabove</key>
     <dict>
+      <key>gbreve.ss04</key>
+      <integer>-139</integer>
       <key>public.kern2.comma</key>
       <integer>-68</integer>
+      <key>public.kern2.g.ss04</key>
+      <integer>-294</integer>
     </dict>
     <key>Ytilde</key>
     <dict>
+      <key>gbreve.ss04</key>
+      <integer>-139</integer>
       <key>public.kern2.comma</key>
       <integer>-68</integer>
+      <key>public.kern2.g.ss04</key>
+      <integer>-294</integer>
     </dict>
     <key>_zero_percent</key>
     <dict>
@@ -135,6 +564,8 @@
     <dict>
       <key>public.kern2.f</key>
       <integer>40</integer>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
       <key>public.kern2.t</key>
       <integer>40</integer>
     </dict>
@@ -142,8 +573,15 @@
     <dict>
       <key>public.kern2.f</key>
       <integer>40</integer>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
       <key>public.kern2.t</key>
       <integer>40</integer>
+    </dict>
+    <key>b</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
     </dict>
     <key>backslash</key>
     <dict>
@@ -153,12 +591,24 @@
       <integer>-218</integer>
       <key>public.kern2.W</key>
       <integer>-118</integer>
+      <key>public.kern2.g.ss04</key>
+      <integer>-50</integer>
       <key>public.kern2.quotedblleft</key>
       <integer>-86</integer>
       <key>public.kern2.quotedblright</key>
       <integer>-115</integer>
       <key>public.kern2.v</key>
       <integer>-103</integer>
+    </dict>
+    <key>baht</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
+    </dict>
+    <key>bitcoin</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
     </dict>
     <key>braceleft</key>
     <dict>
@@ -170,10 +620,75 @@
       <key>public.kern2.j</key>
       <integer>200</integer>
     </dict>
+    <key>c</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-48</integer>
+    </dict>
+    <key>cacute</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-48</integer>
+    </dict>
+    <key>ccaron</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-48</integer>
+    </dict>
+    <key>ccedilla</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-48</integer>
+    </dict>
+    <key>ccircumflex</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-48</integer>
+    </dict>
+    <key>cdotaccent</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-48</integer>
+    </dict>
+    <key>cedi</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-28</integer>
+    </dict>
+    <key>cent</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>circlewhite</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
+    </dict>
+    <key>coloncurrency</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-28</integer>
+    </dict>
     <key>comma</key>
     <dict>
       <key>public.kern2.tf</key>
       <integer>50</integer>
+    </dict>
+    <key>copyright</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
+    </dict>
+    <key>dagger</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-68</integer>
+    </dict>
+    <key>daggerdbl</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-68</integer>
     </dict>
     <key>dcroat</key>
     <dict>
@@ -189,6 +704,121 @@
       <integer>80</integer>
       <key>public.kern2.j</key>
       <integer>80</integer>
+    </dict>
+    <key>e</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>eacute</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>ebreve</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>ecaron</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>ecircumflex</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>ecircumflexacute</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>ecircumflexdotbelow</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>ecircumflexgrave</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>ecircumflexhookabove</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>ecircumflextilde</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>edieresis</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>edotaccent</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>edotbelow</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>egrave</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>ehookabove</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>emacron</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>emdash</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>90</integer>
+    </dict>
+    <key>emdash.case</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>90</integer>
+    </dict>
+    <key>endash</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>90</integer>
+    </dict>
+    <key>endash.case</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>90</integer>
+    </dict>
+    <key>eogonek</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>eth</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>etilde</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
     </dict>
     <key>euro</key>
     <dict>
@@ -223,8 +853,50 @@
     <dict>
       <key>f</key>
       <integer>-170</integer>
+      <key>public.kern2.g.ss04</key>
+      <integer>-20</integer>
       <key>t</key>
       <integer>-179</integer>
+    </dict>
+    <key>f_f</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-20</integer>
+    </dict>
+    <key>f_f_f</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-20</integer>
+    </dict>
+    <key>f_f_t</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-10</integer>
+    </dict>
+    <key>f_t</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-10</integer>
+    </dict>
+    <key>f_t_f</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-20</integer>
+    </dict>
+    <key>f_t_t</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-10</integer>
+    </dict>
+    <key>figuredash</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>90</integer>
+    </dict>
+    <key>figuredash.case</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>90</integer>
     </dict>
     <key>five</key>
     <dict>
@@ -256,6 +928,11 @@
     <dict>
       <key>public.kern2.dnom</key>
       <integer>-26</integer>
+    </dict>
+    <key>germandbls</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>26</integer>
     </dict>
     <key>greater</key>
     <dict>
@@ -361,6 +1038,31 @@
       <key>public.kern2.j</key>
       <integer>110</integer>
     </dict>
+    <key>k</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-76</integer>
+    </dict>
+    <key>kcommaaccent</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-76</integer>
+    </dict>
+    <key>kgreenlandic</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-76</integer>
+    </dict>
+    <key>kip</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-80</integer>
+    </dict>
+    <key>l.ss02</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-40</integer>
+    </dict>
     <key>ldot</key>
     <dict>
       <key>public.kern2.Dcroat</key>
@@ -371,12 +1073,22 @@
       <key>public.kern2.T</key>
       <integer>-103</integer>
     </dict>
+    <key>longs</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-119</integer>
+    </dict>
     <key>lslash</key>
     <dict>
       <key>public.kern2.Dcroat</key>
       <integer>68</integer>
       <key>public.kern2.t</key>
       <integer>79</integer>
+    </dict>
+    <key>lslash.ss02</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-10</integer>
     </dict>
     <key>micro</key>
     <dict>
@@ -388,6 +1100,26 @@
       <key>public.kern2.T</key>
       <integer>-115</integer>
     </dict>
+    <key>n</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <real>-64.0</real>
+    </dict>
+    <key>nacute</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <real>-64.0</real>
+    </dict>
+    <key>ncaron</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <real>-64.0</real>
+    </dict>
+    <key>ncommaaccent</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <real>-64.0</real>
+    </dict>
     <key>nine</key>
     <dict>
       <key>one.foot</key>
@@ -397,11 +1129,120 @@
     <dict>
       <key>public.kern2.T</key>
       <integer>-103</integer>
+      <key>public.kern2.g.ss04</key>
+      <real>-64.0</real>
+    </dict>
+    <key>o</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>oacute</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>obreve</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>ocircumflex</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>ocircumflexacute</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>ocircumflexdotbelow</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>ocircumflexgrave</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>ocircumflexhookabove</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>ocircumflextilde</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
     </dict>
     <key>odieresis</key>
     <dict>
       <key>public.kern2.T</key>
       <integer>-103</integer>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>odotbelow</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>oe</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>ograve</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>ohookabove</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>ohorn</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>ohornacute</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>ohorndotbelow</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>ohorngrave</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>ohornhookabove</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>ohorntilde</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>ohungarumlaut</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>omacron</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
     </dict>
     <key>one.foot</key>
     <dict>
@@ -416,8 +1257,20 @@
       <key>public.kern2.three</key>
       <integer>-45</integer>
     </dict>
+    <key>ordfeminine</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-68</integer>
+    </dict>
+    <key>ordmasculine</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-68</integer>
+    </dict>
     <key>oslash</key>
     <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
       <key>public.kern2.quotedblleft</key>
       <integer>-17</integer>
     </dict>
@@ -425,6 +1278,13 @@
     <dict>
       <key>public.kern2.T</key>
       <integer>-103</integer>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
+    </dict>
+    <key>p</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
     </dict>
     <key>parenleft</key>
     <dict>
@@ -437,6 +1297,11 @@
       <integer>-127</integer>
       <key>public.kern2.quotedblright</key>
       <integer>-138</integer>
+    </dict>
+    <key>peso</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-50</integer>
     </dict>
     <key>public.kern1.A</key>
     <dict>
@@ -2011,6 +2876,121 @@
       <key>public.kern2.j</key>
       <integer>144</integer>
     </dict>
+    <key>public.kern1.g.ss04</key>
+    <dict>
+      <key>T</key>
+      <integer>-103</integer>
+      <key>Tbar</key>
+      <integer>-103</integer>
+      <key>Tcaron</key>
+      <integer>-103</integer>
+      <key>Tcommaaccent</key>
+      <integer>-103</integer>
+      <key>c</key>
+      <real>-64.0</real>
+      <key>cacute</key>
+      <real>-64.0</real>
+      <key>ccaron</key>
+      <real>-64.0</real>
+      <key>ccedilla</key>
+      <real>-64.0</real>
+      <key>ccircumflex</key>
+      <real>-64.0</real>
+      <key>cdotaccent</key>
+      <real>-64.0</real>
+      <key>e</key>
+      <real>-64.0</real>
+      <key>eacute</key>
+      <real>-64.0</real>
+      <key>ebreve</key>
+      <real>-64.0</real>
+      <key>ecaron</key>
+      <real>-64.0</real>
+      <key>ecircumflex</key>
+      <real>-64.0</real>
+      <key>ecircumflexacute</key>
+      <real>-64.0</real>
+      <key>ecircumflexdotbelow</key>
+      <real>-64.0</real>
+      <key>ecircumflexgrave</key>
+      <real>-64.0</real>
+      <key>ecircumflexhookabove</key>
+      <real>-64.0</real>
+      <key>ecircumflextilde</key>
+      <real>-64.0</real>
+      <key>edieresis</key>
+      <real>-64.0</real>
+      <key>edotaccent</key>
+      <real>-64.0</real>
+      <key>edotbelow</key>
+      <real>-64.0</real>
+      <key>egrave</key>
+      <real>-64.0</real>
+      <key>ehookabove</key>
+      <real>-64.0</real>
+      <key>emacron</key>
+      <real>-64.0</real>
+      <key>eogonek</key>
+      <real>-64.0</real>
+      <key>etilde</key>
+      <real>-64.0</real>
+      <key>j</key>
+      <real>184.0</real>
+      <key>jcircumflex</key>
+      <real>184.0</real>
+      <key>jdotless</key>
+      <real>184.0</real>
+      <key>o</key>
+      <real>-64.0</real>
+      <key>oacute</key>
+      <real>-64.0</real>
+      <key>obreve</key>
+      <real>-64.0</real>
+      <key>ocircumflex</key>
+      <real>-64.0</real>
+      <key>ocircumflexacute</key>
+      <real>-64.0</real>
+      <key>ocircumflexdotbelow</key>
+      <real>-64.0</real>
+      <key>ocircumflexgrave</key>
+      <real>-64.0</real>
+      <key>ocircumflexhookabove</key>
+      <real>-64.0</real>
+      <key>ocircumflextilde</key>
+      <real>-64.0</real>
+      <key>odieresis</key>
+      <real>-64.0</real>
+      <key>odotbelow</key>
+      <real>-64.0</real>
+      <key>ograve</key>
+      <real>-64.0</real>
+      <key>ohookabove</key>
+      <real>-64.0</real>
+      <key>ohorn</key>
+      <real>-64.0</real>
+      <key>ohornacute</key>
+      <real>-64.0</real>
+      <key>ohorndotbelow</key>
+      <real>-64.0</real>
+      <key>ohorngrave</key>
+      <real>-64.0</real>
+      <key>ohornhookabove</key>
+      <real>-64.0</real>
+      <key>ohorntilde</key>
+      <real>-64.0</real>
+      <key>ohungarumlaut</key>
+      <real>-64.0</real>
+      <key>omacron</key>
+      <real>-64.0</real>
+      <key>option</key>
+      <integer>-103</integer>
+      <key>oslash</key>
+      <real>-64.0</real>
+      <key>otilde</key>
+      <real>-64.0</real>
+      <key>uni021A</key>
+      <integer>-103</integer>
+    </dict>
     <key>public.kern1.guillemetleft</key>
     <dict>
       <key>public.kern2.A</key>
@@ -3107,6 +4087,46 @@
       <key>public.kern2.Y</key>
       <integer>-50</integer>
     </dict>
+    <key>quotedbl</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-40</integer>
+    </dict>
+    <key>quotedblleft</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-89</integer>
+    </dict>
+    <key>quotedblright</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-127</integer>
+    </dict>
+    <key>quoteleft</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-89</integer>
+    </dict>
+    <key>quoteright</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-127</integer>
+    </dict>
+    <key>quotesingle</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-40</integer>
+    </dict>
+    <key>registered</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-57</integer>
+    </dict>
+    <key>seven</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-103</integer>
+    </dict>
     <key>seven.numr</key>
     <dict>
       <key>four.numr</key>
@@ -3129,17 +4149,84 @@
       <key>underscore</key>
       <integer>-92</integer>
     </dict>
+    <key>slash</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-119</integer>
+    </dict>
     <key>t</key>
     <dict>
       <key>f</key>
       <integer>-159</integer>
+      <key>public.kern2.g.ss04</key>
+      <integer>-10</integer>
       <key>t</key>
       <integer>-176</integer>
+    </dict>
+    <key>t_f</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-20</integer>
+    </dict>
+    <key>t_f_f</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-20</integer>
+    </dict>
+    <key>t_f_t</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-10</integer>
+    </dict>
+    <key>t_t</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-10</integer>
+    </dict>
+    <key>t_t_f</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-20</integer>
+    </dict>
+    <key>t_t_t</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-10</integer>
+    </dict>
+    <key>tbar</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-10</integer>
+    </dict>
+    <key>tcaron</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-10</integer>
+    </dict>
+    <key>tcedilla</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-10</integer>
+    </dict>
+    <key>tcommaaccent</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-10</integer>
+    </dict>
+    <key>thorn</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>25</integer>
     </dict>
     <key>three.numr</key>
     <dict>
       <key>public.kern2.fraction</key>
       <integer>-29</integer>
+    </dict>
+    <key>trademark</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-68</integer>
     </dict>
     <key>two.numr</key>
     <dict>
@@ -3185,6 +4272,15 @@
       <key>tenge</key>
       <integer>-103</integer>
     </dict>
+    <key>uni021A</key>
+    <dict>
+      <key>gbreve.ss04</key>
+      <integer>-183</integer>
+      <key>gcircumflex.ss04</key>
+      <integer>-193</integer>
+      <key>public.kern2.g.ss04</key>
+      <integer>-322</integer>
+    </dict>
     <key>uni20BD</key>
     <dict>
       <key>public.kern2.comma</key>
@@ -3194,23 +4290,71 @@
       <key>underscore</key>
       <integer>-103</integer>
     </dict>
+    <key>v</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-36</integer>
+    </dict>
+    <key>w</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-20</integer>
+    </dict>
+    <key>wacute</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-20</integer>
+    </dict>
+    <key>warningSign</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-50</integer>
+    </dict>
+    <key>wcircumflex</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-20</integer>
+    </dict>
+    <key>wdieresis</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-20</integer>
+    </dict>
+    <key>wgrave</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-20</integer>
+    </dict>
+    <key>x</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-62</integer>
+    </dict>
     <key>y</key>
     <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-36</integer>
       <key>public.kern2.j</key>
       <integer>110</integer>
     </dict>
     <key>yacute</key>
     <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-36</integer>
       <key>public.kern2.j</key>
       <integer>110</integer>
     </dict>
     <key>ycircumflex</key>
     <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-36</integer>
       <key>public.kern2.j</key>
       <integer>110</integer>
     </dict>
     <key>ydieresis</key>
     <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-36</integer>
       <key>public.kern2.j</key>
       <integer>110</integer>
     </dict>
@@ -3218,23 +4362,51 @@
     <dict>
       <key>public.kern2.comma</key>
       <integer>19</integer>
+      <key>public.kern2.g.ss04</key>
+      <integer>-36</integer>
       <key>public.kern2.j</key>
       <integer>233</integer>
     </dict>
     <key>ygrave</key>
     <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-36</integer>
       <key>public.kern2.j</key>
       <integer>110</integer>
     </dict>
     <key>yhookabove</key>
     <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-36</integer>
       <key>public.kern2.j</key>
       <integer>110</integer>
     </dict>
     <key>ytilde</key>
     <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-36</integer>
       <key>public.kern2.j</key>
       <integer>110</integer>
+    </dict>
+    <key>z</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-59</integer>
+    </dict>
+    <key>zacute</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-59</integer>
+    </dict>
+    <key>zcaron</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-59</integer>
+    </dict>
+    <key>zdotaccent</key>
+    <dict>
+      <key>public.kern2.g.ss04</key>
+      <integer>-59</integer>
     </dict>
     <key>zero</key>
     <dict>

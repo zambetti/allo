@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="gcommaaccent.ss04" format="2">
+  <advance width="1105.0"/>
+  <anchor x="559.3670348343246" y="-441.0" name="bottom"/>
+  <anchor x="912.1282922684792" y="548" name="cross"/>
+  <anchor x="532.1282922684792" y="1578" name="top"/>
+  <anchor x="951.1282922684792" y="1097" name="topr"/>
+  <outline>
+    <component base="g.ss04"/>
+    <component base="commaaccentrotate.cn" xOffset="407.1282922684792"/>
+  </outline>
+</glyph>

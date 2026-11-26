@@ -291,6 +291,7 @@ class BuildModeTests(TemporaryRootTests):
         self.hint = self.patch(build, "hint_otfs", side_effect=self.hint_fonts)
         self.validation_inputs = None
         self.validate = self.patch(build, "validate_custom_fonts", side_effect=self.validate_fonts)
+        self.proof = self.patch(build, "write_variable_proof", side_effect=self.write_proof)
 
     def compile_variable_font(self, designspace, **kwargs):
         self.variable = StubFont(self.root, "AlloVariable")
@@ -313,6 +314,13 @@ class BuildModeTests(TemporaryRootTests):
         path = web_dir / f"{prefix}VariableFriendly.woff2"
         StubFont(self.root, f"{prefix}VariableFriendly", flavor="woff2").save(path)
         return path
+
+    def write_proof(self, font_path, output_path):
+        self.assertEqual(font_path, self.output / "fonts/webfonts/AlloCustomVariable.woff2")
+        self.assertEqual(output_path, self.output / "variable-proof.html")
+        self.assertTrue(font_path.is_file())
+        output_path.write_text("<!doctype html><title>Variable proof fixture</title>")
+        return output_path
 
     def hint_fonts(self, pairs):
         for paths in pairs.values():
@@ -373,6 +381,7 @@ class BuildModeTests(TemporaryRootTests):
         self.assert_pipeline(self.root, "Allo")
         self.rename.assert_not_called()
         self.validate.assert_not_called()
+        self.proof.assert_not_called()
         self.assertFalse(self.output.exists())
         self.assertFalse((self.root / "README.txt").exists())
         self.assertFalse((self.root / "naming-validation.json").exists())
@@ -401,6 +410,8 @@ class BuildModeTests(TemporaryRootTests):
         self.assertEqual(self.variable.saves[0][2], "AlloCustomVariable")
         self.assertTrue(all(font.saves[0][2].startswith("AlloCustom-") for font in self.compiled_statics))
         self.validate.assert_called_once()
+        self.proof.assert_called_once()
+        self.assertTrue((self.output / "variable-proof.html").is_file())
         files, references = self.validation_inputs
         self.assertEqual(len(files), 39)
         self.assertEqual(set(files), font_paths(self.output, "AlloCustom"))
@@ -444,7 +455,7 @@ class BuildModeTests(TemporaryRootTests):
         for text in (
             f"ALLO CUSTOM  {CONFIG['version']}", "not an upstream release",
             "naming alone adds no glyphs or features", "single-storey g remains default",
-            "ss04 is not added", "Static family: Allo Custom", "Variable family: Allo Custom Variable",
+            "Enable ss04", "variable-proof.html", "Static family: Allo Custom", "Variable family: Allo Custom Variable",
             "No fonts are installed automatically", "allo-custom.css", "allo-custom-friendly.css",
             "naming-validation.json", "fonts/SHA256SUMS", "AlloCustomVariable.ttf",
             "AlloCustomVariableFriendly.woff2", 'font-family: "Allo Custom"',
@@ -464,7 +475,7 @@ class BuildModeTests(TemporaryRootTests):
         folder = f"AlloCustom-{CONFIG['version']}/"
         expected = {str(path.relative_to(self.output)) for path in font_paths(self.output, "AlloCustom")}
         expected |= {"README.txt", "OFL.txt", "allo-custom.css", "allo-custom-friendly.css",
-                     "fonts/SHA256SUMS", "naming-validation.json"}
+                     "fonts/SHA256SUMS", "naming-validation.json", "variable-proof.html"}
         with zipfile.ZipFile(archive) as zipped:
             self.assertIsNone(zipped.testzip())
             self.assertEqual(zipped.namelist(), sorted(folder + name for name in expected))

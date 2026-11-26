@@ -781,6 +781,11 @@
       <string>f_t_f</string>
       <string>f_f_t</string>
       <string>f_f_f</string>
+      <string>g.ss04</string>
+      <string>gcircumflex.ss04</string>
+      <string>gbreve.ss04</string>
+      <string>gdotaccent.ss04</string>
+      <string>gcommaaccent.ss04</string>
     </array>
     <key>public.openTypeCategories</key>
     <dict>
@@ -1362,13 +1367,23 @@
       <string>base</string>
       <key>g</key>
       <string>base</string>
+      <key>g.ss04</key>
+      <string>base</string>
       <key>gbreve</key>
+      <string>base</string>
+      <key>gbreve.ss04</key>
       <string>base</string>
       <key>gcircumflex</key>
       <string>base</string>
+      <key>gcircumflex.ss04</key>
+      <string>base</string>
       <key>gcommaaccent</key>
       <string>base</string>
+      <key>gcommaaccent.ss04</key>
+      <string>base</string>
       <key>gdotaccent</key>
+      <string>base</string>
+      <key>gdotaccent.ss04</key>
       <string>base</string>
       <key>grave</key>
       <string>base</string>

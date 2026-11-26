@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="gdotaccent.ss04" format="2">
+  <advance width="1195.0"/>
+  <anchor x="600.0" y="-441.0" name="bottom"/>
+  <anchor x="976.0" y="564" name="cross"/>
+  <anchor x="572.0" y="1539.0" name="top"/>
+  <anchor x="1076.0" y="1118" name="topr"/>
+  <outline>
+    <component base="g.ss04"/>
+    <component base="dotaccentcomb" xOffset="336.0"/>
+  </outline>
+</glyph>

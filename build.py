@@ -19,6 +19,7 @@ from fontTools.ttLib import TTFont
 from ufo2ft import compileOTF, compileVariableTTF
 import ufoLib2
 from custom_names import rename_for_custom, validate_custom_fonts
+from variable_proof import write_variable_proof
 
 
 def save(font, path, web_dir=None):
@@ -283,6 +284,7 @@ ZIP_README = '''
     ss02   Disambiguation       I l 1 0  →  serifed I, tailed l,
                                 footed 1, slashed zero
     ss03   Open figures         4 6 9 with open forms
+    ss04   Double-storey g      g, ĝ, ğ, ġ, ģ (single-storey stays default)
     cv01   Footed 1             cv02   Slashed zero
     cv03   Tailed l             cv04   Serifed I
     cv05   Dotted zero
@@ -382,7 +384,8 @@ def custom_readme(readme):
             .replace('"Allo"', '"Allo Custom"'))
     return ("ALLO CUSTOM — separate-name development build, not an upstream release.\n"
             "Built from the current project sources; naming alone adds no glyphs or features.\n"
-            "The existing single-storey g remains default. The planned ss04 is not added by this build mode.\n"
+            "The existing single-storey g remains default. Enable ss04 for the double-storey alternate.\n"
+            "Open variable-proof.html for offline axis sliders and an editable two-character proof.\n"
             "Static family: Allo Custom. Variable family: Allo Custom Variable.\n"
             "These identities are distinct from the Allo release. No fonts are installed automatically.\n"
             "Web: use allo-custom.css OR allo-custom-friendly.css with font-family: Allo Custom.\n"
@@ -478,7 +481,8 @@ def main(argv=None):
         report['font_sha256'] = hashes
         report_path = output / 'naming-validation.json'
         report_path.write_text(json.dumps(report, indent=2, ensure_ascii=False) + '\n')
-        files += [report_path, sums_path, *custom_support_files(output)]
+        proof_path = write_variable_proof(web_dir / (prefix + 'Variable.woff2'), output / 'variable-proof.html')
+        files += [report_path, sums_path, proof_path, *custom_support_files(output)]
         readme = custom_readme(readme)
         (output / 'README.txt').write_text(readme)
     else:

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="gbreve.ss04" format="2">
+  <advance width="1154.0"/>
+  <anchor x="580.2091713596138" y="-438.0" name="bottom"/>
+  <anchor x="953.8688656476266" y="564" name="cross"/>
+  <anchor x="552.8688656476266" y="1535.0" name="top"/>
+  <anchor x="1051.8688656476265" y="1097" name="topr"/>
+  <outline>
+    <component base="g.ss04"/>
+    <component base="brevecomb" xOffset="176.86886564762665"/>
+  </outline>
+</glyph>

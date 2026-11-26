@@ -822,14 +822,24 @@
     <string>fraction.glif</string>
     <key>g</key>
     <string>g.glif</string>
+    <key>g.ss04</key>
+    <string>g.ss04.glif</string>
     <key>gbreve</key>
     <string>gbreve.glif</string>
+    <key>gbreve.ss04</key>
+    <string>gbreve.ss04.glif</string>
     <key>gcircumflex</key>
     <string>gcircumflex.glif</string>
+    <key>gcircumflex.ss04</key>
+    <string>gcircumflex.ss04.glif</string>
     <key>gcommaaccent</key>
     <string>gcommaaccent.glif</string>
+    <key>gcommaaccent.ss04</key>
+    <string>gcommaaccent.ss04.glif</string>
     <key>gdotaccent</key>
     <string>gdotaccent.glif</string>
+    <key>gdotaccent.ss04</key>
+    <string>gdotaccent.ss04.glif</string>
     <key>germandbls</key>
     <string>germandbls.glif</string>
     <key>grave</key>

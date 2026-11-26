@@ -461,6 +461,14 @@
       <string>gcommaaccent</string>
       <string>q</string>
     </array>
+    <key>public.kern1.g.ss04</key>
+    <array>
+      <string>g.ss04</string>
+      <string>gcircumflex.ss04</string>
+      <string>gbreve.ss04</string>
+      <string>gdotaccent.ss04</string>
+      <string>gcommaaccent.ss04</string>
+    </array>
     <key>public.kern1.guillemetleft</key>
     <array>
       <string>guilsinglleft</string>
@@ -1269,6 +1277,14 @@
     <key>public.kern2.fraction</key>
     <array>
       <string>fraction</string>
+    </array>
+    <key>public.kern2.g.ss04</key>
+    <array>
+      <string>g.ss04</string>
+      <string>gcircumflex.ss04</string>
+      <string>gbreve.ss04</string>
+      <string>gdotaccent.ss04</string>
+      <string>gcommaaccent.ss04</string>
     </array>
     <key>public.kern2.guillemetleft</key>
     <array>
