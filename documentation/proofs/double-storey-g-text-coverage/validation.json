@@ -1,0 +1,284 @@
+{
+  "status": "passed",
+  "scope": "Coverage review, not new spacing or production integration",
+  "proof_sha256": "6ce810c5afb78eca4046bf8d2c21d5b8942440d482f564e6bb96051f950a95be",
+  "coverage_sha256": "c335f77fc4915d41050746f3eccdee8999d41932ccdfe38bcc023e271f89d0d4",
+  "source_code_sha256": {
+    "build_proof.py": "95c79c90e2b8b9084cd03606f032b98d52c04c1a3e5ca776f01f303061ca225d",
+    "corpus.py": "54e0535115547d713442f5461de707a3dac79c2abea18c1fc71341a1e685eb41",
+    "page.py": "7c55ad3e7cceb7bdd7723dadee630f6dd960fe5eb591286a6e91b7e57bf31f71"
+  },
+  "fonts": [
+    {
+      "weight": 100,
+      "style": "Thin",
+      "ng_tightening": 40,
+      "source": "documentation/proofs/double-storey-g-incoming-spacing/fonts/AlloGIncomingStudy-Thin.otf",
+      "source_sha256": "75d3dc9549a8886eb5751f542335ec3b8a2598258de85bcbe8e8889a95b36b45",
+      "baseline_source": "documentation/proofs/double-storey-g-spacing-finish/fonts/AlloGSpacingFinish-Thin.otf",
+      "baseline_sha256": "a313f755dcfd5dfea3fd2555f0287739ad1adf2d2b43b3030e45845701fdff40",
+      "authored_runs_checked": 237
+    },
+    {
+      "weight": 200,
+      "style": "ExtraLight",
+      "ng_tightening": 44,
+      "source": "documentation/proofs/double-storey-g-incoming-spacing/fonts/AlloGIncomingStudy-ExtraLight.otf",
+      "source_sha256": "d070b84d1bbacc3b189651270154f78d4bb9495dab43ce473ff23c55b34cb605",
+      "baseline_source": "documentation/proofs/double-storey-g-spacing-finish/fonts/AlloGSpacingFinish-ExtraLight.otf",
+      "baseline_sha256": "a303465c3928ec32ca043c72f3f9fa3c03a14a5b16f708f9c4f826866e652322",
+      "authored_runs_checked": 237
+    },
+    {
+      "weight": 300,
+      "style": "Light",
+      "ng_tightening": 46,
+      "source": "documentation/proofs/double-storey-g-incoming-spacing/fonts/AlloGIncomingStudy-Light.otf",
+      "source_sha256": "b6a393aa18bd0d7b9828ace1989363df6c9ab9fcc677c299b9695e34ef4265c2",
+      "baseline_source": "documentation/proofs/double-storey-g-spacing-finish/fonts/AlloGSpacingFinish-Light.otf",
+      "baseline_sha256": "cb5542ba0167e124902e395d679cfe3ab038e9a2135bc804fe597f3a286c169b",
+      "authored_runs_checked": 237
+    },
+    {
+      "weight": 400,
+      "style": "Regular",
+      "ng_tightening": 48,
+      "source": "documentation/proofs/double-storey-g-incoming-spacing/fonts/AlloGIncomingStudy-Regular.otf",
+      "source_sha256": "bdbc2a8a8bd77fdb8030ce24ac8689491e1dad4d1fb04168a6a598a1369fb5b0",
+      "baseline_source": "documentation/proofs/double-storey-g-spacing-finish/fonts/AlloGSpacingFinish-Regular.otf",
+      "baseline_sha256": "addf314d4dff6941b2380a53784f1234df63d2341f657771cadda3b5c788c50d",
+      "authored_runs_checked": 237
+    },
+    {
+      "weight": 500,
+      "style": "Medium",
+      "ng_tightening": 52,
+      "source": "documentation/proofs/double-storey-g-incoming-spacing/fonts/AlloGIncomingStudy-Medium.otf",
+      "source_sha256": "887a0d6506de759913b59cbf927b35bc7ea082cfff4ad3e5ae24211df0bcfa2c",
+      "baseline_source": "documentation/proofs/double-storey-g-spacing-finish/fonts/AlloGSpacingFinish-Medium.otf",
+      "baseline_sha256": "d6821625240e95b3ce0ba2fb15914a543e2ecd76b141db68b9494a9135099ede",
+      "authored_runs_checked": 237
+    },
+    {
+      "weight": 600,
+      "style": "SemiBold",
+      "ng_tightening": 54,
+      "source": "documentation/proofs/double-storey-g-incoming-spacing/fonts/AlloGIncomingStudy-SemiBold.otf",
+      "source_sha256": "c164b5cb803b0c6e857738c82855093719e605c6a7febd772e6eff512d195b92",
+      "baseline_source": "documentation/proofs/double-storey-g-spacing-finish/fonts/AlloGSpacingFinish-SemiBold.otf",
+      "baseline_sha256": "9112b321116e5e870934338559eb253adeabcd43bcf5d5d5b6f3c3dd4b92a185",
+      "authored_runs_checked": 237
+    },
+    {
+      "weight": 700,
+      "style": "Bold",
+      "ng_tightening": 58,
+      "source": "documentation/proofs/double-storey-g-incoming-spacing/fonts/AlloGIncomingStudy-Bold.otf",
+      "source_sha256": "1f544d67532f566937c7f4372dd130126c6becaebb3bc67c3399035940020e34",
+      "baseline_source": "documentation/proofs/double-storey-g-spacing-finish/fonts/AlloGSpacingFinish-Bold.otf",
+      "baseline_sha256": "a1241cef02662c8c23738cb2de7ddb6c15525d207e0c2052270954903671d9fd",
+      "authored_runs_checked": 237
+    },
+    {
+      "weight": 800,
+      "style": "ExtraBold",
+      "ng_tightening": 60,
+      "source": "documentation/proofs/double-storey-g-incoming-spacing/fonts/AlloGIncomingStudy-ExtraBold.otf",
+      "source_sha256": "94e530820afab91c6bb597ad9d4edfeb7e1b131aaecfa5cfe3079043aa53a575",
+      "baseline_source": "documentation/proofs/double-storey-g-spacing-finish/fonts/AlloGSpacingFinish-ExtraBold.otf",
+      "baseline_sha256": "04cc6ca5206daa328d342271503dcf41b7a5996171f2c6bc8b0a3e54bccb461d",
+      "authored_runs_checked": 237
+    },
+    {
+      "weight": 900,
+      "style": "Black",
+      "ng_tightening": 64,
+      "source": "documentation/proofs/double-storey-g-incoming-spacing/fonts/AlloGIncomingStudy-Black.otf",
+      "source_sha256": "6053350b6ecfcaf091e995f21f1965d996c61f259860d3a7b67ad4607c625b6c",
+      "baseline_source": "documentation/proofs/double-storey-g-spacing-finish/fonts/AlloGSpacingFinish-Black.otf",
+      "baseline_sha256": "934c4d469f808c1a214b0994fb9f1a836bd294a4d83d81f6ab88fe47c3330b18",
+      "authored_runs_checked": 237
+    }
+  ],
+  "embedded_fonts": [
+    {
+      "weight": 100,
+      "woff2_bytes": 50876,
+      "matching_tables": [
+        "CFF ",
+        "GPOS",
+        "GSUB",
+        "GDEF",
+        "hmtx",
+        "hhea",
+        "cmap",
+        "name",
+        "OS/2"
+      ]
+    },
+    {
+      "weight": 200,
+      "woff2_bytes": 57012,
+      "matching_tables": [
+        "CFF ",
+        "GPOS",
+        "GSUB",
+        "GDEF",
+        "hmtx",
+        "hhea",
+        "cmap",
+        "name",
+        "OS/2"
+      ]
+    },
+    {
+      "weight": 300,
+      "woff2_bytes": 57820,
+      "matching_tables": [
+        "CFF ",
+        "GPOS",
+        "GSUB",
+        "GDEF",
+        "hmtx",
+        "hhea",
+        "cmap",
+        "name",
+        "OS/2"
+      ]
+    },
+    {
+      "weight": 400,
+      "woff2_bytes": 54408,
+      "matching_tables": [
+        "CFF ",
+        "GPOS",
+        "GSUB",
+        "GDEF",
+        "hmtx",
+        "hhea",
+        "cmap",
+        "name",
+        "OS/2"
+      ]
+    },
+    {
+      "weight": 500,
+      "woff2_bytes": 63244,
+      "matching_tables": [
+        "CFF ",
+        "GPOS",
+        "GSUB",
+        "GDEF",
+        "hmtx",
+        "hhea",
+        "cmap",
+        "name",
+        "OS/2"
+      ]
+    },
+    {
+      "weight": 600,
+      "woff2_bytes": 64248,
+      "matching_tables": [
+        "CFF ",
+        "GPOS",
+        "GSUB",
+        "GDEF",
+        "hmtx",
+        "hhea",
+        "cmap",
+        "name",
+        "OS/2"
+      ]
+    },
+    {
+      "weight": 700,
+      "woff2_bytes": 65196,
+      "matching_tables": [
+        "CFF ",
+        "GPOS",
+        "GSUB",
+        "GDEF",
+        "hmtx",
+        "hhea",
+        "cmap",
+        "name",
+        "OS/2"
+      ]
+    },
+    {
+      "weight": 800,
+      "woff2_bytes": 64916,
+      "matching_tables": [
+        "CFF ",
+        "GPOS",
+        "GSUB",
+        "GDEF",
+        "hmtx",
+        "hhea",
+        "cmap",
+        "name",
+        "OS/2"
+      ]
+    },
+    {
+      "weight": 900,
+      "woff2_bytes": 58012,
+      "matching_tables": [
+        "CFF ",
+        "GPOS",
+        "GSUB",
+        "GDEF",
+        "hmtx",
+        "hhea",
+        "cmap",
+        "name",
+        "OS/2"
+      ]
+    }
+  ],
+  "features": {
+    "ss11": 0,
+    "ss12": 1,
+    "ss13": 0,
+    "ss14": 0,
+    "ss15": 1,
+    "ss16": 0,
+    "ss17": 1,
+    "ss18": 0,
+    "ss19": 1,
+    "ss20": 0
+  },
+  "counts": {
+    "incoming_rows": 26,
+    "outgoing_rows": 26,
+    "unique_lowercase_pairs": 51,
+    "word_rows": 41,
+    "synthetic_rows": 11,
+    "capital_pairs": 26,
+    "boundary_runs": 22,
+    "authored_runs": 237,
+    "baseline_and_selected_shaping_comparisons": 4266,
+    "geometry_pairs_per_weight": 102,
+    "geometry_measurements": 918
+  },
+  "geometry_warnings": [],
+  "protected_file_count": 54263,
+  "protected_files_sha256_unchanged": true,
+  "checks_passed": [
+    "All 52 lowercase coverage rows and 26 capital-before-g pairs are present, ordered and literal",
+    "Every example contains its stated contiguous pair; invented contexts are explicitly labeled test strings",
+    "Every authored character is mapped in every source font; no shaped .notdef glyphs",
+    "Approved study 05 baseline preserved for every authored run; only n-before-g advance changes in selected state",
+    "Every g advance and glyph offset retained, including ngj/ngo/nge/ngc controls",
+    "All embedded font identities and drawing, metric, mapping and layout tables match unchanged study 06 OTFs",
+    "HTML structure checked; all six earlier proofs and production files SHA-256 preserved"
+  ],
+  "limitations": [
+    "Regular tighter ng is the reviewed preference; the other weights remain visual review candidates",
+    "Plain Latin g and listed neighbours only; no accent, oblique, other opsz/ROND or variable-family coverage",
+    "No shared-stem kerning adoption, automatic spacing optimization, font installation or production edit",
+    "Sampled clearances and Boolean intersections are diagnostic, not optical approval",
+    "Browser rendering and actual-size captures are checked separately in browser/validation.json"
+  ]
+}

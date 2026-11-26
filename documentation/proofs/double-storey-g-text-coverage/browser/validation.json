@@ -1,0 +1,6079 @@
+{
+  "status": "passed",
+  "startedAt": "2026-11-26T01:11:45.537Z",
+  "proof": "proof.html",
+  "proofSha256": "6ce810c5afb78eca4046bf8d2c21d5b8942440d482f564e6bb96051f950a95be",
+  "browserVersion": "149.0.7827.55",
+  "renderer": {
+    "engine": "Chromium / Blink",
+    "mode": "headless",
+    "platform": "darwin",
+    "package": "/opt/homebrew/lib/python3.11/site-packages/playwright/driver/package",
+    "executable": "/Users/nicholas/Library/Caches/ms-playwright/chromium-1228/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing",
+    "offline": true,
+    "httpHttpsBlocked": true,
+    "serviceWorkers": "block",
+    "locale": "en-US",
+    "colorScheme": "light",
+    "temporaryProfile": true,
+    "measurement": "Cloned DOM text runs; max-content, preformatted, explicit line widths summed"
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 1000,
+    "deviceScaleFactor": 1
+  },
+  "unitsPerEm": 2048,
+  "toleranceCssPx": 0.05,
+  "features": {
+    "chosen": [
+      [
+        "ss11",
+        0
+      ],
+      [
+        "ss12",
+        1
+      ],
+      [
+        "ss13",
+        0
+      ],
+      [
+        "ss14",
+        0
+      ],
+      [
+        "ss15",
+        1
+      ],
+      [
+        "ss16",
+        0
+      ],
+      [
+        "ss17",
+        1
+      ],
+      [
+        "ss18",
+        0
+      ],
+      [
+        "ss19",
+        1
+      ],
+      [
+        "ss20",
+        0
+      ]
+    ],
+    "baseline": "\"ss11\" 0, \"ss12\" 0, \"ss13\" 0, \"ss14\" 0, \"ss15\" 1, \"ss16\" 0, \"ss17\" 1, \"ss18\" 0, \"ss19\" 1, \"ss20\" 0"
+  },
+  "timeoutsMs": {
+    "launch": 15000,
+    "action": 12000,
+    "run": 180000,
+    "cleanup": 5000
+  },
+  "expectedCoverage": {
+    "weights": [
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800,
+      900
+    ],
+    "pairSizesCssPx": [
+      16,
+      24,
+      32
+    ],
+    "readingSizesCssPx": [
+      16,
+      24
+    ],
+    "states": 27,
+    "pairRows": 52,
+    "capitalPairs": 26,
+    "checkpointWeights": [
+      100,
+      400,
+      700,
+      900
+    ],
+    "probeComparisons": 324,
+    "screenshots": 5
+  },
+  "counts": {
+    "casesStarted": 47,
+    "casesPassed": 47,
+    "casesFailed": 0,
+    "assertions": 65667,
+    "states": 27,
+    "loadedFontFaces": 9,
+    "resolvedFontLoads": 9,
+    "pairRows": 52,
+    "wordRows": 41,
+    "syntheticRows": 11,
+    "pairRowStates": 1404,
+    "capitalPairs": 26,
+    "boundarySamples": 22,
+    "checkpoints": 4,
+    "probeComparisons": 324,
+    "screenshots": 5,
+    "localLinks": 5
+  },
+  "cases": [
+    {
+      "name": "parent configuration contract",
+      "status": "passed"
+    },
+    {
+      "name": "fixed renderer, initial controls, and nine eagerly loaded actual FontFaces",
+      "status": "passed"
+    },
+    {
+      "name": "exact alphabet coverage, synthetic labels, boundary samples, and initial typography",
+      "status": "passed"
+    },
+    {
+      "name": "selectors and pair-row layout / 100 / 16",
+      "status": "passed"
+    },
+    {
+      "name": "selectors and pair-row layout / 100 / 24",
+      "status": "passed"
+    },
+    {
+      "name": "selectors and pair-row layout / 100 / 32",
+      "status": "passed"
+    },
+    {
+      "name": "ng-only width deltas at both reading sizes / 100",
+      "status": "passed"
+    },
+    {
+      "name": "selectors and pair-row layout / 200 / 16",
+      "status": "passed"
+    },
+    {
+      "name": "selectors and pair-row layout / 200 / 24",
+      "status": "passed"
+    },
+    {
+      "name": "selectors and pair-row layout / 200 / 32",
+      "status": "passed"
+    },
+    {
+      "name": "ng-only width deltas at both reading sizes / 200",
+      "status": "passed"
+    },
+    {
+      "name": "selectors and pair-row layout / 300 / 16",
+      "status": "passed"
+    },
+    {
+      "name": "selectors and pair-row layout / 300 / 24",
+      "status": "passed"
+    },
+    {
+      "name": "selectors and pair-row layout / 300 / 32",
+      "status": "passed"
+    },
+    {
+      "name": "ng-only width deltas at both reading sizes / 300",
+      "status": "passed"
+    },
+    {
+      "name": "selectors and pair-row layout / 400 / 16",
+      "status": "passed"
+    },
+    {
+      "name": "selectors and pair-row layout / 400 / 24",
+      "status": "passed"
+    },
+    {
+      "name": "selectors and pair-row layout / 400 / 32",
+      "status": "passed"
+    },
+    {
+      "name": "ng-only width deltas at both reading sizes / 400",
+      "status": "passed"
+    },
+    {
+      "name": "selectors and pair-row layout / 500 / 16",
+      "status": "passed"
+    },
+    {
+      "name": "selectors and pair-row layout / 500 / 24",
+      "status": "passed"
+    },
+    {
+      "name": "selectors and pair-row layout / 500 / 32",
+      "status": "passed"
+    },
+    {
+      "name": "ng-only width deltas at both reading sizes / 500",
+      "status": "passed"
+    },
+    {
+      "name": "selectors and pair-row layout / 600 / 16",
+      "status": "passed"
+    },
+    {
+      "name": "selectors and pair-row layout / 600 / 24",
+      "status": "passed"
+    },
+    {
+      "name": "selectors and pair-row layout / 600 / 32",
+      "status": "passed"
+    },
+    {
+      "name": "ng-only width deltas at both reading sizes / 600",
+      "status": "passed"
+    },
+    {
+      "name": "selectors and pair-row layout / 700 / 16",
+      "status": "passed"
+    },
+    {
+      "name": "selectors and pair-row layout / 700 / 24",
+      "status": "passed"
+    },
+    {
+      "name": "selectors and pair-row layout / 700 / 32",
+      "status": "passed"
+    },
+    {
+      "name": "ng-only width deltas at both reading sizes / 700",
+      "status": "passed"
+    },
+    {
+      "name": "selectors and pair-row layout / 800 / 16",
+      "status": "passed"
+    },
+    {
+      "name": "selectors and pair-row layout / 800 / 24",
+      "status": "passed"
+    },
+    {
+      "name": "selectors and pair-row layout / 800 / 32",
+      "status": "passed"
+    },
+    {
+      "name": "ng-only width deltas at both reading sizes / 800",
+      "status": "passed"
+    },
+    {
+      "name": "selectors and pair-row layout / 900 / 16",
+      "status": "passed"
+    },
+    {
+      "name": "selectors and pair-row layout / 900 / 24",
+      "status": "passed"
+    },
+    {
+      "name": "selectors and pair-row layout / 900 / 32",
+      "status": "passed"
+    },
+    {
+      "name": "ng-only width deltas at both reading sizes / 900",
+      "status": "passed"
+    },
+    {
+      "name": "literal hostile passage, unaffected coverage/focus/checkpoints, and reset",
+      "status": "passed"
+    },
+    {
+      "name": "panel screenshot / reading-400-16.png",
+      "status": "passed"
+    },
+    {
+      "name": "panel screenshot / reading-400-24.png",
+      "status": "passed"
+    },
+    {
+      "name": "panel screenshot / pairs-400.png",
+      "status": "passed"
+    },
+    {
+      "name": "panel screenshot / boundaries-400.png",
+      "status": "passed"
+    },
+    {
+      "name": "panel screenshot / weights.png",
+      "status": "passed"
+    },
+    {
+      "name": "local href targets resolve without navigation or networking",
+      "status": "passed"
+    },
+    {
+      "name": "complete coverage and no console, page, font or network errors",
+      "status": "passed"
+    }
+  ],
+  "fonts": [
+    {
+      "family": "CoverageProof",
+      "weight": "100",
+      "style": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "CoverageProof",
+      "weight": "200",
+      "style": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "CoverageProof",
+      "weight": "300",
+      "style": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "CoverageProof",
+      "weight": "400",
+      "style": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "CoverageProof",
+      "weight": "500",
+      "style": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "CoverageProof",
+      "weight": "600",
+      "style": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "CoverageProof",
+      "weight": "700",
+      "style": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "CoverageProof",
+      "weight": "800",
+      "style": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "CoverageProof",
+      "weight": "900",
+      "style": "normal",
+      "status": "loaded"
+    }
+  ],
+  "states": [
+    {
+      "weight": 100,
+      "pairSizeCssPx": 16,
+      "samples": 160,
+      "layout": {
+        "rows": 52,
+        "runs": 156,
+        "toleranceCssPx": 1,
+        "errors": [],
+        "documentOverflowCssPx": 0
+      }
+    },
+    {
+      "weight": 100,
+      "pairSizeCssPx": 24,
+      "samples": 160,
+      "layout": {
+        "rows": 52,
+        "runs": 156,
+        "toleranceCssPx": 1,
+        "errors": [],
+        "documentOverflowCssPx": 0
+      }
+    },
+    {
+      "weight": 100,
+      "pairSizeCssPx": 32,
+      "samples": 160,
+      "layout": {
+        "rows": 52,
+        "runs": 156,
+        "toleranceCssPx": 1,
+        "errors": [],
+        "documentOverflowCssPx": 0
+      }
+    },
+    {
+      "weight": 200,
+      "pairSizeCssPx": 16,
+      "samples": 160,
+      "layout": {
+        "rows": 52,
+        "runs": 156,
+        "toleranceCssPx": 1,
+        "errors": [],
+        "documentOverflowCssPx": 0
+      }
+    },
+    {
+      "weight": 200,
+      "pairSizeCssPx": 24,
+      "samples": 160,
+      "layout": {
+        "rows": 52,
+        "runs": 156,
+        "toleranceCssPx": 1,
+        "errors": [],
+        "documentOverflowCssPx": 0
+      }
+    },
+    {
+      "weight": 200,
+      "pairSizeCssPx": 32,
+      "samples": 160,
+      "layout": {
+        "rows": 52,
+        "runs": 156,
+        "toleranceCssPx": 1,
+        "errors": [],
+        "documentOverflowCssPx": 0
+      }
+    },
+    {
+      "weight": 300,
+      "pairSizeCssPx": 16,
+      "samples": 160,
+      "layout": {
+        "rows": 52,
+        "runs": 156,
+        "toleranceCssPx": 1,
+        "errors": [],
+        "documentOverflowCssPx": 0
+      }
+    },
+    {
+      "weight": 300,
+      "pairSizeCssPx": 24,
+      "samples": 160,
+      "layout": {
+        "rows": 52,
+        "runs": 156,
+        "toleranceCssPx": 1,
+        "errors": [],
+        "documentOverflowCssPx": 0
+      }
+    },
+    {
+      "weight": 300,
+      "pairSizeCssPx": 32,
+      "samples": 160,
+      "layout": {
+        "rows": 52,
+        "runs": 156,
+        "toleranceCssPx": 1,
+        "errors": [],
+        "documentOverflowCssPx": 0
+      }
+    },
+    {
+      "weight": 400,
+      "pairSizeCssPx": 16,
+      "samples": 160,
+      "layout": {
+        "rows": 52,
+        "runs": 156,
+        "toleranceCssPx": 1,
+        "errors": [],
+        "documentOverflowCssPx": 0
+      }
+    },
+    {
+      "weight": 400,
+      "pairSizeCssPx": 24,
+      "samples": 160,
+      "layout": {
+        "rows": 52,
+        "runs": 156,
+        "toleranceCssPx": 1,
+        "errors": [],
+        "documentOverflowCssPx": 0
+      }
+    },
+    {
+      "weight": 400,
+      "pairSizeCssPx": 32,
+      "samples": 160,
+      "layout": {
+        "rows": 52,
+        "runs": 156,
+        "toleranceCssPx": 1,
+        "errors": [],
+        "documentOverflowCssPx": 0
+      }
+    },
+    {
+      "weight": 500,
+      "pairSizeCssPx": 16,
+      "samples": 160,
+      "layout": {
+        "rows": 52,
+        "runs": 156,
+        "toleranceCssPx": 1,
+        "errors": [],
+        "documentOverflowCssPx": 0
+      }
+    },
+    {
+      "weight": 500,
+      "pairSizeCssPx": 24,
+      "samples": 160,
+      "layout": {
+        "rows": 52,
+        "runs": 156,
+        "toleranceCssPx": 1,
+        "errors": [],
+        "documentOverflowCssPx": 0
+      }
+    },
+    {
+      "weight": 500,
+      "pairSizeCssPx": 32,
+      "samples": 160,
+      "layout": {
+        "rows": 52,
+        "runs": 156,
+        "toleranceCssPx": 1,
+        "errors": [],
+        "documentOverflowCssPx": 0
+      }
+    },
+    {
+      "weight": 600,
+      "pairSizeCssPx": 16,
+      "samples": 160,
+      "layout": {
+        "rows": 52,
+        "runs": 156,
+        "toleranceCssPx": 1,
+        "errors": [],
+        "documentOverflowCssPx": 0
+      }
+    },
+    {
+      "weight": 600,
+      "pairSizeCssPx": 24,
+      "samples": 160,
+      "layout": {
+        "rows": 52,
+        "runs": 156,
+        "toleranceCssPx": 1,
+        "errors": [],
+        "documentOverflowCssPx": 0
+      }
+    },
+    {
+      "weight": 600,
+      "pairSizeCssPx": 32,
+      "samples": 160,
+      "layout": {
+        "rows": 52,
+        "runs": 156,
+        "toleranceCssPx": 1,
+        "errors": [],
+        "documentOverflowCssPx": 0
+      }
+    },
+    {
+      "weight": 700,
+      "pairSizeCssPx": 16,
+      "samples": 160,
+      "layout": {
+        "rows": 52,
+        "runs": 156,
+        "toleranceCssPx": 1,
+        "errors": [],
+        "documentOverflowCssPx": 0
+      }
+    },
+    {
+      "weight": 700,
+      "pairSizeCssPx": 24,
+      "samples": 160,
+      "layout": {
+        "rows": 52,
+        "runs": 156,
+        "toleranceCssPx": 1,
+        "errors": [],
+        "documentOverflowCssPx": 0
+      }
+    },
+    {
+      "weight": 700,
+      "pairSizeCssPx": 32,
+      "samples": 160,
+      "layout": {
+        "rows": 52,
+        "runs": 156,
+        "toleranceCssPx": 1,
+        "errors": [],
+        "documentOverflowCssPx": 0
+      }
+    },
+    {
+      "weight": 800,
+      "pairSizeCssPx": 16,
+      "samples": 160,
+      "layout": {
+        "rows": 52,
+        "runs": 156,
+        "toleranceCssPx": 1,
+        "errors": [],
+        "documentOverflowCssPx": 0
+      }
+    },
+    {
+      "weight": 800,
+      "pairSizeCssPx": 24,
+      "samples": 160,
+      "layout": {
+        "rows": 52,
+        "runs": 156,
+        "toleranceCssPx": 1,
+        "errors": [],
+        "documentOverflowCssPx": 0
+      }
+    },
+    {
+      "weight": 800,
+      "pairSizeCssPx": 32,
+      "samples": 160,
+      "layout": {
+        "rows": 52,
+        "runs": 156,
+        "toleranceCssPx": 1,
+        "errors": [],
+        "documentOverflowCssPx": 0
+      }
+    },
+    {
+      "weight": 900,
+      "pairSizeCssPx": 16,
+      "samples": 160,
+      "layout": {
+        "rows": 52,
+        "runs": 156,
+        "toleranceCssPx": 1,
+        "errors": [],
+        "documentOverflowCssPx": 0
+      }
+    },
+    {
+      "weight": 900,
+      "pairSizeCssPx": 24,
+      "samples": 160,
+      "layout": {
+        "rows": 52,
+        "runs": 156,
+        "toleranceCssPx": 1,
+        "errors": [],
+        "documentOverflowCssPx": 0
+      }
+    },
+    {
+      "weight": 900,
+      "pairSizeCssPx": 32,
+      "samples": 160,
+      "layout": {
+        "rows": 52,
+        "runs": 156,
+        "toleranceCssPx": 1,
+        "errors": [],
+        "documentOverflowCssPx": 0
+      }
+    }
+  ],
+  "probes": [
+    {
+      "weight": 100,
+      "sizeCssPx": 16,
+      "name": "ng",
+      "text": "ng",
+      "chosenCssPx": 17.75,
+      "baselineCssPx": 18.0625,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.3125,
+      "shorteningCssPx": 0.3125
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 16,
+      "name": "hg",
+      "text": "hg",
+      "chosenCssPx": 18.0625,
+      "baselineCssPx": 18.0625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 16,
+      "name": "mg",
+      "text": "mg",
+      "chosenCssPx": 22.40625,
+      "baselineCssPx": 22.40625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 16,
+      "name": "ug",
+      "text": "ug",
+      "chosenCssPx": 18.0625,
+      "baselineCssPx": 18.0625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 16,
+      "name": "ag",
+      "text": "ag",
+      "chosenCssPx": 17.140625,
+      "baselineCssPx": 17.140625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 16,
+      "name": "og",
+      "text": "og",
+      "chosenCssPx": 18.046875,
+      "baselineCssPx": 18.046875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 16,
+      "name": "rg",
+      "text": "rg",
+      "chosenCssPx": 13.734375,
+      "baselineCssPx": 13.734375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 16,
+      "name": "go",
+      "text": "go",
+      "chosenCssPx": 17.734375,
+      "baselineCssPx": 17.734375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 16,
+      "name": "ge",
+      "text": "ge",
+      "chosenCssPx": 17.5625,
+      "baselineCssPx": 17.5625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 16,
+      "name": "gc",
+      "text": "gc",
+      "chosenCssPx": 17,
+      "baselineCssPx": 17,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 16,
+      "name": "gj",
+      "text": "gj",
+      "chosenCssPx": 12.21875,
+      "baselineCssPx": 12.21875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 16,
+      "name": "ngj",
+      "text": "ngj",
+      "chosenCssPx": 21.078125,
+      "baselineCssPx": 21.390625,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.3125,
+      "shorteningCssPx": 0.3125
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 16,
+      "name": "ngo",
+      "text": "ngo",
+      "chosenCssPx": 26.59375,
+      "baselineCssPx": 26.90625,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.3125,
+      "shorteningCssPx": 0.3125
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 16,
+      "name": "changing",
+      "text": "changing",
+      "chosenCssPx": 64.625,
+      "baselineCssPx": 65.25,
+      "occurrences": 2,
+      "expectedShorteningCssPx": 0.625,
+      "shorteningCssPx": 0.625
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 16,
+      "name": "Morning",
+      "text": "Morning",
+      "chosenCssPx": 58.515625,
+      "baselineCssPx": 58.828125,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.3125,
+      "shorteningCssPx": 0.3125
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 16,
+      "name": "paragraph-1",
+      "text": "Morning light was coming through the kitchen window when I began packing my bag. We were going somewhere new for the weekend, so I checked the address again before leaving. At the garden gate, a neighbor asked whether we could bring back a small jar of honey from the market.",
+      "chosenCssPx": 2022.75,
+      "baselineCssPx": 2024.625,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 1.875,
+      "shorteningCssPx": 1.875
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 16,
+      "name": "paragraph-2",
+      "text": "The library was changing its opening hours at the beginning of the month. Our group met there on Tuesday to plan a small reading event. We agreed to leave the main entrance clear, hang a sign near the stairs, and give visitors a quiet place to sit after lunch.",
+      "chosenCssPx": 1804.203125,
+      "baselineCssPx": 1806.078125,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 1.875,
+      "shorteningCssPx": 1.875
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 16,
+      "name": "paragraph-3",
+      "text": "On the way home, we stopped at the shop for eggs, rice, and a bag of apples. A dog was waiting beside the door while its owner paid for groceries. The bus arrived just as we reached the crossing, and I was glad to put the shopping down for a while.",
+      "chosenCssPx": 1757.875,
+      "baselineCssPx": 1758.8125,
+      "occurrences": 3,
+      "expectedShorteningCssPx": 0.9375,
+      "shorteningCssPx": 0.9375
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 24,
+      "name": "ng",
+      "text": "ng",
+      "chosenCssPx": 26.625,
+      "baselineCssPx": 27.09375,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.46875,
+      "shorteningCssPx": 0.46875
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 24,
+      "name": "hg",
+      "text": "hg",
+      "chosenCssPx": 27.09375,
+      "baselineCssPx": 27.09375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 24,
+      "name": "mg",
+      "text": "mg",
+      "chosenCssPx": 33.609375,
+      "baselineCssPx": 33.609375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 24,
+      "name": "ug",
+      "text": "ug",
+      "chosenCssPx": 27.09375,
+      "baselineCssPx": 27.09375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 24,
+      "name": "ag",
+      "text": "ag",
+      "chosenCssPx": 25.703125,
+      "baselineCssPx": 25.703125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 24,
+      "name": "og",
+      "text": "og",
+      "chosenCssPx": 27.0625,
+      "baselineCssPx": 27.0625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 24,
+      "name": "rg",
+      "text": "rg",
+      "chosenCssPx": 20.609375,
+      "baselineCssPx": 20.609375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 24,
+      "name": "go",
+      "text": "go",
+      "chosenCssPx": 26.59375,
+      "baselineCssPx": 26.59375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 24,
+      "name": "ge",
+      "text": "ge",
+      "chosenCssPx": 26.34375,
+      "baselineCssPx": 26.34375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 24,
+      "name": "gc",
+      "text": "gc",
+      "chosenCssPx": 25.5,
+      "baselineCssPx": 25.5,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 24,
+      "name": "gj",
+      "text": "gj",
+      "chosenCssPx": 18.328125,
+      "baselineCssPx": 18.328125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 24,
+      "name": "ngj",
+      "text": "ngj",
+      "chosenCssPx": 31.625,
+      "baselineCssPx": 32.09375,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.46875,
+      "shorteningCssPx": 0.46875
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 24,
+      "name": "ngo",
+      "text": "ngo",
+      "chosenCssPx": 39.890625,
+      "baselineCssPx": 40.359375,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.46875,
+      "shorteningCssPx": 0.46875
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 24,
+      "name": "changing",
+      "text": "changing",
+      "chosenCssPx": 96.9375,
+      "baselineCssPx": 97.875,
+      "occurrences": 2,
+      "expectedShorteningCssPx": 0.9375,
+      "shorteningCssPx": 0.9375
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 24,
+      "name": "Morning",
+      "text": "Morning",
+      "chosenCssPx": 87.78125,
+      "baselineCssPx": 88.25,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.46875,
+      "shorteningCssPx": 0.46875
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 24,
+      "name": "paragraph-1",
+      "text": "Morning light was coming through the kitchen window when I began packing my bag. We were going somewhere new for the weekend, so I checked the address again before leaving. At the garden gate, a neighbor asked whether we could bring back a small jar of honey from the market.",
+      "chosenCssPx": 3034.125,
+      "baselineCssPx": 3036.9375,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 2.8125,
+      "shorteningCssPx": 2.8125
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 24,
+      "name": "paragraph-2",
+      "text": "The library was changing its opening hours at the beginning of the month. Our group met there on Tuesday to plan a small reading event. We agreed to leave the main entrance clear, hang a sign near the stairs, and give visitors a quiet place to sit after lunch.",
+      "chosenCssPx": 2706.296875,
+      "baselineCssPx": 2709.109375,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 2.8125,
+      "shorteningCssPx": 2.8125
+    },
+    {
+      "weight": 100,
+      "sizeCssPx": 24,
+      "name": "paragraph-3",
+      "text": "On the way home, we stopped at the shop for eggs, rice, and a bag of apples. A dog was waiting beside the door while its owner paid for groceries. The bus arrived just as we reached the crossing, and I was glad to put the shopping down for a while.",
+      "chosenCssPx": 2636.8125,
+      "baselineCssPx": 2638.21875,
+      "occurrences": 3,
+      "expectedShorteningCssPx": 1.40625,
+      "shorteningCssPx": 1.40625
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 16,
+      "name": "ng",
+      "text": "ng",
+      "chosenCssPx": 17.90625,
+      "baselineCssPx": 18.25,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.34375,
+      "shorteningCssPx": 0.34375
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 16,
+      "name": "hg",
+      "text": "hg",
+      "chosenCssPx": 18.25,
+      "baselineCssPx": 18.25,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 16,
+      "name": "mg",
+      "text": "mg",
+      "chosenCssPx": 22.609375,
+      "baselineCssPx": 22.609375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 16,
+      "name": "ug",
+      "text": "ug",
+      "chosenCssPx": 18.25,
+      "baselineCssPx": 18.25,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 16,
+      "name": "ag",
+      "text": "ag",
+      "chosenCssPx": 17.46875,
+      "baselineCssPx": 17.46875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 16,
+      "name": "og",
+      "text": "og",
+      "chosenCssPx": 18.296875,
+      "baselineCssPx": 18.296875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 16,
+      "name": "rg",
+      "text": "rg",
+      "chosenCssPx": 14.15625,
+      "baselineCssPx": 14.15625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 16,
+      "name": "go",
+      "text": "go",
+      "chosenCssPx": 17.96875,
+      "baselineCssPx": 17.96875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 16,
+      "name": "ge",
+      "text": "ge",
+      "chosenCssPx": 17.734375,
+      "baselineCssPx": 17.734375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 16,
+      "name": "gc",
+      "text": "gc",
+      "chosenCssPx": 17.328125,
+      "baselineCssPx": 17.328125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 16,
+      "name": "gj",
+      "text": "gj",
+      "chosenCssPx": 12.5,
+      "baselineCssPx": 12.5,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 16,
+      "name": "ngj",
+      "text": "ngj",
+      "chosenCssPx": 21.359375,
+      "baselineCssPx": 21.703125,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.34375,
+      "shorteningCssPx": 0.34375
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 16,
+      "name": "ngo",
+      "text": "ngo",
+      "chosenCssPx": 26.828125,
+      "baselineCssPx": 27.171875,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.34375,
+      "shorteningCssPx": 0.34375
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 16,
+      "name": "changing",
+      "text": "changing",
+      "chosenCssPx": 65.5,
+      "baselineCssPx": 66.1875,
+      "occurrences": 2,
+      "expectedShorteningCssPx": 0.6875,
+      "shorteningCssPx": 0.6875
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 16,
+      "name": "Morning",
+      "text": "Morning",
+      "chosenCssPx": 59.375,
+      "baselineCssPx": 59.71875,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.34375,
+      "shorteningCssPx": 0.34375
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 16,
+      "name": "paragraph-1",
+      "text": "Morning light was coming through the kitchen window when I began packing my bag. We were going somewhere new for the weekend, so I checked the address again before leaving. At the garden gate, a neighbor asked whether we could bring back a small jar of honey from the market.",
+      "chosenCssPx": 2053.765625,
+      "baselineCssPx": 2055.828125,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 2.0625,
+      "shorteningCssPx": 2.0625
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 16,
+      "name": "paragraph-2",
+      "text": "The library was changing its opening hours at the beginning of the month. Our group met there on Tuesday to plan a small reading event. We agreed to leave the main entrance clear, hang a sign near the stairs, and give visitors a quiet place to sit after lunch.",
+      "chosenCssPx": 1834.984375,
+      "baselineCssPx": 1837.046875,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 2.0625,
+      "shorteningCssPx": 2.0625
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 16,
+      "name": "paragraph-3",
+      "text": "On the way home, we stopped at the shop for eggs, rice, and a bag of apples. A dog was waiting beside the door while its owner paid for groceries. The bus arrived just as we reached the crossing, and I was glad to put the shopping down for a while.",
+      "chosenCssPx": 1786.671875,
+      "baselineCssPx": 1787.703125,
+      "occurrences": 3,
+      "expectedShorteningCssPx": 1.03125,
+      "shorteningCssPx": 1.03125
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 24,
+      "name": "ng",
+      "text": "ng",
+      "chosenCssPx": 26.859375,
+      "baselineCssPx": 27.375,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.515625,
+      "shorteningCssPx": 0.515625
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 24,
+      "name": "hg",
+      "text": "hg",
+      "chosenCssPx": 27.375,
+      "baselineCssPx": 27.375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 24,
+      "name": "mg",
+      "text": "mg",
+      "chosenCssPx": 33.921875,
+      "baselineCssPx": 33.921875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 24,
+      "name": "ug",
+      "text": "ug",
+      "chosenCssPx": 27.375,
+      "baselineCssPx": 27.375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 24,
+      "name": "ag",
+      "text": "ag",
+      "chosenCssPx": 26.203125,
+      "baselineCssPx": 26.203125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 24,
+      "name": "og",
+      "text": "og",
+      "chosenCssPx": 27.453125,
+      "baselineCssPx": 27.453125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 24,
+      "name": "rg",
+      "text": "rg",
+      "chosenCssPx": 21.234375,
+      "baselineCssPx": 21.234375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 24,
+      "name": "go",
+      "text": "go",
+      "chosenCssPx": 26.953125,
+      "baselineCssPx": 26.953125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 24,
+      "name": "ge",
+      "text": "ge",
+      "chosenCssPx": 26.609375,
+      "baselineCssPx": 26.609375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 24,
+      "name": "gc",
+      "text": "gc",
+      "chosenCssPx": 25.984375,
+      "baselineCssPx": 25.984375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 24,
+      "name": "gj",
+      "text": "gj",
+      "chosenCssPx": 18.75,
+      "baselineCssPx": 18.75,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 24,
+      "name": "ngj",
+      "text": "ngj",
+      "chosenCssPx": 32.046875,
+      "baselineCssPx": 32.5625,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.515625,
+      "shorteningCssPx": 0.515625
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 24,
+      "name": "ngo",
+      "text": "ngo",
+      "chosenCssPx": 40.25,
+      "baselineCssPx": 40.765625,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.515625,
+      "shorteningCssPx": 0.515625
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 24,
+      "name": "changing",
+      "text": "changing",
+      "chosenCssPx": 98.25,
+      "baselineCssPx": 99.28125,
+      "occurrences": 2,
+      "expectedShorteningCssPx": 1.03125,
+      "shorteningCssPx": 1.03125
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 24,
+      "name": "Morning",
+      "text": "Morning",
+      "chosenCssPx": 89.0625,
+      "baselineCssPx": 89.578125,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.515625,
+      "shorteningCssPx": 0.515625
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 24,
+      "name": "paragraph-1",
+      "text": "Morning light was coming through the kitchen window when I began packing my bag. We were going somewhere new for the weekend, so I checked the address again before leaving. At the garden gate, a neighbor asked whether we could bring back a small jar of honey from the market.",
+      "chosenCssPx": 3080.640625,
+      "baselineCssPx": 3083.734375,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 3.09375,
+      "shorteningCssPx": 3.09375
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 24,
+      "name": "paragraph-2",
+      "text": "The library was changing its opening hours at the beginning of the month. Our group met there on Tuesday to plan a small reading event. We agreed to leave the main entrance clear, hang a sign near the stairs, and give visitors a quiet place to sit after lunch.",
+      "chosenCssPx": 2752.46875,
+      "baselineCssPx": 2755.5625,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 3.09375,
+      "shorteningCssPx": 3.09375
+    },
+    {
+      "weight": 200,
+      "sizeCssPx": 24,
+      "name": "paragraph-3",
+      "text": "On the way home, we stopped at the shop for eggs, rice, and a bag of apples. A dog was waiting beside the door while its owner paid for groceries. The bus arrived just as we reached the crossing, and I was glad to put the shopping down for a while.",
+      "chosenCssPx": 2680,
+      "baselineCssPx": 2681.546875,
+      "occurrences": 3,
+      "expectedShorteningCssPx": 1.546875,
+      "shorteningCssPx": 1.546875
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 16,
+      "name": "ng",
+      "text": "ng",
+      "chosenCssPx": 18.078125,
+      "baselineCssPx": 18.4375,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.359375,
+      "shorteningCssPx": 0.359375
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 16,
+      "name": "hg",
+      "text": "hg",
+      "chosenCssPx": 18.4375,
+      "baselineCssPx": 18.4375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 16,
+      "name": "mg",
+      "text": "mg",
+      "chosenCssPx": 22.8125,
+      "baselineCssPx": 22.8125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 16,
+      "name": "ug",
+      "text": "ug",
+      "chosenCssPx": 18.4375,
+      "baselineCssPx": 18.4375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 16,
+      "name": "ag",
+      "text": "ag",
+      "chosenCssPx": 17.828125,
+      "baselineCssPx": 17.828125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 16,
+      "name": "og",
+      "text": "og",
+      "chosenCssPx": 18.5625,
+      "baselineCssPx": 18.5625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 16,
+      "name": "rg",
+      "text": "rg",
+      "chosenCssPx": 14.578125,
+      "baselineCssPx": 14.578125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 16,
+      "name": "go",
+      "text": "go",
+      "chosenCssPx": 18.21875,
+      "baselineCssPx": 18.21875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 16,
+      "name": "ge",
+      "text": "ge",
+      "chosenCssPx": 17.9375,
+      "baselineCssPx": 17.9375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 16,
+      "name": "gc",
+      "text": "gc",
+      "chosenCssPx": 17.65625,
+      "baselineCssPx": 17.65625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 16,
+      "name": "gj",
+      "text": "gj",
+      "chosenCssPx": 12.78125,
+      "baselineCssPx": 12.78125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 16,
+      "name": "ngj",
+      "text": "ngj",
+      "chosenCssPx": 21.65625,
+      "baselineCssPx": 22.015625,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.359375,
+      "shorteningCssPx": 0.359375
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 16,
+      "name": "ngo",
+      "text": "ngo",
+      "chosenCssPx": 27.09375,
+      "baselineCssPx": 27.453125,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.359375,
+      "shorteningCssPx": 0.359375
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 16,
+      "name": "changing",
+      "text": "changing",
+      "chosenCssPx": 66.40625,
+      "baselineCssPx": 67.125,
+      "occurrences": 2,
+      "expectedShorteningCssPx": 0.71875,
+      "shorteningCssPx": 0.71875
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 16,
+      "name": "Morning",
+      "text": "Morning",
+      "chosenCssPx": 60.21875,
+      "baselineCssPx": 60.578125,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.359375,
+      "shorteningCssPx": 0.359375
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 16,
+      "name": "paragraph-1",
+      "text": "Morning light was coming through the kitchen window when I began packing my bag. We were going somewhere new for the weekend, so I checked the address again before leaving. At the garden gate, a neighbor asked whether we could bring back a small jar of honey from the market.",
+      "chosenCssPx": 2085.09375,
+      "baselineCssPx": 2087.25,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 2.15625,
+      "shorteningCssPx": 2.15625
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 16,
+      "name": "paragraph-2",
+      "text": "The library was changing its opening hours at the beginning of the month. Our group met there on Tuesday to plan a small reading event. We agreed to leave the main entrance clear, hang a sign near the stairs, and give visitors a quiet place to sit after lunch.",
+      "chosenCssPx": 1866.015625,
+      "baselineCssPx": 1868.171875,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 2.15625,
+      "shorteningCssPx": 2.15625
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 16,
+      "name": "paragraph-3",
+      "text": "On the way home, we stopped at the shop for eggs, rice, and a bag of apples. A dog was waiting beside the door while its owner paid for groceries. The bus arrived just as we reached the crossing, and I was glad to put the shopping down for a while.",
+      "chosenCssPx": 1815.8125,
+      "baselineCssPx": 1816.890625,
+      "occurrences": 3,
+      "expectedShorteningCssPx": 1.078125,
+      "shorteningCssPx": 1.078125
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 24,
+      "name": "ng",
+      "text": "ng",
+      "chosenCssPx": 27.109375,
+      "baselineCssPx": 27.65625,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.5390625,
+      "shorteningCssPx": 0.546875
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 24,
+      "name": "hg",
+      "text": "hg",
+      "chosenCssPx": 27.65625,
+      "baselineCssPx": 27.65625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 24,
+      "name": "mg",
+      "text": "mg",
+      "chosenCssPx": 34.21875,
+      "baselineCssPx": 34.21875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 24,
+      "name": "ug",
+      "text": "ug",
+      "chosenCssPx": 27.65625,
+      "baselineCssPx": 27.65625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 24,
+      "name": "ag",
+      "text": "ag",
+      "chosenCssPx": 26.734375,
+      "baselineCssPx": 26.734375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 24,
+      "name": "og",
+      "text": "og",
+      "chosenCssPx": 27.84375,
+      "baselineCssPx": 27.84375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 24,
+      "name": "rg",
+      "text": "rg",
+      "chosenCssPx": 21.875,
+      "baselineCssPx": 21.875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 24,
+      "name": "go",
+      "text": "go",
+      "chosenCssPx": 27.328125,
+      "baselineCssPx": 27.328125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 24,
+      "name": "ge",
+      "text": "ge",
+      "chosenCssPx": 26.90625,
+      "baselineCssPx": 26.90625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 24,
+      "name": "gc",
+      "text": "gc",
+      "chosenCssPx": 26.484375,
+      "baselineCssPx": 26.484375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 24,
+      "name": "gj",
+      "text": "gj",
+      "chosenCssPx": 19.171875,
+      "baselineCssPx": 19.171875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 24,
+      "name": "ngj",
+      "text": "ngj",
+      "chosenCssPx": 32.484375,
+      "baselineCssPx": 33.03125,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.5390625,
+      "shorteningCssPx": 0.546875
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 24,
+      "name": "ngo",
+      "text": "ngo",
+      "chosenCssPx": 40.640625,
+      "baselineCssPx": 41.1875,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.5390625,
+      "shorteningCssPx": 0.546875
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 24,
+      "name": "changing",
+      "text": "changing",
+      "chosenCssPx": 99.609375,
+      "baselineCssPx": 100.6875,
+      "occurrences": 2,
+      "expectedShorteningCssPx": 1.078125,
+      "shorteningCssPx": 1.078125
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 24,
+      "name": "Morning",
+      "text": "Morning",
+      "chosenCssPx": 90.328125,
+      "baselineCssPx": 90.859375,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.5390625,
+      "shorteningCssPx": 0.53125
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 24,
+      "name": "paragraph-1",
+      "text": "Morning light was coming through the kitchen window when I began packing my bag. We were going somewhere new for the weekend, so I checked the address again before leaving. At the garden gate, a neighbor asked whether we could bring back a small jar of honey from the market.",
+      "chosenCssPx": 3127.640625,
+      "baselineCssPx": 3130.875,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 3.234375,
+      "shorteningCssPx": 3.234375
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 24,
+      "name": "paragraph-2",
+      "text": "The library was changing its opening hours at the beginning of the month. Our group met there on Tuesday to plan a small reading event. We agreed to leave the main entrance clear, hang a sign near the stairs, and give visitors a quiet place to sit after lunch.",
+      "chosenCssPx": 2799.03125,
+      "baselineCssPx": 2802.265625,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 3.234375,
+      "shorteningCssPx": 3.234375
+    },
+    {
+      "weight": 300,
+      "sizeCssPx": 24,
+      "name": "paragraph-3",
+      "text": "On the way home, we stopped at the shop for eggs, rice, and a bag of apples. A dog was waiting beside the door while its owner paid for groceries. The bus arrived just as we reached the crossing, and I was glad to put the shopping down for a while.",
+      "chosenCssPx": 2723.71875,
+      "baselineCssPx": 2725.328125,
+      "occurrences": 3,
+      "expectedShorteningCssPx": 1.6171875,
+      "shorteningCssPx": 1.609375
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 16,
+      "name": "ng",
+      "text": "ng",
+      "chosenCssPx": 18.25,
+      "baselineCssPx": 18.625,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.375,
+      "shorteningCssPx": 0.375
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 16,
+      "name": "hg",
+      "text": "hg",
+      "chosenCssPx": 18.625,
+      "baselineCssPx": 18.625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 16,
+      "name": "mg",
+      "text": "mg",
+      "chosenCssPx": 23.015625,
+      "baselineCssPx": 23.015625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 16,
+      "name": "ug",
+      "text": "ug",
+      "chosenCssPx": 18.625,
+      "baselineCssPx": 18.625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 16,
+      "name": "ag",
+      "text": "ag",
+      "chosenCssPx": 18.15625,
+      "baselineCssPx": 18.15625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 16,
+      "name": "og",
+      "text": "og",
+      "chosenCssPx": 18.828125,
+      "baselineCssPx": 18.828125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 16,
+      "name": "rg",
+      "text": "rg",
+      "chosenCssPx": 15,
+      "baselineCssPx": 15,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 16,
+      "name": "go",
+      "text": "go",
+      "chosenCssPx": 18.453125,
+      "baselineCssPx": 18.453125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 16,
+      "name": "ge",
+      "text": "ge",
+      "chosenCssPx": 18.125,
+      "baselineCssPx": 18.125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 16,
+      "name": "gc",
+      "text": "gc",
+      "chosenCssPx": 17.96875,
+      "baselineCssPx": 17.96875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 16,
+      "name": "gj",
+      "text": "gj",
+      "chosenCssPx": 13.046875,
+      "baselineCssPx": 13.046875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 16,
+      "name": "ngj",
+      "text": "ngj",
+      "chosenCssPx": 21.953125,
+      "baselineCssPx": 22.328125,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.375,
+      "shorteningCssPx": 0.375
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 16,
+      "name": "ngo",
+      "text": "ngo",
+      "chosenCssPx": 27.359375,
+      "baselineCssPx": 27.734375,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.375,
+      "shorteningCssPx": 0.375
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 16,
+      "name": "changing",
+      "text": "changing",
+      "chosenCssPx": 67.3125,
+      "baselineCssPx": 68.0625,
+      "occurrences": 2,
+      "expectedShorteningCssPx": 0.75,
+      "shorteningCssPx": 0.75
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 16,
+      "name": "Morning",
+      "text": "Morning",
+      "chosenCssPx": 61.078125,
+      "baselineCssPx": 61.453125,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.375,
+      "shorteningCssPx": 0.375
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 16,
+      "name": "paragraph-1",
+      "text": "Morning light was coming through the kitchen window when I began packing my bag. We were going somewhere new for the weekend, so I checked the address again before leaving. At the garden gate, a neighbor asked whether we could bring back a small jar of honey from the market.",
+      "chosenCssPx": 2116.203125,
+      "baselineCssPx": 2118.453125,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 2.25,
+      "shorteningCssPx": 2.25
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 16,
+      "name": "paragraph-2",
+      "text": "The library was changing its opening hours at the beginning of the month. Our group met there on Tuesday to plan a small reading event. We agreed to leave the main entrance clear, hang a sign near the stairs, and give visitors a quiet place to sit after lunch.",
+      "chosenCssPx": 1896.890625,
+      "baselineCssPx": 1899.140625,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 2.25,
+      "shorteningCssPx": 2.25
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 16,
+      "name": "paragraph-3",
+      "text": "On the way home, we stopped at the shop for eggs, rice, and a bag of apples. A dog was waiting beside the door while its owner paid for groceries. The bus arrived just as we reached the crossing, and I was glad to put the shopping down for a while.",
+      "chosenCssPx": 1844.640625,
+      "baselineCssPx": 1845.765625,
+      "occurrences": 3,
+      "expectedShorteningCssPx": 1.125,
+      "shorteningCssPx": 1.125
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 24,
+      "name": "ng",
+      "text": "ng",
+      "chosenCssPx": 27.375,
+      "baselineCssPx": 27.9375,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.5625,
+      "shorteningCssPx": 0.5625
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 24,
+      "name": "hg",
+      "text": "hg",
+      "chosenCssPx": 27.9375,
+      "baselineCssPx": 27.9375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 24,
+      "name": "mg",
+      "text": "mg",
+      "chosenCssPx": 34.53125,
+      "baselineCssPx": 34.53125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 24,
+      "name": "ug",
+      "text": "ug",
+      "chosenCssPx": 27.9375,
+      "baselineCssPx": 27.9375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 24,
+      "name": "ag",
+      "text": "ag",
+      "chosenCssPx": 27.234375,
+      "baselineCssPx": 27.234375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 24,
+      "name": "og",
+      "text": "og",
+      "chosenCssPx": 28.234375,
+      "baselineCssPx": 28.234375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 24,
+      "name": "rg",
+      "text": "rg",
+      "chosenCssPx": 22.5,
+      "baselineCssPx": 22.5,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 24,
+      "name": "go",
+      "text": "go",
+      "chosenCssPx": 27.671875,
+      "baselineCssPx": 27.671875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 24,
+      "name": "ge",
+      "text": "ge",
+      "chosenCssPx": 27.1875,
+      "baselineCssPx": 27.1875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 24,
+      "name": "gc",
+      "text": "gc",
+      "chosenCssPx": 26.953125,
+      "baselineCssPx": 26.953125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 24,
+      "name": "gj",
+      "text": "gj",
+      "chosenCssPx": 19.578125,
+      "baselineCssPx": 19.578125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 24,
+      "name": "ngj",
+      "text": "ngj",
+      "chosenCssPx": 32.9375,
+      "baselineCssPx": 33.5,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.5625,
+      "shorteningCssPx": 0.5625
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 24,
+      "name": "ngo",
+      "text": "ngo",
+      "chosenCssPx": 41.03125,
+      "baselineCssPx": 41.59375,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.5625,
+      "shorteningCssPx": 0.5625
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 24,
+      "name": "changing",
+      "text": "changing",
+      "chosenCssPx": 100.96875,
+      "baselineCssPx": 102.09375,
+      "occurrences": 2,
+      "expectedShorteningCssPx": 1.125,
+      "shorteningCssPx": 1.125
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 24,
+      "name": "Morning",
+      "text": "Morning",
+      "chosenCssPx": 91.625,
+      "baselineCssPx": 92.1875,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.5625,
+      "shorteningCssPx": 0.5625
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 24,
+      "name": "paragraph-1",
+      "text": "Morning light was coming through the kitchen window when I began packing my bag. We were going somewhere new for the weekend, so I checked the address again before leaving. At the garden gate, a neighbor asked whether we could bring back a small jar of honey from the market.",
+      "chosenCssPx": 3174.296875,
+      "baselineCssPx": 3177.671875,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 3.375,
+      "shorteningCssPx": 3.375
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 24,
+      "name": "paragraph-2",
+      "text": "The library was changing its opening hours at the beginning of the month. Our group met there on Tuesday to plan a small reading event. We agreed to leave the main entrance clear, hang a sign near the stairs, and give visitors a quiet place to sit after lunch.",
+      "chosenCssPx": 2845.34375,
+      "baselineCssPx": 2848.71875,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 3.375,
+      "shorteningCssPx": 3.375
+    },
+    {
+      "weight": 400,
+      "sizeCssPx": 24,
+      "name": "paragraph-3",
+      "text": "On the way home, we stopped at the shop for eggs, rice, and a bag of apples. A dog was waiting beside the door while its owner paid for groceries. The bus arrived just as we reached the crossing, and I was glad to put the shopping down for a while.",
+      "chosenCssPx": 2766.96875,
+      "baselineCssPx": 2768.65625,
+      "occurrences": 3,
+      "expectedShorteningCssPx": 1.6875,
+      "shorteningCssPx": 1.6875
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 16,
+      "name": "ng",
+      "text": "ng",
+      "chosenCssPx": 18.453125,
+      "baselineCssPx": 18.859375,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.40625,
+      "shorteningCssPx": 0.40625
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 16,
+      "name": "hg",
+      "text": "hg",
+      "chosenCssPx": 18.859375,
+      "baselineCssPx": 18.859375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 16,
+      "name": "mg",
+      "text": "mg",
+      "chosenCssPx": 23.28125,
+      "baselineCssPx": 23.28125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 16,
+      "name": "ug",
+      "text": "ug",
+      "chosenCssPx": 18.859375,
+      "baselineCssPx": 18.859375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 16,
+      "name": "ag",
+      "text": "ag",
+      "chosenCssPx": 18.328125,
+      "baselineCssPx": 18.328125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 16,
+      "name": "og",
+      "text": "og",
+      "chosenCssPx": 18.96875,
+      "baselineCssPx": 18.96875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 16,
+      "name": "rg",
+      "text": "rg",
+      "chosenCssPx": 15.203125,
+      "baselineCssPx": 15.203125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 16,
+      "name": "go",
+      "text": "go",
+      "chosenCssPx": 18.5625,
+      "baselineCssPx": 18.5625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 16,
+      "name": "ge",
+      "text": "ge",
+      "chosenCssPx": 18.234375,
+      "baselineCssPx": 18.234375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 16,
+      "name": "gc",
+      "text": "gc",
+      "chosenCssPx": 18.078125,
+      "baselineCssPx": 18.078125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 16,
+      "name": "gj",
+      "text": "gj",
+      "chosenCssPx": 13.390625,
+      "baselineCssPx": 13.390625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 16,
+      "name": "ngj",
+      "text": "ngj",
+      "chosenCssPx": 22.421875,
+      "baselineCssPx": 22.828125,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.40625,
+      "shorteningCssPx": 0.40625
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 16,
+      "name": "ngo",
+      "text": "ngo",
+      "chosenCssPx": 27.609375,
+      "baselineCssPx": 28.015625,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.40625,
+      "shorteningCssPx": 0.40625
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 16,
+      "name": "changing",
+      "text": "changing",
+      "chosenCssPx": 68.1875,
+      "baselineCssPx": 69,
+      "occurrences": 2,
+      "expectedShorteningCssPx": 0.8125,
+      "shorteningCssPx": 0.8125
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 16,
+      "name": "Morning",
+      "text": "Morning",
+      "chosenCssPx": 61.9375,
+      "baselineCssPx": 62.34375,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.40625,
+      "shorteningCssPx": 0.40625
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 16,
+      "name": "paragraph-1",
+      "text": "Morning light was coming through the kitchen window when I began packing my bag. We were going somewhere new for the weekend, so I checked the address again before leaving. At the garden gate, a neighbor asked whether we could bring back a small jar of honey from the market.",
+      "chosenCssPx": 2132.90625,
+      "baselineCssPx": 2135.34375,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 2.4375,
+      "shorteningCssPx": 2.4375
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 16,
+      "name": "paragraph-2",
+      "text": "The library was changing its opening hours at the beginning of the month. Our group met there on Tuesday to plan a small reading event. We agreed to leave the main entrance clear, hang a sign near the stairs, and give visitors a quiet place to sit after lunch.",
+      "chosenCssPx": 1912.90625,
+      "baselineCssPx": 1915.34375,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 2.4375,
+      "shorteningCssPx": 2.4375
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 16,
+      "name": "paragraph-3",
+      "text": "On the way home, we stopped at the shop for eggs, rice, and a bag of apples. A dog was waiting beside the door while its owner paid for groceries. The bus arrived just as we reached the crossing, and I was glad to put the shopping down for a while.",
+      "chosenCssPx": 1857.796875,
+      "baselineCssPx": 1859.015625,
+      "occurrences": 3,
+      "expectedShorteningCssPx": 1.21875,
+      "shorteningCssPx": 1.21875
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 24,
+      "name": "ng",
+      "text": "ng",
+      "chosenCssPx": 27.671875,
+      "baselineCssPx": 28.28125,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.609375,
+      "shorteningCssPx": 0.609375
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 24,
+      "name": "hg",
+      "text": "hg",
+      "chosenCssPx": 28.296875,
+      "baselineCssPx": 28.296875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 24,
+      "name": "mg",
+      "text": "mg",
+      "chosenCssPx": 34.921875,
+      "baselineCssPx": 34.921875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 24,
+      "name": "ug",
+      "text": "ug",
+      "chosenCssPx": 28.296875,
+      "baselineCssPx": 28.296875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 24,
+      "name": "ag",
+      "text": "ag",
+      "chosenCssPx": 27.5,
+      "baselineCssPx": 27.5,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 24,
+      "name": "og",
+      "text": "og",
+      "chosenCssPx": 28.453125,
+      "baselineCssPx": 28.453125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 24,
+      "name": "rg",
+      "text": "rg",
+      "chosenCssPx": 22.796875,
+      "baselineCssPx": 22.796875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 24,
+      "name": "go",
+      "text": "go",
+      "chosenCssPx": 27.84375,
+      "baselineCssPx": 27.84375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 24,
+      "name": "ge",
+      "text": "ge",
+      "chosenCssPx": 27.359375,
+      "baselineCssPx": 27.359375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 24,
+      "name": "gc",
+      "text": "gc",
+      "chosenCssPx": 27.109375,
+      "baselineCssPx": 27.109375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 24,
+      "name": "gj",
+      "text": "gj",
+      "chosenCssPx": 20.078125,
+      "baselineCssPx": 20.078125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 24,
+      "name": "ngj",
+      "text": "ngj",
+      "chosenCssPx": 33.640625,
+      "baselineCssPx": 34.25,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.609375,
+      "shorteningCssPx": 0.609375
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 24,
+      "name": "ngo",
+      "text": "ngo",
+      "chosenCssPx": 41.40625,
+      "baselineCssPx": 42.015625,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.609375,
+      "shorteningCssPx": 0.609375
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 24,
+      "name": "changing",
+      "text": "changing",
+      "chosenCssPx": 102.28125,
+      "baselineCssPx": 103.5,
+      "occurrences": 2,
+      "expectedShorteningCssPx": 1.21875,
+      "shorteningCssPx": 1.21875
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 24,
+      "name": "Morning",
+      "text": "Morning",
+      "chosenCssPx": 92.90625,
+      "baselineCssPx": 93.515625,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.609375,
+      "shorteningCssPx": 0.609375
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 24,
+      "name": "paragraph-1",
+      "text": "Morning light was coming through the kitchen window when I began packing my bag. We were going somewhere new for the weekend, so I checked the address again before leaving. At the garden gate, a neighbor asked whether we could bring back a small jar of honey from the market.",
+      "chosenCssPx": 3199.359375,
+      "baselineCssPx": 3203.015625,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 3.65625,
+      "shorteningCssPx": 3.65625
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 24,
+      "name": "paragraph-2",
+      "text": "The library was changing its opening hours at the beginning of the month. Our group met there on Tuesday to plan a small reading event. We agreed to leave the main entrance clear, hang a sign near the stairs, and give visitors a quiet place to sit after lunch.",
+      "chosenCssPx": 2869.359375,
+      "baselineCssPx": 2873.015625,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 3.65625,
+      "shorteningCssPx": 3.65625
+    },
+    {
+      "weight": 500,
+      "sizeCssPx": 24,
+      "name": "paragraph-3",
+      "text": "On the way home, we stopped at the shop for eggs, rice, and a bag of apples. A dog was waiting beside the door while its owner paid for groceries. The bus arrived just as we reached the crossing, and I was glad to put the shopping down for a while.",
+      "chosenCssPx": 2786.703125,
+      "baselineCssPx": 2788.53125,
+      "occurrences": 3,
+      "expectedShorteningCssPx": 1.828125,
+      "shorteningCssPx": 1.828125
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 16,
+      "name": "ng",
+      "text": "ng",
+      "chosenCssPx": 18.671875,
+      "baselineCssPx": 19.09375,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.421875,
+      "shorteningCssPx": 0.421875
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 16,
+      "name": "hg",
+      "text": "hg",
+      "chosenCssPx": 19.09375,
+      "baselineCssPx": 19.09375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 16,
+      "name": "mg",
+      "text": "mg",
+      "chosenCssPx": 23.546875,
+      "baselineCssPx": 23.546875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 16,
+      "name": "ug",
+      "text": "ug",
+      "chosenCssPx": 19.09375,
+      "baselineCssPx": 19.09375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 16,
+      "name": "ag",
+      "text": "ag",
+      "chosenCssPx": 18.5,
+      "baselineCssPx": 18.5,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 16,
+      "name": "og",
+      "text": "og",
+      "chosenCssPx": 19.109375,
+      "baselineCssPx": 19.109375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 16,
+      "name": "rg",
+      "text": "rg",
+      "chosenCssPx": 15.390625,
+      "baselineCssPx": 15.390625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 16,
+      "name": "go",
+      "text": "go",
+      "chosenCssPx": 18.6875,
+      "baselineCssPx": 18.6875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 16,
+      "name": "ge",
+      "text": "ge",
+      "chosenCssPx": 18.34375,
+      "baselineCssPx": 18.34375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 16,
+      "name": "gc",
+      "text": "gc",
+      "chosenCssPx": 18.171875,
+      "baselineCssPx": 18.171875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 16,
+      "name": "gj",
+      "text": "gj",
+      "chosenCssPx": 13.703125,
+      "baselineCssPx": 13.703125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 16,
+      "name": "ngj",
+      "text": "ngj",
+      "chosenCssPx": 22.90625,
+      "baselineCssPx": 23.328125,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.421875,
+      "shorteningCssPx": 0.421875
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 16,
+      "name": "ngo",
+      "text": "ngo",
+      "chosenCssPx": 27.875,
+      "baselineCssPx": 28.296875,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.421875,
+      "shorteningCssPx": 0.421875
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 16,
+      "name": "changing",
+      "text": "changing",
+      "chosenCssPx": 69.09375,
+      "baselineCssPx": 69.9375,
+      "occurrences": 2,
+      "expectedShorteningCssPx": 0.84375,
+      "shorteningCssPx": 0.84375
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 16,
+      "name": "Morning",
+      "text": "Morning",
+      "chosenCssPx": 62.828125,
+      "baselineCssPx": 63.25,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.421875,
+      "shorteningCssPx": 0.421875
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 16,
+      "name": "paragraph-1",
+      "text": "Morning light was coming through the kitchen window when I began packing my bag. We were going somewhere new for the weekend, so I checked the address again before leaving. At the garden gate, a neighbor asked whether we could bring back a small jar of honey from the market.",
+      "chosenCssPx": 2149.28125,
+      "baselineCssPx": 2151.8125,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 2.53125,
+      "shorteningCssPx": 2.53125
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 16,
+      "name": "paragraph-2",
+      "text": "The library was changing its opening hours at the beginning of the month. Our group met there on Tuesday to plan a small reading event. We agreed to leave the main entrance clear, hang a sign near the stairs, and give visitors a quiet place to sit after lunch.",
+      "chosenCssPx": 1928.65625,
+      "baselineCssPx": 1931.1875,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 2.53125,
+      "shorteningCssPx": 2.53125
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 16,
+      "name": "paragraph-3",
+      "text": "On the way home, we stopped at the shop for eggs, rice, and a bag of apples. A dog was waiting beside the door while its owner paid for groceries. The bus arrived just as we reached the crossing, and I was glad to put the shopping down for a while.",
+      "chosenCssPx": 1870.546875,
+      "baselineCssPx": 1871.8125,
+      "occurrences": 3,
+      "expectedShorteningCssPx": 1.265625,
+      "shorteningCssPx": 1.265625
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 24,
+      "name": "ng",
+      "text": "ng",
+      "chosenCssPx": 28.015625,
+      "baselineCssPx": 28.640625,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.6328125,
+      "shorteningCssPx": 0.625
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 24,
+      "name": "hg",
+      "text": "hg",
+      "chosenCssPx": 28.640625,
+      "baselineCssPx": 28.640625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 24,
+      "name": "mg",
+      "text": "mg",
+      "chosenCssPx": 35.3125,
+      "baselineCssPx": 35.3125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 24,
+      "name": "ug",
+      "text": "ug",
+      "chosenCssPx": 28.640625,
+      "baselineCssPx": 28.640625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 24,
+      "name": "ag",
+      "text": "ag",
+      "chosenCssPx": 27.75,
+      "baselineCssPx": 27.75,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 24,
+      "name": "og",
+      "text": "og",
+      "chosenCssPx": 28.65625,
+      "baselineCssPx": 28.65625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 24,
+      "name": "rg",
+      "text": "rg",
+      "chosenCssPx": 23.09375,
+      "baselineCssPx": 23.09375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 24,
+      "name": "go",
+      "text": "go",
+      "chosenCssPx": 28.03125,
+      "baselineCssPx": 28.03125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 24,
+      "name": "ge",
+      "text": "ge",
+      "chosenCssPx": 27.515625,
+      "baselineCssPx": 27.515625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 24,
+      "name": "gc",
+      "text": "gc",
+      "chosenCssPx": 27.25,
+      "baselineCssPx": 27.25,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 24,
+      "name": "gj",
+      "text": "gj",
+      "chosenCssPx": 20.5625,
+      "baselineCssPx": 20.5625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 24,
+      "name": "ngj",
+      "text": "ngj",
+      "chosenCssPx": 34.359375,
+      "baselineCssPx": 34.984375,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.6328125,
+      "shorteningCssPx": 0.625
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 24,
+      "name": "ngo",
+      "text": "ngo",
+      "chosenCssPx": 41.8125,
+      "baselineCssPx": 42.453125,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.6328125,
+      "shorteningCssPx": 0.640625
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 24,
+      "name": "changing",
+      "text": "changing",
+      "chosenCssPx": 103.640625,
+      "baselineCssPx": 104.90625,
+      "occurrences": 2,
+      "expectedShorteningCssPx": 1.265625,
+      "shorteningCssPx": 1.265625
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 24,
+      "name": "Morning",
+      "text": "Morning",
+      "chosenCssPx": 94.25,
+      "baselineCssPx": 94.875,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.6328125,
+      "shorteningCssPx": 0.625
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 24,
+      "name": "paragraph-1",
+      "text": "Morning light was coming through the kitchen window when I began packing my bag. We were going somewhere new for the weekend, so I checked the address again before leaving. At the garden gate, a neighbor asked whether we could bring back a small jar of honey from the market.",
+      "chosenCssPx": 3223.921875,
+      "baselineCssPx": 3227.71875,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 3.796875,
+      "shorteningCssPx": 3.796875
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 24,
+      "name": "paragraph-2",
+      "text": "The library was changing its opening hours at the beginning of the month. Our group met there on Tuesday to plan a small reading event. We agreed to leave the main entrance clear, hang a sign near the stairs, and give visitors a quiet place to sit after lunch.",
+      "chosenCssPx": 2892.984375,
+      "baselineCssPx": 2896.78125,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 3.796875,
+      "shorteningCssPx": 3.796875
+    },
+    {
+      "weight": 600,
+      "sizeCssPx": 24,
+      "name": "paragraph-3",
+      "text": "On the way home, we stopped at the shop for eggs, rice, and a bag of apples. A dog was waiting beside the door while its owner paid for groceries. The bus arrived just as we reached the crossing, and I was glad to put the shopping down for a while.",
+      "chosenCssPx": 2805.828125,
+      "baselineCssPx": 2807.71875,
+      "occurrences": 3,
+      "expectedShorteningCssPx": 1.8984375,
+      "shorteningCssPx": 1.890625
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 16,
+      "name": "ng",
+      "text": "ng",
+      "chosenCssPx": 18.890625,
+      "baselineCssPx": 19.34375,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.453125,
+      "shorteningCssPx": 0.453125
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 16,
+      "name": "hg",
+      "text": "hg",
+      "chosenCssPx": 19.34375,
+      "baselineCssPx": 19.34375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 16,
+      "name": "mg",
+      "text": "mg",
+      "chosenCssPx": 23.8125,
+      "baselineCssPx": 23.8125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 16,
+      "name": "ug",
+      "text": "ug",
+      "chosenCssPx": 19.34375,
+      "baselineCssPx": 19.34375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 16,
+      "name": "ag",
+      "text": "ag",
+      "chosenCssPx": 18.6875,
+      "baselineCssPx": 18.6875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 16,
+      "name": "og",
+      "text": "og",
+      "chosenCssPx": 19.265625,
+      "baselineCssPx": 19.265625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 16,
+      "name": "rg",
+      "text": "rg",
+      "chosenCssPx": 15.59375,
+      "baselineCssPx": 15.59375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 16,
+      "name": "go",
+      "text": "go",
+      "chosenCssPx": 18.8125,
+      "baselineCssPx": 18.8125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 16,
+      "name": "ge",
+      "text": "ge",
+      "chosenCssPx": 18.46875,
+      "baselineCssPx": 18.46875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 16,
+      "name": "gc",
+      "text": "gc",
+      "chosenCssPx": 18.28125,
+      "baselineCssPx": 18.28125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 16,
+      "name": "gj",
+      "text": "gj",
+      "chosenCssPx": 14.109375,
+      "baselineCssPx": 14.109375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 16,
+      "name": "ngj",
+      "text": "ngj",
+      "chosenCssPx": 23.4375,
+      "baselineCssPx": 23.890625,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.453125,
+      "shorteningCssPx": 0.453125
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 16,
+      "name": "ngo",
+      "text": "ngo",
+      "chosenCssPx": 28.140625,
+      "baselineCssPx": 28.59375,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.453125,
+      "shorteningCssPx": 0.453125
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 16,
+      "name": "changing",
+      "text": "changing",
+      "chosenCssPx": 69.984375,
+      "baselineCssPx": 70.890625,
+      "occurrences": 2,
+      "expectedShorteningCssPx": 0.90625,
+      "shorteningCssPx": 0.90625
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 16,
+      "name": "Morning",
+      "text": "Morning",
+      "chosenCssPx": 63.703125,
+      "baselineCssPx": 64.15625,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.453125,
+      "shorteningCssPx": 0.453125
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 16,
+      "name": "paragraph-1",
+      "text": "Morning light was coming through the kitchen window when I began packing my bag. We were going somewhere new for the weekend, so I checked the address again before leaving. At the garden gate, a neighbor asked whether we could bring back a small jar of honey from the market.",
+      "chosenCssPx": 2166.234375,
+      "baselineCssPx": 2168.953125,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 2.71875,
+      "shorteningCssPx": 2.71875
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 16,
+      "name": "paragraph-2",
+      "text": "The library was changing its opening hours at the beginning of the month. Our group met there on Tuesday to plan a small reading event. We agreed to leave the main entrance clear, hang a sign near the stairs, and give visitors a quiet place to sit after lunch.",
+      "chosenCssPx": 1944.84375,
+      "baselineCssPx": 1947.5625,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 2.71875,
+      "shorteningCssPx": 2.71875
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 16,
+      "name": "paragraph-3",
+      "text": "On the way home, we stopped at the shop for eggs, rice, and a bag of apples. A dog was waiting beside the door while its owner paid for groceries. The bus arrived just as we reached the crossing, and I was glad to put the shopping down for a while.",
+      "chosenCssPx": 1883.859375,
+      "baselineCssPx": 1885.21875,
+      "occurrences": 3,
+      "expectedShorteningCssPx": 1.359375,
+      "shorteningCssPx": 1.359375
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 24,
+      "name": "ng",
+      "text": "ng",
+      "chosenCssPx": 28.328125,
+      "baselineCssPx": 29.015625,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.6796875,
+      "shorteningCssPx": 0.6875
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 24,
+      "name": "hg",
+      "text": "hg",
+      "chosenCssPx": 29.015625,
+      "baselineCssPx": 29.015625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 24,
+      "name": "mg",
+      "text": "mg",
+      "chosenCssPx": 35.71875,
+      "baselineCssPx": 35.71875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 24,
+      "name": "ug",
+      "text": "ug",
+      "chosenCssPx": 29.015625,
+      "baselineCssPx": 29.015625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 24,
+      "name": "ag",
+      "text": "ag",
+      "chosenCssPx": 28.03125,
+      "baselineCssPx": 28.03125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 24,
+      "name": "og",
+      "text": "og",
+      "chosenCssPx": 28.890625,
+      "baselineCssPx": 28.890625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 24,
+      "name": "rg",
+      "text": "rg",
+      "chosenCssPx": 23.390625,
+      "baselineCssPx": 23.390625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 24,
+      "name": "go",
+      "text": "go",
+      "chosenCssPx": 28.21875,
+      "baselineCssPx": 28.21875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 24,
+      "name": "ge",
+      "text": "ge",
+      "chosenCssPx": 27.703125,
+      "baselineCssPx": 27.703125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 24,
+      "name": "gc",
+      "text": "gc",
+      "chosenCssPx": 27.421875,
+      "baselineCssPx": 27.421875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 24,
+      "name": "gj",
+      "text": "gj",
+      "chosenCssPx": 21.15625,
+      "baselineCssPx": 21.15625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 24,
+      "name": "ngj",
+      "text": "ngj",
+      "chosenCssPx": 35.15625,
+      "baselineCssPx": 35.828125,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.6796875,
+      "shorteningCssPx": 0.671875
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 24,
+      "name": "ngo",
+      "text": "ngo",
+      "chosenCssPx": 42.21875,
+      "baselineCssPx": 42.890625,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.6796875,
+      "shorteningCssPx": 0.671875
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 24,
+      "name": "changing",
+      "text": "changing",
+      "chosenCssPx": 104.984375,
+      "baselineCssPx": 106.34375,
+      "occurrences": 2,
+      "expectedShorteningCssPx": 1.359375,
+      "shorteningCssPx": 1.359375
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 24,
+      "name": "Morning",
+      "text": "Morning",
+      "chosenCssPx": 95.5625,
+      "baselineCssPx": 96.234375,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.6796875,
+      "shorteningCssPx": 0.671875
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 24,
+      "name": "paragraph-1",
+      "text": "Morning light was coming through the kitchen window when I began packing my bag. We were going somewhere new for the weekend, so I checked the address again before leaving. At the garden gate, a neighbor asked whether we could bring back a small jar of honey from the market.",
+      "chosenCssPx": 3249.34375,
+      "baselineCssPx": 3253.421875,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 4.078125,
+      "shorteningCssPx": 4.078125
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 24,
+      "name": "paragraph-2",
+      "text": "The library was changing its opening hours at the beginning of the month. Our group met there on Tuesday to plan a small reading event. We agreed to leave the main entrance clear, hang a sign near the stairs, and give visitors a quiet place to sit after lunch.",
+      "chosenCssPx": 2917.265625,
+      "baselineCssPx": 2921.34375,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 4.078125,
+      "shorteningCssPx": 4.078125
+    },
+    {
+      "weight": 700,
+      "sizeCssPx": 24,
+      "name": "paragraph-3",
+      "text": "On the way home, we stopped at the shop for eggs, rice, and a bag of apples. A dog was waiting beside the door while its owner paid for groceries. The bus arrived just as we reached the crossing, and I was glad to put the shopping down for a while.",
+      "chosenCssPx": 2825.796875,
+      "baselineCssPx": 2827.828125,
+      "occurrences": 3,
+      "expectedShorteningCssPx": 2.0390625,
+      "shorteningCssPx": 2.03125
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 16,
+      "name": "ng",
+      "text": "ng",
+      "chosenCssPx": 19.171875,
+      "baselineCssPx": 19.640625,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.46875,
+      "shorteningCssPx": 0.46875
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 16,
+      "name": "hg",
+      "text": "hg",
+      "chosenCssPx": 19.640625,
+      "baselineCssPx": 19.640625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 16,
+      "name": "mg",
+      "text": "mg",
+      "chosenCssPx": 24.140625,
+      "baselineCssPx": 24.140625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 16,
+      "name": "ug",
+      "text": "ug",
+      "chosenCssPx": 19.640625,
+      "baselineCssPx": 19.640625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 16,
+      "name": "ag",
+      "text": "ag",
+      "chosenCssPx": 18.90625,
+      "baselineCssPx": 18.90625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 16,
+      "name": "og",
+      "text": "og",
+      "chosenCssPx": 19.4375,
+      "baselineCssPx": 19.4375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 16,
+      "name": "rg",
+      "text": "rg",
+      "chosenCssPx": 15.828125,
+      "baselineCssPx": 15.828125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 16,
+      "name": "go",
+      "text": "go",
+      "chosenCssPx": 18.96875,
+      "baselineCssPx": 18.96875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 16,
+      "name": "ge",
+      "text": "ge",
+      "chosenCssPx": 18.625,
+      "baselineCssPx": 18.625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 16,
+      "name": "gc",
+      "text": "gc",
+      "chosenCssPx": 18.40625,
+      "baselineCssPx": 18.40625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 16,
+      "name": "gj",
+      "text": "gj",
+      "chosenCssPx": 14.65625,
+      "baselineCssPx": 14.65625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 16,
+      "name": "ngj",
+      "text": "ngj",
+      "chosenCssPx": 24.171875,
+      "baselineCssPx": 24.640625,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.46875,
+      "shorteningCssPx": 0.46875
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 16,
+      "name": "ngo",
+      "text": "ngo",
+      "chosenCssPx": 28.484375,
+      "baselineCssPx": 28.953125,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.46875,
+      "shorteningCssPx": 0.46875
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 16,
+      "name": "changing",
+      "text": "changing",
+      "chosenCssPx": 71.109375,
+      "baselineCssPx": 72.046875,
+      "occurrences": 2,
+      "expectedShorteningCssPx": 0.9375,
+      "shorteningCssPx": 0.9375
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 16,
+      "name": "Morning",
+      "text": "Morning",
+      "chosenCssPx": 64.796875,
+      "baselineCssPx": 65.265625,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.46875,
+      "shorteningCssPx": 0.46875
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 16,
+      "name": "paragraph-1",
+      "text": "Morning light was coming through the kitchen window when I began packing my bag. We were going somewhere new for the weekend, so I checked the address again before leaving. At the garden gate, a neighbor asked whether we could bring back a small jar of honey from the market.",
+      "chosenCssPx": 2186.828125,
+      "baselineCssPx": 2189.640625,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 2.8125,
+      "shorteningCssPx": 2.8125
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 16,
+      "name": "paragraph-2",
+      "text": "The library was changing its opening hours at the beginning of the month. Our group met there on Tuesday to plan a small reading event. We agreed to leave the main entrance clear, hang a sign near the stairs, and give visitors a quiet place to sit after lunch.",
+      "chosenCssPx": 1964.578125,
+      "baselineCssPx": 1967.390625,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 2.8125,
+      "shorteningCssPx": 2.8125
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 16,
+      "name": "paragraph-3",
+      "text": "On the way home, we stopped at the shop for eggs, rice, and a bag of apples. A dog was waiting beside the door while its owner paid for groceries. The bus arrived just as we reached the crossing, and I was glad to put the shopping down for a while.",
+      "chosenCssPx": 1900.109375,
+      "baselineCssPx": 1901.515625,
+      "occurrences": 3,
+      "expectedShorteningCssPx": 1.40625,
+      "shorteningCssPx": 1.40625
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 24,
+      "name": "ng",
+      "text": "ng",
+      "chosenCssPx": 28.75,
+      "baselineCssPx": 29.453125,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.703125,
+      "shorteningCssPx": 0.703125
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 24,
+      "name": "hg",
+      "text": "hg",
+      "chosenCssPx": 29.46875,
+      "baselineCssPx": 29.46875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 24,
+      "name": "mg",
+      "text": "mg",
+      "chosenCssPx": 36.203125,
+      "baselineCssPx": 36.203125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 24,
+      "name": "ug",
+      "text": "ug",
+      "chosenCssPx": 29.46875,
+      "baselineCssPx": 29.46875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 24,
+      "name": "ag",
+      "text": "ag",
+      "chosenCssPx": 28.359375,
+      "baselineCssPx": 28.359375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 24,
+      "name": "og",
+      "text": "og",
+      "chosenCssPx": 29.15625,
+      "baselineCssPx": 29.15625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 24,
+      "name": "rg",
+      "text": "rg",
+      "chosenCssPx": 23.75,
+      "baselineCssPx": 23.75,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 24,
+      "name": "go",
+      "text": "go",
+      "chosenCssPx": 28.453125,
+      "baselineCssPx": 28.453125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 24,
+      "name": "ge",
+      "text": "ge",
+      "chosenCssPx": 27.9375,
+      "baselineCssPx": 27.9375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 24,
+      "name": "gc",
+      "text": "gc",
+      "chosenCssPx": 27.609375,
+      "baselineCssPx": 27.609375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 24,
+      "name": "gj",
+      "text": "gj",
+      "chosenCssPx": 21.984375,
+      "baselineCssPx": 21.984375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 24,
+      "name": "ngj",
+      "text": "ngj",
+      "chosenCssPx": 36.265625,
+      "baselineCssPx": 36.96875,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.703125,
+      "shorteningCssPx": 0.703125
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 24,
+      "name": "ngo",
+      "text": "ngo",
+      "chosenCssPx": 42.734375,
+      "baselineCssPx": 43.4375,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.703125,
+      "shorteningCssPx": 0.703125
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 24,
+      "name": "changing",
+      "text": "changing",
+      "chosenCssPx": 106.671875,
+      "baselineCssPx": 108.078125,
+      "occurrences": 2,
+      "expectedShorteningCssPx": 1.40625,
+      "shorteningCssPx": 1.40625
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 24,
+      "name": "Morning",
+      "text": "Morning",
+      "chosenCssPx": 97.1875,
+      "baselineCssPx": 97.890625,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.703125,
+      "shorteningCssPx": 0.703125
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 24,
+      "name": "paragraph-1",
+      "text": "Morning light was coming through the kitchen window when I began packing my bag. We were going somewhere new for the weekend, so I checked the address again before leaving. At the garden gate, a neighbor asked whether we could bring back a small jar of honey from the market.",
+      "chosenCssPx": 3280.234375,
+      "baselineCssPx": 3284.453125,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 4.21875,
+      "shorteningCssPx": 4.21875
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 24,
+      "name": "paragraph-2",
+      "text": "The library was changing its opening hours at the beginning of the month. Our group met there on Tuesday to plan a small reading event. We agreed to leave the main entrance clear, hang a sign near the stairs, and give visitors a quiet place to sit after lunch.",
+      "chosenCssPx": 2946.859375,
+      "baselineCssPx": 2951.078125,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 4.21875,
+      "shorteningCssPx": 4.21875
+    },
+    {
+      "weight": 800,
+      "sizeCssPx": 24,
+      "name": "paragraph-3",
+      "text": "On the way home, we stopped at the shop for eggs, rice, and a bag of apples. A dog was waiting beside the door while its owner paid for groceries. The bus arrived just as we reached the crossing, and I was glad to put the shopping down for a while.",
+      "chosenCssPx": 2850.171875,
+      "baselineCssPx": 2852.28125,
+      "occurrences": 3,
+      "expectedShorteningCssPx": 2.109375,
+      "shorteningCssPx": 2.109375
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 16,
+      "name": "ng",
+      "text": "ng",
+      "chosenCssPx": 19.46875,
+      "baselineCssPx": 19.96875,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.5,
+      "shorteningCssPx": 0.5
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 16,
+      "name": "hg",
+      "text": "hg",
+      "chosenCssPx": 19.96875,
+      "baselineCssPx": 19.96875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 16,
+      "name": "mg",
+      "text": "mg",
+      "chosenCssPx": 24.5,
+      "baselineCssPx": 24.5,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 16,
+      "name": "ug",
+      "text": "ug",
+      "chosenCssPx": 19.96875,
+      "baselineCssPx": 19.96875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 16,
+      "name": "ag",
+      "text": "ag",
+      "chosenCssPx": 19.140625,
+      "baselineCssPx": 19.140625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 16,
+      "name": "og",
+      "text": "og",
+      "chosenCssPx": 19.640625,
+      "baselineCssPx": 19.640625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 16,
+      "name": "rg",
+      "text": "rg",
+      "chosenCssPx": 16.09375,
+      "baselineCssPx": 16.09375,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 16,
+      "name": "go",
+      "text": "go",
+      "chosenCssPx": 19.140625,
+      "baselineCssPx": 19.140625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 16,
+      "name": "ge",
+      "text": "ge",
+      "chosenCssPx": 18.78125,
+      "baselineCssPx": 18.78125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 16,
+      "name": "gc",
+      "text": "gc",
+      "chosenCssPx": 18.546875,
+      "baselineCssPx": 18.546875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 16,
+      "name": "gj",
+      "text": "gj",
+      "chosenCssPx": 15.203125,
+      "baselineCssPx": 15.203125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 16,
+      "name": "ngj",
+      "text": "ngj",
+      "chosenCssPx": 24.921875,
+      "baselineCssPx": 25.421875,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.5,
+      "shorteningCssPx": 0.5
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 16,
+      "name": "ngo",
+      "text": "ngo",
+      "chosenCssPx": 28.84375,
+      "baselineCssPx": 29.34375,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.5,
+      "shorteningCssPx": 0.5
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 16,
+      "name": "changing",
+      "text": "changing",
+      "chosenCssPx": 72.3125,
+      "baselineCssPx": 73.3125,
+      "occurrences": 2,
+      "expectedShorteningCssPx": 1,
+      "shorteningCssPx": 1
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 16,
+      "name": "Morning",
+      "text": "Morning",
+      "chosenCssPx": 65.96875,
+      "baselineCssPx": 66.46875,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.5,
+      "shorteningCssPx": 0.5
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 16,
+      "name": "paragraph-1",
+      "text": "Morning light was coming through the kitchen window when I began packing my bag. We were going somewhere new for the weekend, so I checked the address again before leaving. At the garden gate, a neighbor asked whether we could bring back a small jar of honey from the market.",
+      "chosenCssPx": 2209.171875,
+      "baselineCssPx": 2212.171875,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 3,
+      "shorteningCssPx": 3
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 16,
+      "name": "paragraph-2",
+      "text": "The library was changing its opening hours at the beginning of the month. Our group met there on Tuesday to plan a small reading event. We agreed to leave the main entrance clear, hang a sign near the stairs, and give visitors a quiet place to sit after lunch.",
+      "chosenCssPx": 1985.96875,
+      "baselineCssPx": 1988.96875,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 3,
+      "shorteningCssPx": 3
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 16,
+      "name": "paragraph-3",
+      "text": "On the way home, we stopped at the shop for eggs, rice, and a bag of apples. A dog was waiting beside the door while its owner paid for groceries. The bus arrived just as we reached the crossing, and I was glad to put the shopping down for a while.",
+      "chosenCssPx": 1917.625,
+      "baselineCssPx": 1919.125,
+      "occurrences": 3,
+      "expectedShorteningCssPx": 1.5,
+      "shorteningCssPx": 1.5
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 24,
+      "name": "ng",
+      "text": "ng",
+      "chosenCssPx": 29.203125,
+      "baselineCssPx": 29.953125,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.75,
+      "shorteningCssPx": 0.75
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 24,
+      "name": "hg",
+      "text": "hg",
+      "chosenCssPx": 29.953125,
+      "baselineCssPx": 29.953125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 24,
+      "name": "mg",
+      "text": "mg",
+      "chosenCssPx": 36.75,
+      "baselineCssPx": 36.75,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 24,
+      "name": "ug",
+      "text": "ug",
+      "chosenCssPx": 29.953125,
+      "baselineCssPx": 29.953125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 24,
+      "name": "ag",
+      "text": "ag",
+      "chosenCssPx": 28.703125,
+      "baselineCssPx": 28.703125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 24,
+      "name": "og",
+      "text": "og",
+      "chosenCssPx": 29.453125,
+      "baselineCssPx": 29.453125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 24,
+      "name": "rg",
+      "text": "rg",
+      "chosenCssPx": 24.140625,
+      "baselineCssPx": 24.140625,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 24,
+      "name": "go",
+      "text": "go",
+      "chosenCssPx": 28.703125,
+      "baselineCssPx": 28.703125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 24,
+      "name": "ge",
+      "text": "ge",
+      "chosenCssPx": 28.171875,
+      "baselineCssPx": 28.171875,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 24,
+      "name": "gc",
+      "text": "gc",
+      "chosenCssPx": 27.828125,
+      "baselineCssPx": 27.828125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 24,
+      "name": "gj",
+      "text": "gj",
+      "chosenCssPx": 22.8125,
+      "baselineCssPx": 22.8125,
+      "occurrences": 0,
+      "expectedShorteningCssPx": 0,
+      "shorteningCssPx": 0
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 24,
+      "name": "ngj",
+      "text": "ngj",
+      "chosenCssPx": 37.375,
+      "baselineCssPx": 38.125,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.75,
+      "shorteningCssPx": 0.75
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 24,
+      "name": "ngo",
+      "text": "ngo",
+      "chosenCssPx": 43.265625,
+      "baselineCssPx": 44.015625,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.75,
+      "shorteningCssPx": 0.75
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 24,
+      "name": "changing",
+      "text": "changing",
+      "chosenCssPx": 108.46875,
+      "baselineCssPx": 109.96875,
+      "occurrences": 2,
+      "expectedShorteningCssPx": 1.5,
+      "shorteningCssPx": 1.5
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 24,
+      "name": "Morning",
+      "text": "Morning",
+      "chosenCssPx": 98.953125,
+      "baselineCssPx": 99.703125,
+      "occurrences": 1,
+      "expectedShorteningCssPx": 0.75,
+      "shorteningCssPx": 0.75
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 24,
+      "name": "paragraph-1",
+      "text": "Morning light was coming through the kitchen window when I began packing my bag. We were going somewhere new for the weekend, so I checked the address again before leaving. At the garden gate, a neighbor asked whether we could bring back a small jar of honey from the market.",
+      "chosenCssPx": 3313.765625,
+      "baselineCssPx": 3318.265625,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 4.5,
+      "shorteningCssPx": 4.5
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 24,
+      "name": "paragraph-2",
+      "text": "The library was changing its opening hours at the beginning of the month. Our group met there on Tuesday to plan a small reading event. We agreed to leave the main entrance clear, hang a sign near the stairs, and give visitors a quiet place to sit after lunch.",
+      "chosenCssPx": 2978.953125,
+      "baselineCssPx": 2983.453125,
+      "occurrences": 6,
+      "expectedShorteningCssPx": 4.5,
+      "shorteningCssPx": 4.5
+    },
+    {
+      "weight": 900,
+      "sizeCssPx": 24,
+      "name": "paragraph-3",
+      "text": "On the way home, we stopped at the shop for eggs, rice, and a bag of apples. A dog was waiting beside the door while its owner paid for groceries. The bus arrived just as we reached the crossing, and I was glad to put the shopping down for a while.",
+      "chosenCssPx": 2876.4375,
+      "baselineCssPx": 2878.6875,
+      "occurrences": 3,
+      "expectedShorteningCssPx": 2.25,
+      "shorteningCssPx": 2.25
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "browser/reading-400-16.png",
+      "target": "#reading16",
+      "weights": [
+        400
+      ],
+      "sizeCssPx": 16,
+      "deviceScaleFactor": 1,
+      "scale": "css",
+      "cssBounds": {
+        "x": 32,
+        "y": 393.390625,
+        "width": 676,
+        "height": 509.296875
+      },
+      "scroll": {
+        "x": 0,
+        "y": 0
+      },
+      "pageBounds": {
+        "left": 32,
+        "top": 393.390625,
+        "right": 708,
+        "bottom": 902.6875
+      },
+      "crop": {
+        "x": 32,
+        "y": 393,
+        "width": 676,
+        "height": 510
+      },
+      "expectedPixels": {
+        "width": 676,
+        "height": 510
+      },
+      "pixels": {
+        "width": 676,
+        "height": 510
+      },
+      "sha256": "08ef1f7c65a6c9f5e0a363aadea2808e00a4b040caa60547cc3bf868f217bd02"
+    },
+    {
+      "file": "browser/reading-400-24.png",
+      "target": "#reading24",
+      "weights": [
+        400
+      ],
+      "sizeCssPx": 24,
+      "deviceScaleFactor": 1,
+      "scale": "css",
+      "cssBounds": {
+        "x": 732,
+        "y": 142.390625,
+        "width": 676,
+        "height": 857.296875
+      },
+      "scroll": {
+        "x": 0,
+        "y": 251
+      },
+      "pageBounds": {
+        "left": 732,
+        "top": 393.390625,
+        "right": 1408,
+        "bottom": 1250.6875
+      },
+      "crop": {
+        "x": 732,
+        "y": 393,
+        "width": 676,
+        "height": 858
+      },
+      "expectedPixels": {
+        "width": 676,
+        "height": 858
+      },
+      "pixels": {
+        "width": 676,
+        "height": 858
+      },
+      "sha256": "b2e8156a7ea33d4742762df8a063e16d77b00738b9fdf79213500290bff4eebd"
+    },
+    {
+      "file": "browser/pairs-400.png",
+      "target": "#pairCoverage",
+      "weights": [
+        400
+      ],
+      "sizeCssPx": 24,
+      "deviceScaleFactor": 1,
+      "scale": "css",
+      "cssBounds": {
+        "x": 32,
+        "y": -326.3125,
+        "width": 1376,
+        "height": 1653.015625
+      },
+      "scroll": {
+        "x": 0,
+        "y": 1605
+      },
+      "pageBounds": {
+        "left": 32,
+        "top": 1278.6875,
+        "right": 1408,
+        "bottom": 2931.703125
+      },
+      "crop": {
+        "x": 32,
+        "y": 1278,
+        "width": 1376,
+        "height": 1654
+      },
+      "expectedPixels": {
+        "width": 1376,
+        "height": 1654
+      },
+      "pixels": {
+        "width": 1376,
+        "height": 1654
+      },
+      "sha256": "72a24f1115f4d018d3097b3de186c363a8eb2318fe2b8c302a69e8736ace4c25"
+    },
+    {
+      "file": "browser/boundaries-400.png",
+      "target": "#boundaryCoverage",
+      "weights": [
+        400
+      ],
+      "sizeCssPx": 24,
+      "deviceScaleFactor": 1,
+      "scale": "css",
+      "cssBounds": {
+        "x": 32,
+        "y": 228.703125,
+        "width": 1376,
+        "height": 542.28125
+      },
+      "scroll": {
+        "x": 0,
+        "y": 2731
+      },
+      "pageBounds": {
+        "left": 32,
+        "top": 2959.703125,
+        "right": 1408,
+        "bottom": 3501.984375
+      },
+      "crop": {
+        "x": 32,
+        "y": 2959,
+        "width": 1376,
+        "height": 543
+      },
+      "expectedPixels": {
+        "width": 1376,
+        "height": 543
+      },
+      "pixels": {
+        "width": 1376,
+        "height": 543
+      },
+      "sha256": "c3a81266c054c06506515e0ce6f186a0e94d02c8fdeffad25e2661adea24d55c"
+    },
+    {
+      "file": "browser/weights.png",
+      "target": "#weightCheckpoints",
+      "weights": [
+        100,
+        400,
+        700,
+        900
+      ],
+      "sizeCssPx": 24,
+      "deviceScaleFactor": 1,
+      "scale": "css",
+      "cssBounds": {
+        "x": 32,
+        "y": 520.984375,
+        "width": 1376,
+        "height": 479.296875
+      },
+      "scroll": {
+        "x": 0,
+        "y": 3009
+      },
+      "pageBounds": {
+        "left": 32,
+        "top": 3529.984375,
+        "right": 1408,
+        "bottom": 4009.28125
+      },
+      "crop": {
+        "x": 32,
+        "y": 3529,
+        "width": 1376,
+        "height": 481
+      },
+      "expectedPixels": {
+        "width": 1376,
+        "height": 481
+      },
+      "pixels": {
+        "width": 1376,
+        "height": 481
+      },
+      "sha256": "5476445d7a6e4cdf289321b5a72ab2a2e5e1fde183905aac2a86afdd3e9eca4d"
+    }
+  ],
+  "links": [
+    {
+      "href": "README.md",
+      "url": "file:///Users/nicholas/Documents/Fonts/allo/documentation/proofs/double-storey-g-text-coverage/README.md",
+      "sameDocument": false,
+      "fragmentExists": true,
+      "local": true,
+      "exists": true
+    },
+    {
+      "href": "coverage.json",
+      "url": "file:///Users/nicholas/Documents/Fonts/allo/documentation/proofs/double-storey-g-text-coverage/coverage.json",
+      "sameDocument": false,
+      "fragmentExists": true,
+      "local": true,
+      "exists": true
+    },
+    {
+      "href": "validation.json",
+      "url": "file:///Users/nicholas/Documents/Fonts/allo/documentation/proofs/double-storey-g-text-coverage/validation.json",
+      "sameDocument": false,
+      "fragmentExists": true,
+      "local": true,
+      "exists": true
+    },
+    {
+      "href": "clearances.json",
+      "url": "file:///Users/nicholas/Documents/Fonts/allo/documentation/proofs/double-storey-g-text-coverage/clearances.json",
+      "sameDocument": false,
+      "fragmentExists": true,
+      "local": true,
+      "exists": true
+    },
+    {
+      "href": "../double-storey-g-incoming-spacing/proof.html",
+      "url": "file:///Users/nicholas/Documents/Fonts/allo/documentation/proofs/double-storey-g-incoming-spacing/proof.html",
+      "sameDocument": false,
+      "fragmentExists": true,
+      "local": true,
+      "exists": true
+    }
+  ],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": [],
+  "blockedRequests": [],
+  "httpErrors": [],
+  "fontLoadingErrors": [],
+  "cleanup": {
+    "environmentRestored": true,
+    "runtimeRemoved": true,
+    "browserClosed": true,
+    "errors": []
+  },
+  "limits": "Geometry and width tests are not optical approval or glyph-outline/.notdef validation. Font coverage is checked by the parent Python validation. No mobile layout claim.",
+  "environment": {
+    "width": 1440,
+    "height": 1000,
+    "dpr": 1,
+    "scale": 1,
+    "zoom": "1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+    "fontSetStatus": "loaded",
+    "faces": [
+      {
+        "family": "CoverageProof",
+        "weight": "100",
+        "style": "normal",
+        "status": "loaded"
+      },
+      {
+        "family": "CoverageProof",
+        "weight": "200",
+        "style": "normal",
+        "status": "loaded"
+      },
+      {
+        "family": "CoverageProof",
+        "weight": "300",
+        "style": "normal",
+        "status": "loaded"
+      },
+      {
+        "family": "CoverageProof",
+        "weight": "400",
+        "style": "normal",
+        "status": "loaded"
+      },
+      {
+        "family": "CoverageProof",
+        "weight": "500",
+        "style": "normal",
+        "status": "loaded"
+      },
+      {
+        "family": "CoverageProof",
+        "weight": "600",
+        "style": "normal",
+        "status": "loaded"
+      },
+      {
+        "family": "CoverageProof",
+        "weight": "700",
+        "style": "normal",
+        "status": "loaded"
+      },
+      {
+        "family": "CoverageProof",
+        "weight": "800",
+        "style": "normal",
+        "status": "loaded"
+      },
+      {
+        "family": "CoverageProof",
+        "weight": "900",
+        "style": "normal",
+        "status": "loaded"
+      }
+    ],
+    "rules": [
+      {
+        "family": "CoverageProof",
+        "weight": "100",
+        "style": "normal",
+        "sourcePresent": true
+      },
+      {
+        "family": "CoverageProof",
+        "weight": "200",
+        "style": "normal",
+        "sourcePresent": true
+      },
+      {
+        "family": "CoverageProof",
+        "weight": "300",
+        "style": "normal",
+        "sourcePresent": true
+      },
+      {
+        "family": "CoverageProof",
+        "weight": "400",
+        "style": "normal",
+        "sourcePresent": true
+      },
+      {
+        "family": "CoverageProof",
+        "weight": "500",
+        "style": "normal",
+        "sourcePresent": true
+      },
+      {
+        "family": "CoverageProof",
+        "weight": "600",
+        "style": "normal",
+        "sourcePresent": true
+      },
+      {
+        "family": "CoverageProof",
+        "weight": "700",
+        "style": "normal",
+        "sourcePresent": true
+      },
+      {
+        "family": "CoverageProof",
+        "weight": "800",
+        "style": "normal",
+        "sourcePresent": true
+      },
+      {
+        "family": "CoverageProof",
+        "weight": "900",
+        "style": "normal",
+        "sourcePresent": true
+      }
+    ],
+    "controls": {
+      "weight": {
+        "tag": "SELECT",
+        "value": "400",
+        "options": [
+          "100",
+          "200",
+          "300",
+          "400",
+          "500",
+          "600",
+          "700",
+          "800",
+          "900"
+        ]
+      },
+      "pairSize": {
+        "tag": "SELECT",
+        "value": "24",
+        "options": [
+          "16",
+          "24",
+          "32"
+        ]
+      }
+    },
+    "editor": {
+      "tag": "DETAILS",
+      "textareaInside": true,
+      "resetTag": "BUTTON"
+    }
+  },
+  "coverage": {
+    "rows": [
+      {
+        "direction": "incoming",
+        "pair": "ag",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "ag",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "again · bag",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "incoming",
+        "pair": "bg",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "bg",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "subgroup",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "incoming",
+        "pair": "cg",
+        "kind": "synthetic",
+        "tokens": [
+          {
+            "text": "cg",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "hacgan",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "test string"
+        ]
+      },
+      {
+        "direction": "incoming",
+        "pair": "dg",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "dg",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "edge · bridge",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "incoming",
+        "pair": "eg",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "eg",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "begin · regular",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "incoming",
+        "pair": "fg",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "fg",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "afghan",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "incoming",
+        "pair": "gg",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "gg",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "egg · bigger",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "incoming",
+        "pair": "hg",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "hg",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "churchgoer · beachgoer",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "incoming",
+        "pair": "ig",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "ig",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "big · signal",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "incoming",
+        "pair": "jg",
+        "kind": "synthetic",
+        "tokens": [
+          {
+            "text": "jg",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "hajgan",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "test string"
+        ]
+      },
+      {
+        "direction": "incoming",
+        "pair": "kg",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "kg",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "background · backgammon",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "incoming",
+        "pair": "lg",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "lg",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "bulge · algae",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "incoming",
+        "pair": "mg",
+        "kind": "synthetic",
+        "tokens": [
+          {
+            "text": "mg",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "hamgan",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "test string"
+        ]
+      },
+      {
+        "direction": "incoming",
+        "pair": "ng",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "ng",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "morning · changing",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "incoming",
+        "pair": "og",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "og",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "dog · together",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "incoming",
+        "pair": "pg",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "pg",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "upgrade",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "incoming",
+        "pair": "qg",
+        "kind": "synthetic",
+        "tokens": [
+          {
+            "text": "qg",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "haqgan",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "test string"
+        ]
+      },
+      {
+        "direction": "incoming",
+        "pair": "rg",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "rg",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "large · target",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "incoming",
+        "pair": "sg",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "sg",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "disguise · disgust",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "incoming",
+        "pair": "tg",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "tg",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "outgrow · outgoing",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "incoming",
+        "pair": "ug",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "ug",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "ugly · sugar",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "incoming",
+        "pair": "vg",
+        "kind": "synthetic",
+        "tokens": [
+          {
+            "text": "vg",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "havgan",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "test string"
+        ]
+      },
+      {
+        "direction": "incoming",
+        "pair": "wg",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "wg",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "showgirl",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "incoming",
+        "pair": "xg",
+        "kind": "synthetic",
+        "tokens": [
+          {
+            "text": "xg",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "haxgan",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "test string"
+        ]
+      },
+      {
+        "direction": "incoming",
+        "pair": "yg",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "yg",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "oxygen · hygiene",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "incoming",
+        "pair": "zg",
+        "kind": "synthetic",
+        "tokens": [
+          {
+            "text": "zg",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "hazgan",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "test string"
+        ]
+      },
+      {
+        "direction": "outgoing",
+        "pair": "ga",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "ga",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "garden · began",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "outgoing",
+        "pair": "gb",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "gb",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "rugby",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "outgoing",
+        "pair": "gc",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "gc",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "dogcatcher",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "outgoing",
+        "pair": "gd",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "gd",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "kingdom",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "outgoing",
+        "pair": "ge",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "ge",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "gentle · page",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "outgoing",
+        "pair": "gf",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "gf",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "bagful · dogfight",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "outgoing",
+        "pair": "gg",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "gg",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "egg · bigger",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "outgoing",
+        "pair": "gh",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "gh",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "light · doghouse",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "outgoing",
+        "pair": "gi",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "gi",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "give · begin",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "outgoing",
+        "pair": "gj",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "gj",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "logjam",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "outgoing",
+        "pair": "gk",
+        "kind": "synthetic",
+        "tokens": [
+          {
+            "text": "gk",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "hagkan",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "test string"
+        ]
+      },
+      {
+        "direction": "outgoing",
+        "pair": "gl",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "gl",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "glass · ugly",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "outgoing",
+        "pair": "gm",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "gm",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "segment · pigment",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "outgoing",
+        "pair": "gn",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "gn",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "sign · signal",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "outgoing",
+        "pair": "go",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "go",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "going · ago",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "outgoing",
+        "pair": "gp",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "gp",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "bagpipes",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "outgoing",
+        "pair": "gq",
+        "kind": "synthetic",
+        "tokens": [
+          {
+            "text": "gq",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "hagqan",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "test string"
+        ]
+      },
+      {
+        "direction": "outgoing",
+        "pair": "gr",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "gr",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "green · group",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "outgoing",
+        "pair": "gs",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "gs",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "eggs · bags",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "outgoing",
+        "pair": "gt",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "gt",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "length · strength",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "outgoing",
+        "pair": "gu",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "gu",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "guide · argue",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "outgoing",
+        "pair": "gv",
+        "kind": "synthetic",
+        "tokens": [
+          {
+            "text": "gv",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "hagvan",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "test string"
+        ]
+      },
+      {
+        "direction": "outgoing",
+        "pair": "gw",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "gw",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "dogwood · ragweed",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "outgoing",
+        "pair": "gx",
+        "kind": "synthetic",
+        "tokens": [
+          {
+            "text": "gx",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "hagxan",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "test string"
+        ]
+      },
+      {
+        "direction": "outgoing",
+        "pair": "gy",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "gy",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "energy · baggy",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      },
+      {
+        "direction": "outgoing",
+        "pair": "gz",
+        "kind": "word",
+        "tokens": [
+          {
+            "text": "gz",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "examples": [
+          {
+            "text": "zigzag",
+            "children": 0,
+            "fontSample": true
+          }
+        ],
+        "labels": [
+          "word"
+        ]
+      }
+    ],
+    "capitals": [
+      {
+        "text": "Ag",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "Bg",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "Cg",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "Dg",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "Eg",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "Fg",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "Gg",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "Hg",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "Ig",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "Jg",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "Kg",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "Lg",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "Mg",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "Ng",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "Og",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "Pg",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "Qg",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "Rg",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "Sg",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "Tg",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "Ug",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "Vg",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "Wg",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "Xg",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "Yg",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "Zg",
+        "children": 0,
+        "fontSample": true
+      }
+    ],
+    "boundaries": [
+      {
+        "text": "g",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "g g",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "n g",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "g n",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "a dog went home",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "a big green bag",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "(g)",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "[g]",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "{g}",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "‘g’",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "“g”",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "'g'",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "\"g\"",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "g, g.",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "g: g;",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "g! g?",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "g-g",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "g–g",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "g—g",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "ng hg mg ug",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "go ge gc gj",
+        "children": 0,
+        "fontSample": true
+      },
+      {
+        "text": "ngj ngo nge ngc",
+        "children": 0,
+        "fontSample": true
+      }
+    ]
+  },
+  "finishedAt": "2026-11-26T01:11:48.774Z"
+}

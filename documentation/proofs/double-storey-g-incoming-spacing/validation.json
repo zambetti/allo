@@ -1,0 +1,238 @@
+{
+  "scope": "Comparison only: current incoming ng, two tighter levels, optional shared n/h/m/u-before-g hypothesis; no final spacing selected",
+  "fonts": [
+    {
+      "weight": 100,
+      "style": "Thin",
+      "slight": 20,
+      "tighter": 40,
+      "unchanged_outlines": 737,
+      "source": "documentation/proofs/double-storey-g-spacing-finish/fonts/AlloGSpacingFinish-Thin.otf",
+      "source_sha256": "a313f755dcfd5dfea3fd2555f0287739ad1adf2d2b43b3030e45845701fdff40",
+      "font": "documentation/proofs/double-storey-g-incoming-spacing/fonts/AlloGIncomingStudy-Thin.otf",
+      "font_sha256": "75d3dc9549a8886eb5751f542335ec3b8a2598258de85bcbe8e8889a95b36b45"
+    },
+    {
+      "weight": 200,
+      "style": "ExtraLight",
+      "slight": 22,
+      "tighter": 44,
+      "unchanged_outlines": 737,
+      "source": "documentation/proofs/double-storey-g-spacing-finish/fonts/AlloGSpacingFinish-ExtraLight.otf",
+      "source_sha256": "a303465c3928ec32ca043c72f3f9fa3c03a14a5b16f708f9c4f826866e652322",
+      "font": "documentation/proofs/double-storey-g-incoming-spacing/fonts/AlloGIncomingStudy-ExtraLight.otf",
+      "font_sha256": "d070b84d1bbacc3b189651270154f78d4bb9495dab43ce473ff23c55b34cb605"
+    },
+    {
+      "weight": 300,
+      "style": "Light",
+      "slight": 23,
+      "tighter": 46,
+      "unchanged_outlines": 737,
+      "source": "documentation/proofs/double-storey-g-spacing-finish/fonts/AlloGSpacingFinish-Light.otf",
+      "source_sha256": "cb5542ba0167e124902e395d679cfe3ab038e9a2135bc804fe597f3a286c169b",
+      "font": "documentation/proofs/double-storey-g-incoming-spacing/fonts/AlloGIncomingStudy-Light.otf",
+      "font_sha256": "b6a393aa18bd0d7b9828ace1989363df6c9ab9fcc677c299b9695e34ef4265c2"
+    },
+    {
+      "weight": 400,
+      "style": "Regular",
+      "slight": 24,
+      "tighter": 48,
+      "unchanged_outlines": 737,
+      "source": "documentation/proofs/double-storey-g-spacing-finish/fonts/AlloGSpacingFinish-Regular.otf",
+      "source_sha256": "addf314d4dff6941b2380a53784f1234df63d2341f657771cadda3b5c788c50d",
+      "font": "documentation/proofs/double-storey-g-incoming-spacing/fonts/AlloGIncomingStudy-Regular.otf",
+      "font_sha256": "bdbc2a8a8bd77fdb8030ce24ac8689491e1dad4d1fb04168a6a598a1369fb5b0"
+    },
+    {
+      "weight": 500,
+      "style": "Medium",
+      "slight": 26,
+      "tighter": 52,
+      "unchanged_outlines": 737,
+      "source": "documentation/proofs/double-storey-g-spacing-finish/fonts/AlloGSpacingFinish-Medium.otf",
+      "source_sha256": "d6821625240e95b3ce0ba2fb15914a543e2ecd76b141db68b9494a9135099ede",
+      "font": "documentation/proofs/double-storey-g-incoming-spacing/fonts/AlloGIncomingStudy-Medium.otf",
+      "font_sha256": "887a0d6506de759913b59cbf927b35bc7ea082cfff4ad3e5ae24211df0bcfa2c"
+    },
+    {
+      "weight": 600,
+      "style": "SemiBold",
+      "slight": 27,
+      "tighter": 54,
+      "unchanged_outlines": 737,
+      "source": "documentation/proofs/double-storey-g-spacing-finish/fonts/AlloGSpacingFinish-SemiBold.otf",
+      "source_sha256": "9112b321116e5e870934338559eb253adeabcd43bcf5d5d5b6f3c3dd4b92a185",
+      "font": "documentation/proofs/double-storey-g-incoming-spacing/fonts/AlloGIncomingStudy-SemiBold.otf",
+      "font_sha256": "c164b5cb803b0c6e857738c82855093719e605c6a7febd772e6eff512d195b92"
+    },
+    {
+      "weight": 700,
+      "style": "Bold",
+      "slight": 29,
+      "tighter": 58,
+      "unchanged_outlines": 737,
+      "source": "documentation/proofs/double-storey-g-spacing-finish/fonts/AlloGSpacingFinish-Bold.otf",
+      "source_sha256": "a1241cef02662c8c23738cb2de7ddb6c15525d207e0c2052270954903671d9fd",
+      "font": "documentation/proofs/double-storey-g-incoming-spacing/fonts/AlloGIncomingStudy-Bold.otf",
+      "font_sha256": "1f544d67532f566937c7f4372dd130126c6becaebb3bc67c3399035940020e34"
+    },
+    {
+      "weight": 800,
+      "style": "ExtraBold",
+      "slight": 30,
+      "tighter": 60,
+      "unchanged_outlines": 737,
+      "source": "documentation/proofs/double-storey-g-spacing-finish/fonts/AlloGSpacingFinish-ExtraBold.otf",
+      "source_sha256": "04cc6ca5206daa328d342271503dcf41b7a5996171f2c6bc8b0a3e54bccb461d",
+      "font": "documentation/proofs/double-storey-g-incoming-spacing/fonts/AlloGIncomingStudy-ExtraBold.otf",
+      "font_sha256": "94e530820afab91c6bb597ad9d4edfeb7e1b131aaecfa5cfe3079043aa53a575"
+    },
+    {
+      "weight": 900,
+      "style": "Black",
+      "slight": 32,
+      "tighter": 64,
+      "unchanged_outlines": 737,
+      "source": "documentation/proofs/double-storey-g-spacing-finish/fonts/AlloGSpacingFinish-Black.otf",
+      "source_sha256": "934c4d469f808c1a214b0994fb9f1a836bd294a4d83d81f6ab88fe47c3330b18",
+      "font": "documentation/proofs/double-storey-g-incoming-spacing/fonts/AlloGIncomingStudy-Black.otf",
+      "font_sha256": "6053350b6ecfcaf091e995f21f1965d996c61f259860d3a7b67ad4607c625b6c"
+    }
+  ],
+  "features": {
+    "current": {
+      "ss11": 0,
+      "ss12": 0,
+      "ss13": 0,
+      "ss14": 0,
+      "ss15": 1,
+      "ss16": 0,
+      "ss17": 1,
+      "ss18": 0,
+      "ss19": 1,
+      "ss20": 0
+    },
+    "ng-slight": {
+      "ss11": 1,
+      "ss12": 0,
+      "ss13": 0,
+      "ss14": 0,
+      "ss15": 1,
+      "ss16": 0,
+      "ss17": 1,
+      "ss18": 0,
+      "ss19": 1,
+      "ss20": 0
+    },
+    "ng-tighter": {
+      "ss11": 0,
+      "ss12": 1,
+      "ss13": 0,
+      "ss14": 0,
+      "ss15": 1,
+      "ss16": 0,
+      "ss17": 1,
+      "ss18": 0,
+      "ss19": 1,
+      "ss20": 0
+    },
+    "stems-slight": {
+      "ss11": 0,
+      "ss12": 0,
+      "ss13": 1,
+      "ss14": 0,
+      "ss15": 1,
+      "ss16": 0,
+      "ss17": 1,
+      "ss18": 0,
+      "ss19": 1,
+      "ss20": 0
+    },
+    "stems-tighter": {
+      "ss11": 0,
+      "ss12": 0,
+      "ss13": 0,
+      "ss14": 1,
+      "ss15": 1,
+      "ss16": 0,
+      "ss17": 1,
+      "ss18": 0,
+      "ss19": 1,
+      "ss20": 0
+    }
+  },
+  "trial_formula": "slight=round(study05 B/2); tighter=2*slight; magnitudes are comparison choices, not mechanically inferred kerning",
+  "new_features": {
+    "ss11": {
+      "predecessors": [
+        "n"
+      ],
+      "follower": "g",
+      "multiple": 1
+    },
+    "ss12": {
+      "predecessors": [
+        "n"
+      ],
+      "follower": "g",
+      "multiple": 2
+    },
+    "ss13": {
+      "predecessors": [
+        "n",
+        "h",
+        "m",
+        "u"
+      ],
+      "follower": "g",
+      "multiple": 1
+    },
+    "ss14": {
+      "predecessors": [
+        "n",
+        "h",
+        "m",
+        "u"
+      ],
+      "follower": "g",
+      "multiple": 2
+    }
+  },
+  "test_strings": 63,
+  "shaping_checks": 3402,
+  "shaping_states": [
+    "current",
+    "ng-slight",
+    "ng-tighter",
+    "stems-slight",
+    "stems-tighter",
+    "default"
+  ],
+  "unchanged_outlines": 6633,
+  "pair_state_geometry_checks": 900,
+  "unique_geometry_measurements": 252,
+  "warnings": [],
+  "protected_files_sha256_unchanged": true,
+  "protected_file_count": 54237,
+  "checks_passed": [
+    "All 737 drawings per font, hmtx, hhea, GSUB and GDEF unchanged",
+    "Existing GPOS lookups, feature records and language-system selections preserved; four optional PairPos features added",
+    "Current state matches study 05 refined C/B plus gj exactly; all-off defaults also preserved",
+    "Only eligible preceding n/h/m/u advances change; every g advance, glyph sequence and offset is preserved",
+    "ngj/ngo/nge/ngc and shared-stem equivalents retain approved outgoing relative spacing",
+    "Current and all four incoming trials measured at actual shaped positions; no tested clearance warnings or overlaps",
+    "Nine embedded WOFF2 identities, weights, outlines, metrics and layout tables verified against OTFs",
+    "HTML structure checked; all five earlier studies and production files preserved byte-for-byte"
+  ],
+  "limitations": [
+    "Neither a trial amount nor shared-stem scope has been adopted",
+    "Proof-only optional positioning features; all ten are off by default in standalone fonts",
+    "Plain unaccented n/h/m/u and g only; no broader kerning-class or accent integration",
+    "Upright Text/Friendly only; no oblique, optical-size, roundness or variable-font integration",
+    "g remains unhinted; inherited hinting otherwise retained",
+    "Sampled horizontal clearance is not exact Euclidean distance or a legibility verdict",
+    "Browser tests and capture conditions, if run, are recorded separately in browser/validation.json"
+  ]
+}

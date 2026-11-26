@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Allo — double-storey g weight study</title>
+<style>
+__FONT_RULES__
+* {box-sizing:border-box}
+body {margin:0;background:white;color:#191919;font:16px/1.6 system-ui,sans-serif}
+main {max-width:1800px;margin:auto;padding:36px clamp(20px,4.5vw,80px) 60px}
+h1 {font-size:32px;font-weight:500;letter-spacing:-.025em;margin:0 0 12px}
+h2 {font-size:14px;font-weight:500;text-transform:uppercase;letter-spacing:.04em;color:#626262}
+p {max-width:90ch}
+.note,output {color:#626262;font-size:14px}
+.controls {display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin:22px 0}
+select {padding:8px;font:inherit;border:1px solid #aaa;background:white;border-radius:4px}
+textarea {width:100%;min-height:105px;padding:14px;border:1px solid #aaa;border-radius:4px;font:inherit;resize:vertical}
+input[type=range] {width:240px}
+.comparison {display:grid;grid-template-columns:1fr 1fr;gap:60px;margin:20px 0 40px}
+.current {font-family:Current,sans-serif}
+.candidate {font-family:Candidate,sans-serif}
+.font-sample {font-synthesis:none;font-weight:400}
+.anatomy {font-size:clamp(110px,15vw,240px);line-height:1.2;margin:8px 0 38px}
+.sample {white-space:pre-wrap;overflow-wrap:anywhere;font-size:36px;line-height:1.5;margin:12px 0}
+.reading {border-top:1px solid #ddd;margin-top:24px;padding-top:10px}
+.reading p {margin:16px 0;line-height:1.5}
+.sheet {display:block;width:100%;height:auto;margin:25px 0;border-top:1px solid #ddd}
+a {color:inherit}
+summary {cursor:pointer;font-weight:500;padding:12px 0}
+@media (max-width:700px) {.comparison {grid-template-columns:1fr;gap:12px}.anatomy {font-size:160px}}
+</style>
+<main>
+<h1>A double-storey g across the weight range</h1>
+<p>Study 02: new Thin and Black drawings, the approved Regular, and six interpolated weights. The existing <strong>o</strong> sits alongside each <strong>g</strong> as an untouched stroke-weight and curve reference. The <strong>a</strong> in the text is also unchanged.</p>
+<p class="note">Upright, Text / Friendly only. Both font families are embedded: no installation or network access needed. These are nine separate static proof weights, not a completed variable font. Only plain lowercase g is changed.</p>
+<div class="controls">
+<label for="weight">Weight</label><select id="weight">__WEIGHT_OPTIONS__</select>
+<span id="weightKind" class="note"></span><span id="fontStatus" class="note" role="status">Loading proof fonts…</span>
+</div>
+<label for="words">Try your own text</label>
+<textarea id="words" spellcheck="false">ago ogo  going baggage
+A good beginning grows into something great.</textarea>
+<div class="controls"><label for="size">Text size</label><input id="size" type="range" min="12" max="72" value="36"><output id="sizeValue" for="size">36 px</output></div>
+<div class="comparison">
+<section><h2>Current g / existing o</h2><p class="anatomy font-sample current">g o</p><p class="sample font-sample current"></p>
+<div class="reading current font-sample"><p style="font-size:24px">A good beginning grows.</p><p style="font-size:16px">Good things grow gradually in the garden.</p><p style="font-size:12px">Going, gathering, belonging. A good beginning grows.</p></div>
+</section>
+<section><h2>New g / the same existing o</h2><p class="anatomy font-sample candidate">g o</p><p class="sample font-sample candidate"></p>
+<div class="reading candidate font-sample"><p style="font-size:24px">A good beginning grows.</p><p style="font-size:16px">Good things grow gradually in the garden.</p><p style="font-size:12px">Going, gathering, belonging. A good beginning grows.</p></div>
+</section>
+</div>
+<p class="note">Use browser zoom at 100% for the 24, 16 and 12 px samples. The new g is unhinted; the existing letters retain release hinting. Spacing is inherited and provisional. Accents, obliques, optical-size and roundness variations are not implemented.</p>
+<h2>Drawn endpoints and approved Regular</h2>
+<img class="sheet" src="proof.svg" alt="Thin, Regular and Black, each showing the current g, new g and untouched existing o at the same size">
+<details><summary>All nine weights: interpolation ladder</summary><img class="sheet" src="interpolation.svg" alt="Nine weights from Thin to Black with current g, new g, reference o and word samples"></details>
+<p class="note"><a href="proof.svg">Master sheet SVG</a> · <a href="proof.png">Master sheet PNG</a> · <a href="interpolation.svg">Interpolation SVG</a> · <a href="interpolation.png">Interpolation PNG</a> · <a href="README.md">Build and scope notes</a> · <a href="../../../OFL.txt">SIL Open Font License</a></p>
+</main>
+<script>
+const weight = document.getElementById('weight');
+const words = document.getElementById('words');
+const size = document.getElementById('size');
+let loadRequest = 0;
+function updateText() {
+  document.querySelectorAll('.sample').forEach(sample => {
+    sample.textContent = words.value;
+    sample.style.fontSize = size.value + 'px';
+  });
+  document.getElementById('sizeValue').value = size.value + ' px';
+}
+async function updateWeight() {
+  const request = ++loadRequest;
+  const value = weight.value;
+  document.querySelectorAll('.font-sample').forEach(sample => {sample.style.fontWeight = value;});
+  document.getElementById('weightKind').textContent = ['100','400','900'].includes(value) ? 'Drawn master' : 'Interpolated outline';
+  const status = document.getElementById('fontStatus');
+  status.textContent = 'Loading selected weight…';
+  try {
+    const fonts = await Promise.all([
+      document.fonts.load(value + ' 20px Current'),
+      document.fonts.load(value + ' 20px Candidate')
+    ]);
+    if (fonts.some(faces => faces.length === 0)) throw new Error('Font not available');
+    if (request === loadRequest) status.textContent = 'Both matching weights loaded';
+  } catch (error) {
+    if (request === loadRequest) status.textContent = 'Font loading failed—use the vector sheets below.';
+  }
+}
+words.addEventListener('input', updateText);
+size.addEventListener('input', updateText);
+weight.addEventListener('change', updateWeight);
+updateText();
+updateWeight();
+</script>
+</html>

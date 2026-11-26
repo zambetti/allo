@@ -1,0 +1,5597 @@
+{
+  "scope": "Actual selected ss17 + ss19 positioning; C rounds, B other g advances",
+  "measurement": {
+    "name": "sampled horizontal clearance",
+    "upm": 2048,
+    "gap_units": "font units",
+    "area_units": "square font units",
+    "sample_step": 4,
+    "extra_samples": "Common vertical-range endpoints; segment endpoints, t=0.5 and y extrema; midpoints between these event levels.",
+    "gap_definition": "Minimum of second-ink leftmost x minus first-ink rightmost x at common sampled y, including boundary tangencies. Null if there is no common sampled ink.",
+    "overlap_method": "Independent BooleanGlyph intersection of decomposed, positioned outlines (nonzero fill); absolute signed AreaPen contour sum. Boolean curve reconstruction is numerical.",
+    "overlap_tolerance": 1.0,
+    "design_review_gap_threshold": 32.0,
+    "warning_policy": "Warn for overlap_area > 1 square font unit and/or sampled_gap < 32 font units. Area <= 1 is numerical tolerance; 32 is a design-review threshold, not a universal rule.",
+    "caveat": "Sampled horizontal clearance, not exact Euclidean distance or a legibility verdict. A negative envelope gap alone does not establish actual ink overlap."
+  },
+  "shaping": {
+    "engine": "hb-shape",
+    "font_size": 2048,
+    "font_funcs": "ot",
+    "shaper": "ot",
+    "direction": "ltr",
+    "script": "latn",
+    "language": "en",
+    "features": "ss17=1,ss18=0,ss19=1,ss20=0",
+    "positioning": "Cumulative x/y advances plus each glyph's x/y offsets"
+  },
+  "reference": "documentation/proofs/double-storey-g-spacing/clearances.json",
+  "reference_sha256": "3600d4e31358fd7ea93b5f1e9a2eea277a1d1c023e8b1ada6b871cf7bdda0d15",
+  "verification": "Fresh sampled gaps and BooleanGlyph intersections at actual combined-feature glyph origins; cross-checked against the corresponding study 03 states",
+  "weights": {
+    "100": {
+      "font": "documentation/proofs/double-storey-g-spacing/fonts/AlloGSpacingStudy-Thin.otf",
+      "sha256": "543ed25482d80ff8fc1c93b00c4d0ed37b2c3e5a88e0be749bb36cf7503e711e",
+      "round_reduction": 80,
+      "other_reduction": 40,
+      "pairs": {
+        "go": {
+          "glyphs": [
+            "g",
+            "o"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1097,
+              0
+            ]
+          ],
+          "common_y_samples": 410,
+          "minimum_gap_y": 692,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 397.03503716494254,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -80,
+            "sampled_gap": 317.03503716494254,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "round-followers",
+            "level": "tighter"
+          }
+        },
+        "ge": {
+          "glyphs": [
+            "g",
+            "e"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1097,
+              0
+            ]
+          ],
+          "common_y_samples": 515,
+          "minimum_gap_y": 692,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 396.4712523379677,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -80,
+            "sampled_gap": 316.4712523379677,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "round-followers",
+            "level": "tighter"
+          }
+        },
+        "gc": {
+          "glyphs": [
+            "g",
+            "c"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1097,
+              0
+            ]
+          ],
+          "common_y_samples": 445,
+          "minimum_gap_y": 692,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 396.68499870211815,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -80,
+            "sampled_gap": 316.68499870211815,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "round-followers",
+            "level": "tighter"
+          }
+        },
+        "ga": {
+          "glyphs": [
+            "g",
+            "a"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1137,
+              0
+            ]
+          ],
+          "common_y_samples": 458,
+          "minimum_gap_y": 101.25,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 345.54266021962724,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -40,
+            "sampled_gap": 305.54266021962724,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gn": {
+          "glyphs": [
+            "g",
+            "n"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1137,
+              0
+            ]
+          ],
+          "common_y_samples": 423,
+          "minimum_gap_y": 1091.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 305.0,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -40,
+            "sampled_gap": 265.0,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gr": {
+          "glyphs": [
+            "g",
+            "r"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1137,
+              0
+            ]
+          ],
+          "common_y_samples": 424,
+          "minimum_gap_y": 1091.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 305.0,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -40,
+            "sampled_gap": 265.0,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gg": {
+          "glyphs": [
+            "g",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1137,
+              0
+            ]
+          ],
+          "common_y_samples": 507,
+          "minimum_gap_y": -89.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 240.9305067880698,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -40,
+            "sampled_gap": 200.9305067880698,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gy": {
+          "glyphs": [
+            "g",
+            "y"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1137,
+              0
+            ]
+          ],
+          "common_y_samples": 528,
+          "minimum_gap_y": 1108.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 213.0187477250156,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -40,
+            "sampled_gap": 173.0187477250156,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gj": {
+          "glyphs": [
+            "g",
+            "j"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1137,
+              0
+            ]
+          ],
+          "common_y_samples": 541,
+          "minimum_gap_y": -359.5,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 305.67140602936286,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -40,
+            "sampled_gap": 265.67140602936286,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g.": {
+          "glyphs": [
+            "g",
+            "period"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1137,
+              0
+            ]
+          ],
+          "common_y_samples": 39,
+          "minimum_gap_y": 24.625,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 350.46395695805927,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -40,
+            "sampled_gap": 310.46395695805927,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g,": {
+          "glyphs": [
+            "g",
+            "comma"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1137,
+              0
+            ]
+          ],
+          "common_y_samples": 132,
+          "minimum_gap_y": 12,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 325.9586775526618,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -40,
+            "sampled_gap": 285.9586775526618,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g:": {
+          "glyphs": [
+            "g",
+            "colon"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1137,
+              0
+            ]
+          ],
+          "common_y_samples": 92,
+          "minimum_gap_y": 24.625,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 350.46395695805927,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -40,
+            "sampled_gap": 310.46395695805927,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g;": {
+          "glyphs": [
+            "g",
+            "semicolon"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1137,
+              0
+            ]
+          ],
+          "common_y_samples": 185,
+          "minimum_gap_y": 12,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 323.9586775526618,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -40,
+            "sampled_gap": 283.9586775526618,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g)": {
+          "glyphs": [
+            "g",
+            "parenright"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1137,
+              0
+            ]
+          ],
+          "common_y_samples": 482,
+          "minimum_gap_y": -241.625,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 318.44538525626217,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -40,
+            "sampled_gap": 278.44538525626217,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g]": {
+          "glyphs": [
+            "g",
+            "bracketright"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1137,
+              0
+            ]
+          ],
+          "common_y_samples": 482,
+          "minimum_gap_y": -244.125,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 306.1553500783457,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -40,
+            "sampled_gap": 266.1553500783457,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g!": {
+          "glyphs": [
+            "g",
+            "exclam"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1137,
+              0
+            ]
+          ],
+          "common_y_samples": 287,
+          "minimum_gap_y": 24.625,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 350.46395695805927,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -40,
+            "sampled_gap": 310.46395695805927,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "og": {
+          "glyphs": [
+            "o",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1172,
+              0
+            ]
+          ],
+          "common_y_samples": 410,
+          "minimum_gap_y": 700.75,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 315.68935578686796,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": 0,
+            "sampled_gap": 315.68935578686796,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "ag": {
+          "glyphs": [
+            "a",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1056,
+              0
+            ]
+          ],
+          "common_y_samples": 458,
+          "minimum_gap_y": -0.0625,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 329.8641795453092,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": 0,
+            "sampled_gap": 329.8641795453092,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "ng": {
+          "glyphs": [
+            "n",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1174,
+              0
+            ]
+          ],
+          "common_y_samples": 423,
+          "minimum_gap_y": -0.0625,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 329.8641795453092,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": 0,
+            "sampled_gap": 329.8641795453092,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        }
+      }
+    },
+    "200": {
+      "font": "documentation/proofs/double-storey-g-spacing/fonts/AlloGSpacingStudy-ExtraLight.otf",
+      "sha256": "1b28fb1bfbc82929cc7c3257464b298ec00f15d9d50bf1dcdcca59435f964bbd",
+      "round_reduction": 86,
+      "other_reduction": 43,
+      "pairs": {
+        "go": {
+          "glyphs": [
+            "g",
+            "o"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1113,
+              0
+            ]
+          ],
+          "common_y_samples": 415,
+          "minimum_gap_y": 692,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 381.51066121833856,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -86,
+            "sampled_gap": 295.51066121833856,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "round-followers",
+            "level": "tighter"
+          }
+        },
+        "ge": {
+          "glyphs": [
+            "g",
+            "e"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1113,
+              0
+            ]
+          ],
+          "common_y_samples": 524,
+          "minimum_gap_y": 692,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 381.23442192470065,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -86,
+            "sampled_gap": 295.23442192470065,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "round-followers",
+            "level": "tighter"
+          }
+        },
+        "gc": {
+          "glyphs": [
+            "g",
+            "c"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1113,
+              0
+            ]
+          ],
+          "common_y_samples": 447,
+          "minimum_gap_y": 692,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 381.3282050726714,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -86,
+            "sampled_gap": 295.3282050726714,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "round-followers",
+            "level": "tighter"
+          }
+        },
+        "ga": {
+          "glyphs": [
+            "g",
+            "a"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1156,
+              0
+            ]
+          ],
+          "common_y_samples": 466,
+          "minimum_gap_y": 100,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 341.1845794741797,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -43,
+            "sampled_gap": 298.1845794741797,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gn": {
+          "glyphs": [
+            "g",
+            "n"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1156,
+              0
+            ]
+          ],
+          "common_y_samples": 434,
+          "minimum_gap_y": 1069.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 292.0,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -43,
+            "sampled_gap": 249.0,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gr": {
+          "glyphs": [
+            "g",
+            "r"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1156,
+              0
+            ]
+          ],
+          "common_y_samples": 438,
+          "minimum_gap_y": 1069.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 292.0,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -43,
+            "sampled_gap": 249.0,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gg": {
+          "glyphs": [
+            "g",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1156,
+              0
+            ]
+          ],
+          "common_y_samples": 513,
+          "minimum_gap_y": -89.5,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 232.94334847546156,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -43,
+            "sampled_gap": 189.94334847546156,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gy": {
+          "glyphs": [
+            "g",
+            "y"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1156,
+              0
+            ]
+          ],
+          "common_y_samples": 530,
+          "minimum_gap_y": 1096.9375,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 199.58186438142457,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -43,
+            "sampled_gap": 156.58186438142457,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gj": {
+          "glyphs": [
+            "g",
+            "j"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1156,
+              0
+            ]
+          ],
+          "common_y_samples": 543,
+          "minimum_gap_y": -322.91631597286636,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 241.9765935510094,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -43,
+            "sampled_gap": 198.9765935510094,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g.": {
+          "glyphs": [
+            "g",
+            "period"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1156,
+              0
+            ]
+          ],
+          "common_y_samples": 65,
+          "minimum_gap_y": 36,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 334.2859604446212,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -43,
+            "sampled_gap": 291.2859604446212,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g,": {
+          "glyphs": [
+            "g",
+            "comma"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1156,
+              0
+            ]
+          ],
+          "common_y_samples": 170,
+          "minimum_gap_y": 32,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 316.10090798846795,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -43,
+            "sampled_gap": 273.10090798846795,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g:": {
+          "glyphs": [
+            "g",
+            "colon"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1156,
+              0
+            ]
+          ],
+          "common_y_samples": 143,
+          "minimum_gap_y": 36,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 334.2859604446212,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -43,
+            "sampled_gap": 291.2859604446212,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g;": {
+          "glyphs": [
+            "g",
+            "semicolon"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1156,
+              0
+            ]
+          ],
+          "common_y_samples": 248,
+          "minimum_gap_y": 32,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 321.10090798846795,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -43,
+            "sampled_gap": 278.10090798846795,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g)": {
+          "glyphs": [
+            "g",
+            "parenright"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1156,
+              0
+            ]
+          ],
+          "common_y_samples": 490,
+          "minimum_gap_y": -212,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 296.143242388433,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -43,
+            "sampled_gap": 253.143242388433,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g]": {
+          "glyphs": [
+            "g",
+            "bracketright"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1156,
+              0
+            ]
+          ],
+          "common_y_samples": 492,
+          "minimum_gap_y": -216,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 274.76713724070464,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -43,
+            "sampled_gap": 231.76713724070464,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g!": {
+          "glyphs": [
+            "g",
+            "exclam"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1156,
+              0
+            ]
+          ],
+          "common_y_samples": 306,
+          "minimum_gap_y": 36,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 334.2859604446212,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -43,
+            "sampled_gap": 291.2859604446212,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "og": {
+          "glyphs": [
+            "o",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1186,
+              0
+            ]
+          ],
+          "common_y_samples": 415,
+          "minimum_gap_y": 704.125,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 304.9490102488003,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": 0,
+            "sampled_gap": 304.9490102488003,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "ag": {
+          "glyphs": [
+            "a",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1080,
+              0
+            ]
+          ],
+          "common_y_samples": 466,
+          "minimum_gap_y": 4,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 313.9805136818078,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": 0,
+            "sampled_gap": 313.9805136818078,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "ng": {
+          "glyphs": [
+            "n",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1179,
+              0
+            ]
+          ],
+          "common_y_samples": 434,
+          "minimum_gap_y": 4,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 315.14832233992365,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": 0,
+            "sampled_gap": 315.14832233992365,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        }
+      }
+    },
+    "300": {
+      "font": "documentation/proofs/double-storey-g-spacing/fonts/AlloGSpacingStudy-Light.otf",
+      "sha256": "d5b6bf18f1304ddd0bb4b3dda379ab2b0aa356437dd20a8a2273c8d301814b3d",
+      "round_reduction": 90,
+      "other_reduction": 45,
+      "pairs": {
+        "go": {
+          "glyphs": [
+            "g",
+            "o"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1131,
+              0
+            ]
+          ],
+          "common_y_samples": 415,
+          "minimum_gap_y": 692,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 365.9664428624417,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -90,
+            "sampled_gap": 275.9664428624417,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "round-followers",
+            "level": "tighter"
+          }
+        },
+        "ge": {
+          "glyphs": [
+            "g",
+            "e"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1131,
+              0
+            ]
+          ],
+          "common_y_samples": 520,
+          "minimum_gap_y": 692,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 365.5949953677473,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -90,
+            "sampled_gap": 275.5949953677473,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "round-followers",
+            "level": "tighter"
+          }
+        },
+        "gc": {
+          "glyphs": [
+            "g",
+            "c"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1131,
+              0
+            ]
+          ],
+          "common_y_samples": 454,
+          "minimum_gap_y": 692,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 365.89785646751557,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -90,
+            "sampled_gap": 275.89785646751557,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "round-followers",
+            "level": "tighter"
+          }
+        },
+        "ga": {
+          "glyphs": [
+            "g",
+            "a"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1176,
+              0
+            ]
+          ],
+          "common_y_samples": 473,
+          "minimum_gap_y": 99.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 336.9027621983605,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -45,
+            "sampled_gap": 291.9027621983605,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gn": {
+          "glyphs": [
+            "g",
+            "n"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1176,
+              0
+            ]
+          ],
+          "common_y_samples": 433,
+          "minimum_gap_y": 1048.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 278.0,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -45,
+            "sampled_gap": 233.0,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gr": {
+          "glyphs": [
+            "g",
+            "r"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1176,
+              0
+            ]
+          ],
+          "common_y_samples": 441,
+          "minimum_gap_y": 1048.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 278.0,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -45,
+            "sampled_gap": 233.0,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gg": {
+          "glyphs": [
+            "g",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1176,
+              0
+            ]
+          ],
+          "common_y_samples": 516,
+          "minimum_gap_y": -89.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 224.9563284890587,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -45,
+            "sampled_gap": 179.9563284890587,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gy": {
+          "glyphs": [
+            "g",
+            "y"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1176,
+              0
+            ]
+          ],
+          "common_y_samples": 541,
+          "minimum_gap_y": 1086.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 186.989788357394,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -45,
+            "sampled_gap": 141.989788357394,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gj": {
+          "glyphs": [
+            "g",
+            "j"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1176,
+              0
+            ]
+          ],
+          "common_y_samples": 543,
+          "minimum_gap_y": -288.75,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 194.68757781923182,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -45,
+            "sampled_gap": 149.68757781923182,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g.": {
+          "glyphs": [
+            "g",
+            "period"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1176,
+              0
+            ]
+          ],
+          "common_y_samples": 82,
+          "minimum_gap_y": 48,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 318.5007374513077,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -45,
+            "sampled_gap": 273.5007374513077,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g,": {
+          "glyphs": [
+            "g",
+            "comma"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1176,
+              0
+            ]
+          ],
+          "common_y_samples": 191,
+          "minimum_gap_y": 51.375,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 307.4739328724286,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -45,
+            "sampled_gap": 262.4739328724286,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g:": {
+          "glyphs": [
+            "g",
+            "colon"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1176,
+              0
+            ]
+          ],
+          "common_y_samples": 178,
+          "minimum_gap_y": 1023.9188731616468,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 312.75555739361903,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -45,
+            "sampled_gap": 267.75555739361903,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g;": {
+          "glyphs": [
+            "g",
+            "semicolon"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1176,
+              0
+            ]
+          ],
+          "common_y_samples": 287,
+          "minimum_gap_y": 1023.9188731616468,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 308.75555739361903,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -45,
+            "sampled_gap": 263.75555739361903,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g)": {
+          "glyphs": [
+            "g",
+            "parenright"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1176,
+              0
+            ]
+          ],
+          "common_y_samples": 494,
+          "minimum_gap_y": -184,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 276.4719706682861,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -45,
+            "sampled_gap": 231.47197066828608,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g]": {
+          "glyphs": [
+            "g",
+            "bracketright"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1176,
+              0
+            ]
+          ],
+          "common_y_samples": 494,
+          "minimum_gap_y": -184,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 246.13858104102655,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -45,
+            "sampled_gap": 201.13858104102655,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g!": {
+          "glyphs": [
+            "g",
+            "exclam"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1176,
+              0
+            ]
+          ],
+          "common_y_samples": 324,
+          "minimum_gap_y": 48,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 318.3229670527121,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -45,
+            "sampled_gap": 273.3229670527121,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "og": {
+          "glyphs": [
+            "o",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1200,
+              0
+            ]
+          ],
+          "common_y_samples": 415,
+          "minimum_gap_y": 383.8125,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 290.2176204121354,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": 0,
+            "sampled_gap": 290.2176204121354,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "ag": {
+          "glyphs": [
+            "a",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1105,
+              0
+            ]
+          ],
+          "common_y_samples": 473,
+          "minimum_gap_y": 8,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 301.5973438061177,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": 0,
+            "sampled_gap": 301.5973438061177,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "ng": {
+          "glyphs": [
+            "n",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1183,
+              0
+            ]
+          ],
+          "common_y_samples": 433,
+          "minimum_gap_y": 8,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 301.63949344294997,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": 0,
+            "sampled_gap": 301.63949344294997,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        }
+      }
+    },
+    "400": {
+      "font": "documentation/proofs/double-storey-g-spacing/fonts/AlloGSpacingStudy-Regular.otf",
+      "sha256": "ce09828c8de2bec944d84731454006411cd192538b48df5816818fa4b8d27137",
+      "round_reduction": 96,
+      "other_reduction": 48,
+      "pairs": {
+        "go": {
+          "glyphs": [
+            "g",
+            "o"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1147,
+              0
+            ]
+          ],
+          "common_y_samples": 411,
+          "minimum_gap_y": 692,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 350.4212607037257,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -96,
+            "sampled_gap": 254.4212607037257,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "round-followers",
+            "level": "tighter"
+          }
+        },
+        "ge": {
+          "glyphs": [
+            "g",
+            "e"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1147,
+              0
+            ]
+          ],
+          "common_y_samples": 527,
+          "minimum_gap_y": 692,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 349.955407993117,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -96,
+            "sampled_gap": 253.95540799311698,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "round-followers",
+            "level": "tighter"
+          }
+        },
+        "gc": {
+          "glyphs": [
+            "g",
+            "c"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1147,
+              0
+            ]
+          ],
+          "common_y_samples": 446,
+          "minimum_gap_y": 692,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 350.5339846205452,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -96,
+            "sampled_gap": 254.5339846205452,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "round-followers",
+            "level": "tighter"
+          }
+        },
+        "ga": {
+          "glyphs": [
+            "g",
+            "a"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1195,
+              0
+            ]
+          ],
+          "common_y_samples": 463,
+          "minimum_gap_y": 990.5,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 312.61108942415603,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -48,
+            "sampled_gap": 264.61108942415603,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gn": {
+          "glyphs": [
+            "g",
+            "n"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1195,
+              0
+            ]
+          ],
+          "common_y_samples": 424,
+          "minimum_gap_y": 1026.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 265.0,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -48,
+            "sampled_gap": 217.0,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gr": {
+          "glyphs": [
+            "g",
+            "r"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1195,
+              0
+            ]
+          ],
+          "common_y_samples": 429,
+          "minimum_gap_y": 1026.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 265.0,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -48,
+            "sampled_gap": 217.0,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gg": {
+          "glyphs": [
+            "g",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1195,
+              0
+            ]
+          ],
+          "common_y_samples": 508,
+          "minimum_gap_y": -89.5,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 216.96790123830738,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -48,
+            "sampled_gap": 168.96790123830738,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gy": {
+          "glyphs": [
+            "g",
+            "y"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1195,
+              0
+            ]
+          ],
+          "common_y_samples": 533,
+          "minimum_gap_y": 1074.5,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 174.07853503664205,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -48,
+            "sampled_gap": 126.07853503664205,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gj": {
+          "glyphs": [
+            "g",
+            "j"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1195,
+              0
+            ]
+          ],
+          "common_y_samples": 526,
+          "minimum_gap_y": -255.4375,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 158.44076300357233,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -48,
+            "sampled_gap": 110.44076300357233,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g.": {
+          "glyphs": [
+            "g",
+            "period"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1195,
+              0
+            ]
+          ],
+          "common_y_samples": 107,
+          "minimum_gap_y": 55.1875,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 304.19344334971333,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -48,
+            "sampled_gap": 256.19344334971333,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g,": {
+          "glyphs": [
+            "g",
+            "comma"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1195,
+              0
+            ]
+          ],
+          "common_y_samples": 223,
+          "minimum_gap_y": 66.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 302.8601113421762,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -48,
+            "sampled_gap": 254.8601113421762,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g:": {
+          "glyphs": [
+            "g",
+            "colon"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1195,
+              0
+            ]
+          ],
+          "common_y_samples": 214,
+          "minimum_gap_y": 996,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 285.40510008604315,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -48,
+            "sampled_gap": 237.40510008604315,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g;": {
+          "glyphs": [
+            "g",
+            "semicolon"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1195,
+              0
+            ]
+          ],
+          "common_y_samples": 330,
+          "minimum_gap_y": 996,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 285.40510008604315,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -48,
+            "sampled_gap": 237.40510008604315,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g)": {
+          "glyphs": [
+            "g",
+            "parenright"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1195,
+              0
+            ]
+          ],
+          "common_y_samples": 484,
+          "minimum_gap_y": -160,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 261.2743596889766,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -48,
+            "sampled_gap": 213.27435968897657,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g]": {
+          "glyphs": [
+            "g",
+            "bracketright"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1195,
+              0
+            ]
+          ],
+          "common_y_samples": 486,
+          "minimum_gap_y": -160,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 222.74215715072728,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -48,
+            "sampled_gap": 174.74215715072728,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g!": {
+          "glyphs": [
+            "g",
+            "exclam"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1195,
+              0
+            ]
+          ],
+          "common_y_samples": 334,
+          "minimum_gap_y": 55.1875,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 304.01905285658063,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -48,
+            "sampled_gap": 256.01905285658063,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "og": {
+          "glyphs": [
+            "o",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1214,
+              0
+            ]
+          ],
+          "common_y_samples": 411,
+          "minimum_gap_y": 388,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 272.699175719207,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": 0,
+            "sampled_gap": 272.699175719207,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "ag": {
+          "glyphs": [
+            "a",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1129,
+              0
+            ]
+          ],
+          "common_y_samples": 463,
+          "minimum_gap_y": 12,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 286.5631782787276,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": 0,
+            "sampled_gap": 286.5631782787276,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "ng": {
+          "glyphs": [
+            "n",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1188,
+              0
+            ]
+          ],
+          "common_y_samples": 424,
+          "minimum_gap_y": 16,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 287.78545994735396,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": 0,
+            "sampled_gap": 287.78545994735396,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        }
+      }
+    },
+    "500": {
+      "font": "documentation/proofs/double-storey-g-spacing/fonts/AlloGSpacingStudy-Medium.otf",
+      "sha256": "6196a6275f6439946ae7d37641ae5e4ea6cdbcf5c54ddbf3ade8b76941f043e1",
+      "round_reduction": 102,
+      "other_reduction": 51,
+      "pairs": {
+        "go": {
+          "glyphs": [
+            "g",
+            "o"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1153,
+              0
+            ]
+          ],
+          "common_y_samples": 409,
+          "minimum_gap_y": 696,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 337.95113963282574,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -102,
+            "sampled_gap": 235.95113963282574,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "round-followers",
+            "level": "tighter"
+          }
+        },
+        "ge": {
+          "glyphs": [
+            "g",
+            "e"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1153,
+              0
+            ]
+          ],
+          "common_y_samples": 519,
+          "minimum_gap_y": 696,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 337.87721556526367,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -102,
+            "sampled_gap": 235.87721556526367,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "round-followers",
+            "level": "tighter"
+          }
+        },
+        "gc": {
+          "glyphs": [
+            "g",
+            "c"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1153,
+              0
+            ]
+          ],
+          "common_y_samples": 447,
+          "minimum_gap_y": 696,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 338.65103666866594,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -102,
+            "sampled_gap": 236.65103666866594,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "round-followers",
+            "level": "tighter"
+          }
+        },
+        "ga": {
+          "glyphs": [
+            "g",
+            "a"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1204,
+              0
+            ]
+          ],
+          "common_y_samples": 461,
+          "minimum_gap_y": 980.375,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 297.09302095776593,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -51,
+            "sampled_gap": 246.09302095776593,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gn": {
+          "glyphs": [
+            "g",
+            "n"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1204,
+              0
+            ]
+          ],
+          "common_y_samples": 421,
+          "minimum_gap_y": 1020.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 250.0,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -51,
+            "sampled_gap": 199.0,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gr": {
+          "glyphs": [
+            "g",
+            "r"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1204,
+              0
+            ]
+          ],
+          "common_y_samples": 432,
+          "minimum_gap_y": 1020.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 250.0,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -51,
+            "sampled_gap": 199.0,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gg": {
+          "glyphs": [
+            "g",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1204,
+              0
+            ]
+          ],
+          "common_y_samples": 506,
+          "minimum_gap_y": -88,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 201.88418140246358,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -51,
+            "sampled_gap": 150.88418140246358,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gy": {
+          "glyphs": [
+            "g",
+            "y"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1204,
+              0
+            ]
+          ],
+          "common_y_samples": 532,
+          "minimum_gap_y": 1064.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 163.61614992232808,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -51,
+            "sampled_gap": 112.61614992232808,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gj": {
+          "glyphs": [
+            "g",
+            "j"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1218,
+              0
+            ]
+          ],
+          "common_y_samples": 536,
+          "minimum_gap_y": -238.375,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 139.71606081894947,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -51,
+            "sampled_gap": 88.71606081894947,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g.": {
+          "glyphs": [
+            "g",
+            "period"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1204,
+              0
+            ]
+          ],
+          "common_y_samples": 112,
+          "minimum_gap_y": 64,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 300.26282757989475,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -51,
+            "sampled_gap": 249.26282757989475,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g,": {
+          "glyphs": [
+            "g",
+            "comma"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1204,
+              0
+            ]
+          ],
+          "common_y_samples": 231,
+          "minimum_gap_y": 72,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 298.38435095108025,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -51,
+            "sampled_gap": 247.38435095108025,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g:": {
+          "glyphs": [
+            "g",
+            "colon"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1204,
+              0
+            ]
+          ],
+          "common_y_samples": 230,
+          "minimum_gap_y": 988,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 283.3806277757508,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -51,
+            "sampled_gap": 232.38062777575078,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g;": {
+          "glyphs": [
+            "g",
+            "semicolon"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1204,
+              0
+            ]
+          ],
+          "common_y_samples": 349,
+          "minimum_gap_y": 988,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 280.3806277757508,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -51,
+            "sampled_gap": 229.38062777575078,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g)": {
+          "glyphs": [
+            "g",
+            "parenright"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1204,
+              0
+            ]
+          ],
+          "common_y_samples": 486,
+          "minimum_gap_y": -152,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 244.02780570499635,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -51,
+            "sampled_gap": 193.02780570499635,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g]": {
+          "glyphs": [
+            "g",
+            "bracketright"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1204,
+              0
+            ]
+          ],
+          "common_y_samples": 485,
+          "minimum_gap_y": -148,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 206.39172223659102,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -51,
+            "sampled_gap": 155.39172223659102,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g!": {
+          "glyphs": [
+            "g",
+            "exclam"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1204,
+              0
+            ]
+          ],
+          "common_y_samples": 337,
+          "minimum_gap_y": 64,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 299.91751744876683,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -51,
+            "sampled_gap": 248.91751744876683,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "og": {
+          "glyphs": [
+            "o",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1223,
+              0
+            ]
+          ],
+          "common_y_samples": 409,
+          "minimum_gap_y": 392,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 250.29103221366813,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": 0,
+            "sampled_gap": 250.29103221366813,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "ag": {
+          "glyphs": [
+            "a",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1142,
+              0
+            ]
+          ],
+          "common_y_samples": 461,
+          "minimum_gap_y": 14.5,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 268.1060243970983,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": 0,
+            "sampled_gap": 268.1060243970983,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "ng": {
+          "glyphs": [
+            "n",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1209,
+              0
+            ]
+          ],
+          "common_y_samples": 421,
+          "minimum_gap_y": 20,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 273.78225373951295,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": 0,
+            "sampled_gap": 273.78225373951295,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        }
+      }
+    },
+    "600": {
+      "font": "documentation/proofs/double-storey-g-spacing/fonts/AlloGSpacingStudy-SemiBold.otf",
+      "sha256": "619290d16ae3e555bd1d8f7b75bb19fb97a759853ab87f767e7759bb709d4b8c",
+      "round_reduction": 108,
+      "other_reduction": 54,
+      "pairs": {
+        "go": {
+          "glyphs": [
+            "g",
+            "o"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1159,
+              0
+            ]
+          ],
+          "common_y_samples": 413,
+          "minimum_gap_y": 696,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 325.6114755863766,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -108,
+            "sampled_gap": 217.61147558637663,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "round-followers",
+            "level": "tighter"
+          }
+        },
+        "ge": {
+          "glyphs": [
+            "g",
+            "e"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1159,
+              0
+            ]
+          ],
+          "common_y_samples": 528,
+          "minimum_gap_y": 700,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 324.2455622005366,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -108,
+            "sampled_gap": 216.2455622005366,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "round-followers",
+            "level": "tighter"
+          }
+        },
+        "gc": {
+          "glyphs": [
+            "g",
+            "c"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1159,
+              0
+            ]
+          ],
+          "common_y_samples": 448,
+          "minimum_gap_y": 700,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 324.9907098506185,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -108,
+            "sampled_gap": 216.9907098506185,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "round-followers",
+            "level": "tighter"
+          }
+        },
+        "ga": {
+          "glyphs": [
+            "g",
+            "a"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1213,
+              0
+            ]
+          ],
+          "common_y_samples": 463,
+          "minimum_gap_y": 974.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 282.59180579716076,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -54,
+            "sampled_gap": 228.59180579716076,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gn": {
+          "glyphs": [
+            "g",
+            "n"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1213,
+              0
+            ]
+          ],
+          "common_y_samples": 427,
+          "minimum_gap_y": 1013.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 235.0,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -54,
+            "sampled_gap": 181.0,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gr": {
+          "glyphs": [
+            "g",
+            "r"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1213,
+              0
+            ]
+          ],
+          "common_y_samples": 429,
+          "minimum_gap_y": 1013.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 235.0,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -54,
+            "sampled_gap": 181.0,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gg": {
+          "glyphs": [
+            "g",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1213,
+              0
+            ]
+          ],
+          "common_y_samples": 511,
+          "minimum_gap_y": -88,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 186.85956554445784,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -54,
+            "sampled_gap": 132.85956554445784,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gy": {
+          "glyphs": [
+            "g",
+            "y"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1213,
+              0
+            ]
+          ],
+          "common_y_samples": 538,
+          "minimum_gap_y": 1053.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 153.70358185253713,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -54,
+            "sampled_gap": 99.70358185253713,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gj": {
+          "glyphs": [
+            "g",
+            "j"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1240,
+              0
+            ]
+          ],
+          "common_y_samples": 541,
+          "minimum_gap_y": -220,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 121.5958451969168,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -54,
+            "sampled_gap": 67.5958451969168,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g.": {
+          "glyphs": [
+            "g",
+            "period"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1213,
+              0
+            ]
+          ],
+          "common_y_samples": 119,
+          "minimum_gap_y": 68.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 297.56578307792415,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -54,
+            "sampled_gap": 243.56578307792415,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g,": {
+          "glyphs": [
+            "g",
+            "comma"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1213,
+              0
+            ]
+          ],
+          "common_y_samples": 239,
+          "minimum_gap_y": 80,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 293.79393019424924,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -54,
+            "sampled_gap": 239.79393019424924,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g:": {
+          "glyphs": [
+            "g",
+            "colon"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1213,
+              0
+            ]
+          ],
+          "common_y_samples": 246,
+          "minimum_gap_y": 984,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 282.03874018699344,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -54,
+            "sampled_gap": 228.03874018699344,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g;": {
+          "glyphs": [
+            "g",
+            "semicolon"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1213,
+              0
+            ]
+          ],
+          "common_y_samples": 366,
+          "minimum_gap_y": 984,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 276.03874018699344,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -54,
+            "sampled_gap": 222.03874018699344,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g)": {
+          "glyphs": [
+            "g",
+            "parenright"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1213,
+              0
+            ]
+          ],
+          "common_y_samples": 487,
+          "minimum_gap_y": -140,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 227.44750964533227,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -54,
+            "sampled_gap": 173.44750964533227,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g]": {
+          "glyphs": [
+            "g",
+            "bracketright"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1213,
+              0
+            ]
+          ],
+          "common_y_samples": 490,
+          "minimum_gap_y": -136,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 190.59672701717022,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -54,
+            "sampled_gap": 136.59672701717022,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g!": {
+          "glyphs": [
+            "g",
+            "exclam"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1213,
+              0
+            ]
+          ],
+          "common_y_samples": 348,
+          "minimum_gap_y": 68.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 296.28470747919664,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -54,
+            "sampled_gap": 242.28470747919664,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "og": {
+          "glyphs": [
+            "o",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1232,
+              0
+            ]
+          ],
+          "common_y_samples": 413,
+          "minimum_gap_y": 392,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 228.7904700643428,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": 0,
+            "sampled_gap": 228.7904700643428,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "ag": {
+          "glyphs": [
+            "a",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1155,
+              0
+            ]
+          ],
+          "common_y_samples": 463,
+          "minimum_gap_y": 12,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 249.39063966325295,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": 0,
+            "sampled_gap": 249.39063966325295,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "ng": {
+          "glyphs": [
+            "n",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1231,
+              0
+            ]
+          ],
+          "common_y_samples": 427,
+          "minimum_gap_y": 338.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 251.0,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": 0,
+            "sampled_gap": 251.0,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        }
+      }
+    },
+    "700": {
+      "font": "documentation/proofs/double-storey-g-spacing/fonts/AlloGSpacingStudy-Bold.otf",
+      "sha256": "d16af49467a117f60db68e79345cfa3e3ce128bd002e347f5de25e5ca5ac6130",
+      "round_reduction": 114,
+      "other_reduction": 57,
+      "pairs": {
+        "go": {
+          "glyphs": [
+            "g",
+            "o"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1166,
+              0
+            ]
+          ],
+          "common_y_samples": 413,
+          "minimum_gap_y": 700,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 314.39031961122396,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -114,
+            "sampled_gap": 200.39031961122396,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "round-followers",
+            "level": "tighter"
+          }
+        },
+        "ge": {
+          "glyphs": [
+            "g",
+            "e"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1166,
+              0
+            ]
+          ],
+          "common_y_samples": 513,
+          "minimum_gap_y": 704,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 312.6043121111568,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -114,
+            "sampled_gap": 198.6043121111568,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "round-followers",
+            "level": "tighter"
+          }
+        },
+        "gc": {
+          "glyphs": [
+            "g",
+            "c"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1166,
+              0
+            ]
+          ],
+          "common_y_samples": 445,
+          "minimum_gap_y": 700,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 313.87068844343685,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -114,
+            "sampled_gap": 199.87068844343685,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "round-followers",
+            "level": "tighter"
+          }
+        },
+        "ga": {
+          "glyphs": [
+            "g",
+            "a"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1223,
+              0
+            ]
+          ],
+          "common_y_samples": 463,
+          "minimum_gap_y": 120,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 269.55387426842753,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -57,
+            "sampled_gap": 212.55387426842753,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gn": {
+          "glyphs": [
+            "g",
+            "n"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1223,
+              0
+            ]
+          ],
+          "common_y_samples": 430,
+          "minimum_gap_y": 1007.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 221.0,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -57,
+            "sampled_gap": 164.0,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gr": {
+          "glyphs": [
+            "g",
+            "r"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1223,
+              0
+            ]
+          ],
+          "common_y_samples": 433,
+          "minimum_gap_y": 1007.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 221.0,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -57,
+            "sampled_gap": 164.0,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gg": {
+          "glyphs": [
+            "g",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1223,
+              0
+            ]
+          ],
+          "common_y_samples": 506,
+          "minimum_gap_y": -88,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 173.7849850761943,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -57,
+            "sampled_gap": 116.78498507619429,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gy": {
+          "glyphs": [
+            "g",
+            "y"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1223,
+              0
+            ]
+          ],
+          "common_y_samples": 533,
+          "minimum_gap_y": 1040,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 144.37793545413479,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -57,
+            "sampled_gap": 87.37793545413479,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gj": {
+          "glyphs": [
+            "g",
+            "j"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1263,
+              0
+            ]
+          ],
+          "common_y_samples": 534,
+          "minimum_gap_y": -200,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 106.76247084009833,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -57,
+            "sampled_gap": 49.76247084009833,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g.": {
+          "glyphs": [
+            "g",
+            "period"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1223,
+              0
+            ]
+          ],
+          "common_y_samples": 128,
+          "minimum_gap_y": 76,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 295.4210423022796,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -57,
+            "sampled_gap": 238.4210423022796,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g,": {
+          "glyphs": [
+            "g",
+            "comma"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1223,
+              0
+            ]
+          ],
+          "common_y_samples": 245,
+          "minimum_gap_y": 87.125,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 291.55332851976254,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -57,
+            "sampled_gap": 234.55332851976254,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g:": {
+          "glyphs": [
+            "g",
+            "colon"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1223,
+              0
+            ]
+          ],
+          "common_y_samples": 259,
+          "minimum_gap_y": 972,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 280.60000060064453,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -57,
+            "sampled_gap": 223.60000060064453,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g;": {
+          "glyphs": [
+            "g",
+            "semicolon"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1223,
+              0
+            ]
+          ],
+          "common_y_samples": 376,
+          "minimum_gap_y": 972,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 271.60000060064453,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -57,
+            "sampled_gap": 214.60000060064453,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g)": {
+          "glyphs": [
+            "g",
+            "parenright"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1223,
+              0
+            ]
+          ],
+          "common_y_samples": 481,
+          "minimum_gap_y": -136,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 212.9902808020247,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -57,
+            "sampled_gap": 155.9902808020247,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g]": {
+          "glyphs": [
+            "g",
+            "bracketright"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1223,
+              0
+            ]
+          ],
+          "common_y_samples": 482,
+          "minimum_gap_y": -128,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 177.15493678008352,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -57,
+            "sampled_gap": 120.15493678008352,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g!": {
+          "glyphs": [
+            "g",
+            "exclam"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1223,
+              0
+            ]
+          ],
+          "common_y_samples": 354,
+          "minimum_gap_y": 1062.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 293.84119535129526,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -57,
+            "sampled_gap": 236.84119535129526,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "og": {
+          "glyphs": [
+            "o",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1242,
+              0
+            ]
+          ],
+          "common_y_samples": 413,
+          "minimum_gap_y": 396.125,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 207.29153578232513,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": 0,
+            "sampled_gap": 207.29153578232513,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "ag": {
+          "glyphs": [
+            "a",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1168,
+              0
+            ]
+          ],
+          "common_y_samples": 463,
+          "minimum_gap_y": 338.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 226.0,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": 0,
+            "sampled_gap": 226.0,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "ng": {
+          "glyphs": [
+            "n",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1252,
+              0
+            ]
+          ],
+          "common_y_samples": 430,
+          "minimum_gap_y": 338.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 226.0,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": 0,
+            "sampled_gap": 226.0,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        }
+      }
+    },
+    "800": {
+      "font": "documentation/proofs/double-storey-g-spacing/fonts/AlloGSpacingStudy-ExtraBold.otf",
+      "sha256": "8dbf3cfaa52b33d5c4346bf64a49f894264431a86ccc1de522a3a0110e997f59",
+      "round_reduction": 120,
+      "other_reduction": 60,
+      "pairs": {
+        "go": {
+          "glyphs": [
+            "g",
+            "o"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1175,
+              0
+            ]
+          ],
+          "common_y_samples": 408,
+          "minimum_gap_y": 704,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 299.56640029617415,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -120,
+            "sampled_gap": 179.56640029617415,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "round-followers",
+            "level": "tighter"
+          }
+        },
+        "ge": {
+          "glyphs": [
+            "g",
+            "e"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1175,
+              0
+            ]
+          ],
+          "common_y_samples": 527,
+          "minimum_gap_y": 708,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 296.81982318455016,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -120,
+            "sampled_gap": 176.81982318455016,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "round-followers",
+            "level": "tighter"
+          }
+        },
+        "gc": {
+          "glyphs": [
+            "g",
+            "c"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1175,
+              0
+            ]
+          ],
+          "common_y_samples": 446,
+          "minimum_gap_y": 704,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 299.2152719305491,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -120,
+            "sampled_gap": 179.21527193054908,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "round-followers",
+            "level": "tighter"
+          }
+        },
+        "ga": {
+          "glyphs": [
+            "g",
+            "a"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1235,
+              0
+            ]
+          ],
+          "common_y_samples": 462,
+          "minimum_gap_y": 128,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 245.3565256139584,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -60,
+            "sampled_gap": 185.3565256139584,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gn": {
+          "glyphs": [
+            "g",
+            "n"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1235,
+              0
+            ]
+          ],
+          "common_y_samples": 422,
+          "minimum_gap_y": 999.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 204.0,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -60,
+            "sampled_gap": 144.0,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gr": {
+          "glyphs": [
+            "g",
+            "r"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1235,
+              0
+            ]
+          ],
+          "common_y_samples": 431,
+          "minimum_gap_y": 999.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 204.0,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -60,
+            "sampled_gap": 144.0,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gg": {
+          "glyphs": [
+            "g",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1235,
+              0
+            ]
+          ],
+          "common_y_samples": 509,
+          "minimum_gap_y": -84,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 155.68649445527603,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -60,
+            "sampled_gap": 95.68649445527603,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gy": {
+          "glyphs": [
+            "g",
+            "y"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1235,
+              0
+            ]
+          ],
+          "common_y_samples": 540,
+          "minimum_gap_y": 1028.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 133.09360795381622,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -60,
+            "sampled_gap": 73.09360795381622,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gj": {
+          "glyphs": [
+            "g",
+            "j"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1291,
+              0
+            ]
+          ],
+          "common_y_samples": 541,
+          "minimum_gap_y": -180,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 88.64253104917134,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -60,
+            "sampled_gap": 28.64253104917134,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g.": {
+          "glyphs": [
+            "g",
+            "period"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1235,
+              0
+            ]
+          ],
+          "common_y_samples": 132,
+          "minimum_gap_y": 84,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 291.7114920418894,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -60,
+            "sampled_gap": 231.71149204188941,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g,": {
+          "glyphs": [
+            "g",
+            "comma"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1235,
+              0
+            ]
+          ],
+          "common_y_samples": 256,
+          "minimum_gap_y": 96,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 286.74333193679854,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -60,
+            "sampled_gap": 226.74333193679854,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g:": {
+          "glyphs": [
+            "g",
+            "colon"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1235,
+              0
+            ]
+          ],
+          "common_y_samples": 271,
+          "minimum_gap_y": 964,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 279.64718644865957,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -60,
+            "sampled_gap": 219.64718644865957,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g;": {
+          "glyphs": [
+            "g",
+            "semicolon"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1235,
+              0
+            ]
+          ],
+          "common_y_samples": 395,
+          "minimum_gap_y": 964,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 266.64718644865957,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -60,
+            "sampled_gap": 206.64718644865957,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g)": {
+          "glyphs": [
+            "g",
+            "parenright"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1235,
+              0
+            ]
+          ],
+          "common_y_samples": 485,
+          "minimum_gap_y": -124.1875,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 193.0258366961432,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -60,
+            "sampled_gap": 133.0258366961432,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g]": {
+          "glyphs": [
+            "g",
+            "bracketright"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1235,
+              0
+            ]
+          ],
+          "common_y_samples": 488,
+          "minimum_gap_y": -116,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 158.63304609051806,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -60,
+            "sampled_gap": 98.63304609051806,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g!": {
+          "glyphs": [
+            "g",
+            "exclam"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1235,
+              0
+            ]
+          ],
+          "common_y_samples": 364,
+          "minimum_gap_y": 1056,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 288.78934016261906,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -60,
+            "sampled_gap": 228.78934016261906,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "og": {
+          "glyphs": [
+            "o",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1253,
+              0
+            ]
+          ],
+          "common_y_samples": 408,
+          "minimum_gap_y": 404,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 179.9280716196081,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": 0,
+            "sampled_gap": 179.9280716196081,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "ag": {
+          "glyphs": [
+            "a",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1184,
+              0
+            ]
+          ],
+          "common_y_samples": 462,
+          "minimum_gap_y": 338.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 196.0,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": 0,
+            "sampled_gap": 196.0,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "ng": {
+          "glyphs": [
+            "n",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1278,
+              0
+            ]
+          ],
+          "common_y_samples": 422,
+          "minimum_gap_y": 338.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 196.0,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": 0,
+            "sampled_gap": 196.0,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        }
+      }
+    },
+    "900": {
+      "font": "documentation/proofs/double-storey-g-spacing/fonts/AlloGSpacingStudy-Black.otf",
+      "sha256": "ea87c22f4b39f2a0e58d0f406ba5b9b5e8576638b1c75a3b6b2d39a7a6d9822c",
+      "round_reduction": 128,
+      "other_reduction": 64,
+      "pairs": {
+        "go": {
+          "glyphs": [
+            "g",
+            "o"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1184,
+              0
+            ]
+          ],
+          "common_y_samples": 408,
+          "minimum_gap_y": 704,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 285.24646589606255,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -128,
+            "sampled_gap": 157.24646589606255,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "round-followers",
+            "level": "tighter"
+          }
+        },
+        "ge": {
+          "glyphs": [
+            "g",
+            "e"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1184,
+              0
+            ]
+          ],
+          "common_y_samples": 513,
+          "minimum_gap_y": 713.5,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 281.84687669000505,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -128,
+            "sampled_gap": 153.84687669000505,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "round-followers",
+            "level": "tighter"
+          }
+        },
+        "gc": {
+          "glyphs": [
+            "g",
+            "c"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1184,
+              0
+            ]
+          ],
+          "common_y_samples": 442,
+          "minimum_gap_y": 706.1875,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 285.08626549291785,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -128,
+            "sampled_gap": 157.08626549291785,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "round-followers",
+            "level": "tighter"
+          }
+        },
+        "ga": {
+          "glyphs": [
+            "g",
+            "a"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1248,
+              0
+            ]
+          ],
+          "common_y_samples": 451,
+          "minimum_gap_y": 136,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 219.9471138040626,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -64,
+            "sampled_gap": 155.9471138040626,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gn": {
+          "glyphs": [
+            "g",
+            "n"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1248,
+              0
+            ]
+          ],
+          "common_y_samples": 425,
+          "minimum_gap_y": 991.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 185.0,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -64,
+            "sampled_gap": 121.0,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gr": {
+          "glyphs": [
+            "g",
+            "r"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1248,
+              0
+            ]
+          ],
+          "common_y_samples": 426,
+          "minimum_gap_y": 990.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 185.00570257199615,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -64,
+            "sampled_gap": 121.00570257199615,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gg": {
+          "glyphs": [
+            "g",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1248,
+              0
+            ]
+          ],
+          "common_y_samples": 508,
+          "minimum_gap_y": -84,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 136.57427838358853,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -64,
+            "sampled_gap": 72.57427838358853,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gy": {
+          "glyphs": [
+            "g",
+            "y"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1248,
+              0
+            ]
+          ],
+          "common_y_samples": 543,
+          "minimum_gap_y": 1013.5,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 119.84379370176043,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -64,
+            "sampled_gap": 55.84379370176043,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "gj": {
+          "glyphs": [
+            "g",
+            "j"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1322,
+              0
+            ]
+          ],
+          "common_y_samples": 536,
+          "minimum_gap_y": -160,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 72.38726054324866,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -64,
+            "sampled_gap": 8.387260543248658,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g.": {
+          "glyphs": [
+            "g",
+            "period"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1248,
+              0
+            ]
+          ],
+          "common_y_samples": 145,
+          "minimum_gap_y": 96,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 288.4620465612595,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -64,
+            "sampled_gap": 224.4620465612595,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g,": {
+          "glyphs": [
+            "g",
+            "comma"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1248,
+              0
+            ]
+          ],
+          "common_y_samples": 269,
+          "minimum_gap_y": 104,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 282.10730526535303,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -64,
+            "sampled_gap": 218.10730526535303,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g:": {
+          "glyphs": [
+            "g",
+            "colon"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1248,
+              0
+            ]
+          ],
+          "common_y_samples": 296,
+          "minimum_gap_y": 956,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 278.0916443894905,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -64,
+            "sampled_gap": 214.0916443894905,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g;": {
+          "glyphs": [
+            "g",
+            "semicolon"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1248,
+              0
+            ]
+          ],
+          "common_y_samples": 420,
+          "minimum_gap_y": 956,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 261.0916443894905,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -64,
+            "sampled_gap": 197.0916443894905,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g)": {
+          "glyphs": [
+            "g",
+            "parenright"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1248,
+              0
+            ]
+          ],
+          "common_y_samples": 479,
+          "minimum_gap_y": -116,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 172.24669220401915,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -64,
+            "sampled_gap": 108.24669220401915,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g]": {
+          "glyphs": [
+            "g",
+            "bracketright"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1248,
+              0
+            ]
+          ],
+          "common_y_samples": 488,
+          "minimum_gap_y": -104,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 140.4359662759705,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -64,
+            "sampled_gap": 76.43596627597049,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "g!": {
+          "glyphs": [
+            "g",
+            "exclam"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1248,
+              0
+            ]
+          ],
+          "common_y_samples": 373,
+          "minimum_gap_y": 1048,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 282.3942555300696,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": -64,
+            "sampled_gap": 218.3942555300696,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "og": {
+          "glyphs": [
+            "o",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1265,
+              0
+            ]
+          ],
+          "common_y_samples": 408,
+          "minimum_gap_y": 408,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 150.42523483634977,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": 0,
+            "sampled_gap": 150.42523483634977,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "ag": {
+          "glyphs": [
+            "a",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1201,
+              0
+            ]
+          ],
+          "common_y_samples": 451,
+          "minimum_gap_y": 338.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 163.0,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": 0,
+            "sampled_gap": 163.0,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        },
+        "ng": {
+          "glyphs": [
+            "n",
+            "g"
+          ],
+          "selected_origins": [
+            [
+              0,
+              0
+            ],
+            [
+              1307,
+              0
+            ]
+          ],
+          "common_y_samples": 425,
+          "minimum_gap_y": 338.0,
+          "baseline": {
+            "second_dx": 0,
+            "sampled_gap": 163.0,
+            "overlap_area": 0.0
+          },
+          "selected": {
+            "second_dx": 0,
+            "sampled_gap": 163.0,
+            "overlap_area": 0.0
+          },
+          "equivalent_study03_state": {
+            "mode": "all-followers",
+            "level": "moderate"
+          }
+        }
+      }
+    }
+  },
+  "warnings": [
+    {
+      "weight": 800,
+      "pair": "gj",
+      "mode": "combined",
+      "level": "selected",
+      "reasons": [
+        "sampled_gap_below_design_review_threshold"
+      ]
+    },
+    {
+      "weight": 900,
+      "pair": "gj",
+      "mode": "combined",
+      "level": "selected",
+      "reasons": [
+        "sampled_gap_below_design_review_threshold"
+      ]
+    }
+  ]
+}

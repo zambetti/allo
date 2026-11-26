@@ -1,0 +1,190 @@
+{
+  "scope": "Heavy gj refinement only; selected C/B retained; g-space restoration offered separately for comparison, not adopted",
+  "fonts": [
+    {
+      "weight": 100,
+      "style": "Thin",
+      "moderate": 40,
+      "tighter": 80,
+      "gj_correction": 0,
+      "unchanged_outlines": 737,
+      "source": "documentation/proofs/double-storey-g-spacing/fonts/AlloGSpacingStudy-Thin.otf",
+      "source_sha256": "543ed25482d80ff8fc1c93b00c4d0ed37b2c3e5a88e0be749bb36cf7503e711e",
+      "font": "documentation/proofs/double-storey-g-spacing-finish/fonts/AlloGSpacingFinish-Thin.otf",
+      "font_sha256": "a313f755dcfd5dfea3fd2555f0287739ad1adf2d2b43b3030e45845701fdff40"
+    },
+    {
+      "weight": 200,
+      "style": "ExtraLight",
+      "moderate": 43,
+      "tighter": 86,
+      "gj_correction": 0,
+      "unchanged_outlines": 737,
+      "source": "documentation/proofs/double-storey-g-spacing/fonts/AlloGSpacingStudy-ExtraLight.otf",
+      "source_sha256": "1b28fb1bfbc82929cc7c3257464b298ec00f15d9d50bf1dcdcca59435f964bbd",
+      "font": "documentation/proofs/double-storey-g-spacing-finish/fonts/AlloGSpacingFinish-ExtraLight.otf",
+      "font_sha256": "a303465c3928ec32ca043c72f3f9fa3c03a14a5b16f708f9c4f826866e652322"
+    },
+    {
+      "weight": 300,
+      "style": "Light",
+      "moderate": 45,
+      "tighter": 90,
+      "gj_correction": 0,
+      "unchanged_outlines": 737,
+      "source": "documentation/proofs/double-storey-g-spacing/fonts/AlloGSpacingStudy-Light.otf",
+      "source_sha256": "d5b6bf18f1304ddd0bb4b3dda379ab2b0aa356437dd20a8a2273c8d301814b3d",
+      "font": "documentation/proofs/double-storey-g-spacing-finish/fonts/AlloGSpacingFinish-Light.otf",
+      "font_sha256": "cb5542ba0167e124902e395d679cfe3ab038e9a2135bc804fe597f3a286c169b"
+    },
+    {
+      "weight": 400,
+      "style": "Regular",
+      "moderate": 48,
+      "tighter": 96,
+      "gj_correction": 0,
+      "unchanged_outlines": 737,
+      "source": "documentation/proofs/double-storey-g-spacing/fonts/AlloGSpacingStudy-Regular.otf",
+      "source_sha256": "ce09828c8de2bec944d84731454006411cd192538b48df5816818fa4b8d27137",
+      "font": "documentation/proofs/double-storey-g-spacing-finish/fonts/AlloGSpacingFinish-Regular.otf",
+      "font_sha256": "addf314d4dff6941b2380a53784f1234df63d2341f657771cadda3b5c788c50d"
+    },
+    {
+      "weight": 500,
+      "style": "Medium",
+      "moderate": 51,
+      "tighter": 102,
+      "gj_correction": 0,
+      "unchanged_outlines": 737,
+      "source": "documentation/proofs/double-storey-g-spacing/fonts/AlloGSpacingStudy-Medium.otf",
+      "source_sha256": "6196a6275f6439946ae7d37641ae5e4ea6cdbcf5c54ddbf3ade8b76941f043e1",
+      "font": "documentation/proofs/double-storey-g-spacing-finish/fonts/AlloGSpacingFinish-Medium.otf",
+      "font_sha256": "d6821625240e95b3ce0ba2fb15914a543e2ecd76b141db68b9494a9135099ede"
+    },
+    {
+      "weight": 600,
+      "style": "SemiBold",
+      "moderate": 54,
+      "tighter": 108,
+      "gj_correction": 0,
+      "unchanged_outlines": 737,
+      "source": "documentation/proofs/double-storey-g-spacing/fonts/AlloGSpacingStudy-SemiBold.otf",
+      "source_sha256": "619290d16ae3e555bd1d8f7b75bb19fb97a759853ab87f767e7759bb709d4b8c",
+      "font": "documentation/proofs/double-storey-g-spacing-finish/fonts/AlloGSpacingFinish-SemiBold.otf",
+      "font_sha256": "9112b321116e5e870934338559eb253adeabcd43bcf5d5d5b6f3c3dd4b92a185"
+    },
+    {
+      "weight": 700,
+      "style": "Bold",
+      "moderate": 57,
+      "tighter": 114,
+      "gj_correction": 8,
+      "unchanged_outlines": 737,
+      "source": "documentation/proofs/double-storey-g-spacing/fonts/AlloGSpacingStudy-Bold.otf",
+      "source_sha256": "d16af49467a117f60db68e79345cfa3e3ce128bd002e347f5de25e5ca5ac6130",
+      "font": "documentation/proofs/double-storey-g-spacing-finish/fonts/AlloGSpacingFinish-Bold.otf",
+      "font_sha256": "a1241cef02662c8c23738cb2de7ddb6c15525d207e0c2052270954903671d9fd"
+    },
+    {
+      "weight": 800,
+      "style": "ExtraBold",
+      "moderate": 60,
+      "tighter": 120,
+      "gj_correction": 27,
+      "unchanged_outlines": 737,
+      "source": "documentation/proofs/double-storey-g-spacing/fonts/AlloGSpacingStudy-ExtraBold.otf",
+      "source_sha256": "8dbf3cfaa52b33d5c4346bf64a49f894264431a86ccc1de522a3a0110e997f59",
+      "font": "documentation/proofs/double-storey-g-spacing-finish/fonts/AlloGSpacingFinish-ExtraBold.otf",
+      "font_sha256": "04cc6ca5206daa328d342271503dcf41b7a5996171f2c6bc8b0a3e54bccb461d"
+    },
+    {
+      "weight": 900,
+      "style": "Black",
+      "moderate": 64,
+      "tighter": 128,
+      "gj_correction": 40,
+      "unchanged_outlines": 737,
+      "source": "documentation/proofs/double-storey-g-spacing/fonts/AlloGSpacingStudy-Black.otf",
+      "source_sha256": "ea87c22f4b39f2a0e58d0f406ba5b9b5e8576638b1c75a3b6b2d39a7a6d9822c",
+      "font": "documentation/proofs/double-storey-g-spacing-finish/fonts/AlloGSpacingFinish-Black.otf",
+      "font_sha256": "934c4d469f808c1a214b0994fb9f1a836bd294a4d83d81f6ab88fe47c3330b18"
+    }
+  ],
+  "features": {
+    "inherited": {
+      "ss15": 0,
+      "ss16": 0,
+      "ss17": 0,
+      "ss18": 0,
+      "ss19": 0,
+      "ss20": 0
+    },
+    "chosen": {
+      "ss15": 0,
+      "ss16": 0,
+      "ss17": 1,
+      "ss18": 0,
+      "ss19": 1,
+      "ss20": 0
+    },
+    "refined": {
+      "ss15": 1,
+      "ss16": 0,
+      "ss17": 1,
+      "ss18": 0,
+      "ss19": 1,
+      "ss20": 0
+    },
+    "boundary": {
+      "ss15": 1,
+      "ss16": 1,
+      "ss17": 1,
+      "ss18": 0,
+      "ss19": 1,
+      "ss20": 0
+    }
+  },
+  "gj_ramp": {
+    "formula": "round(40 * t*t*(3-2*t)); t=clamp((mapped_weight-580)/320,0,1)",
+    "integer_weights_checked": 801,
+    "nondecreasing": true,
+    "largest_integer_step": 1,
+    "interpretation": "Smooth before rounding in mapped design coordinates; only nine static fonts are emitted, not a variable font"
+  },
+  "space_trial": {
+    "feature": "ss16",
+    "adopted": false,
+    "glyph": "space",
+    "characters": [
+      "U+0020"
+    ],
+    "terminal_g": "Unchanged from chosen B",
+    "nbsp": "U+00A0 uses a different glyph and is not restored"
+  },
+  "test_strings": 44,
+  "shaping_checks": 1584,
+  "unchanged_outlines": 6633,
+  "geometric_pair_checks": 342,
+  "refined_warnings": [],
+  "protected_files_sha256_unchanged": true,
+  "protected_file_count": 54211,
+  "checks_passed": [
+    "All outlines, hmtx, hhea, GSUB and GDEF retained; existing GPOS lookups and feature records retained",
+    "Two optional PairPos lookups added; FeatureList sorted with language references remapped and verified",
+    "Chosen C/B shaping matches the previous fonts exactly",
+    "Refined changes only plain gj advances by the weight-specific positive amount",
+    "Boundary trial changes only plain g before U+0020 space; terminal g and NBSP remain as chosen",
+    "Exact glyph sequences, offsets and advances checked for all four states",
+    "Fresh chosen/refined sampled gaps and BooleanGlyph intersections; all other tested pairs unchanged",
+    "All nine embedded WOFF2 identities, weights, outlines, metrics and layout tables verified",
+    "HTML structure checked; all four earlier studies and production files preserved"
+  ],
+  "limitations": [
+    "Diagnostic features off by default; page selects them explicitly; no production integration",
+    "Plain g and j only; C round class remains unaccented o/e/c; no broader accent integration",
+    "Upright Text/Friendly only; no optical-size, roundness, oblique or variable-font integration",
+    "New g remains unhinted; inherited hinting otherwise retained",
+    "Sampled horizontal gap is not exact Euclidean distance or a legibility verdict",
+    "Browser checks, if run, are recorded separately in browser/validation.json"
+  ]
+}

@@ -1,0 +1,594 @@
+{
+  "scope": "Plain Latin lowercase pairs in both directions, capital-before-g and listed boundaries; not every glyph or language",
+  "paragraphs": [
+    "Morning light was coming through the kitchen window when I began packing my bag. We were going somewhere new for the weekend, so I checked the address again before leaving. At the garden gate, a neighbor asked whether we could bring back a small jar of honey from the market.",
+    "The library was changing its opening hours at the beginning of the month. Our group met there on Tuesday to plan a small reading event. We agreed to leave the main entrance clear, hang a sign near the stairs, and give visitors a quiet place to sit after lunch.",
+    "On the way home, we stopped at the shop for eggs, rice, and a bag of apples. A dog was waiting beside the door while its owner paid for groceries. The bus arrived just as we reached the crossing, and I was glad to put the shopping down for a while."
+  ],
+  "focus_words": "Morning beginning changing going",
+  "checkpoint_text": "Morning light was changing as we crossed the bridge. A good beginning meant going slowly, watching the garden and reading the signs.",
+  "checkpoint_weights": [
+    100,
+    400,
+    700,
+    900
+  ],
+  "rows": [
+    {
+      "direction": "incoming",
+      "pair": "ag",
+      "kind": "word",
+      "examples": [
+        "again",
+        "bag"
+      ],
+      "text": "again · bag"
+    },
+    {
+      "direction": "incoming",
+      "pair": "bg",
+      "kind": "word",
+      "examples": [
+        "subgroup"
+      ],
+      "text": "subgroup"
+    },
+    {
+      "direction": "incoming",
+      "pair": "cg",
+      "kind": "synthetic",
+      "examples": [
+        "hacgan"
+      ],
+      "text": "hacgan"
+    },
+    {
+      "direction": "incoming",
+      "pair": "dg",
+      "kind": "word",
+      "examples": [
+        "edge",
+        "bridge"
+      ],
+      "text": "edge · bridge"
+    },
+    {
+      "direction": "incoming",
+      "pair": "eg",
+      "kind": "word",
+      "examples": [
+        "begin",
+        "regular"
+      ],
+      "text": "begin · regular"
+    },
+    {
+      "direction": "incoming",
+      "pair": "fg",
+      "kind": "word",
+      "examples": [
+        "afghan"
+      ],
+      "text": "afghan"
+    },
+    {
+      "direction": "incoming",
+      "pair": "gg",
+      "kind": "word",
+      "examples": [
+        "egg",
+        "bigger"
+      ],
+      "text": "egg · bigger"
+    },
+    {
+      "direction": "incoming",
+      "pair": "hg",
+      "kind": "word",
+      "examples": [
+        "churchgoer",
+        "beachgoer"
+      ],
+      "text": "churchgoer · beachgoer"
+    },
+    {
+      "direction": "incoming",
+      "pair": "ig",
+      "kind": "word",
+      "examples": [
+        "big",
+        "signal"
+      ],
+      "text": "big · signal"
+    },
+    {
+      "direction": "incoming",
+      "pair": "jg",
+      "kind": "synthetic",
+      "examples": [
+        "hajgan"
+      ],
+      "text": "hajgan"
+    },
+    {
+      "direction": "incoming",
+      "pair": "kg",
+      "kind": "word",
+      "examples": [
+        "background",
+        "backgammon"
+      ],
+      "text": "background · backgammon"
+    },
+    {
+      "direction": "incoming",
+      "pair": "lg",
+      "kind": "word",
+      "examples": [
+        "bulge",
+        "algae"
+      ],
+      "text": "bulge · algae"
+    },
+    {
+      "direction": "incoming",
+      "pair": "mg",
+      "kind": "synthetic",
+      "examples": [
+        "hamgan"
+      ],
+      "text": "hamgan"
+    },
+    {
+      "direction": "incoming",
+      "pair": "ng",
+      "kind": "word",
+      "examples": [
+        "morning",
+        "changing"
+      ],
+      "text": "morning · changing"
+    },
+    {
+      "direction": "incoming",
+      "pair": "og",
+      "kind": "word",
+      "examples": [
+        "dog",
+        "together"
+      ],
+      "text": "dog · together"
+    },
+    {
+      "direction": "incoming",
+      "pair": "pg",
+      "kind": "word",
+      "examples": [
+        "upgrade"
+      ],
+      "text": "upgrade"
+    },
+    {
+      "direction": "incoming",
+      "pair": "qg",
+      "kind": "synthetic",
+      "examples": [
+        "haqgan"
+      ],
+      "text": "haqgan"
+    },
+    {
+      "direction": "incoming",
+      "pair": "rg",
+      "kind": "word",
+      "examples": [
+        "large",
+        "target"
+      ],
+      "text": "large · target"
+    },
+    {
+      "direction": "incoming",
+      "pair": "sg",
+      "kind": "word",
+      "examples": [
+        "disguise",
+        "disgust"
+      ],
+      "text": "disguise · disgust"
+    },
+    {
+      "direction": "incoming",
+      "pair": "tg",
+      "kind": "word",
+      "examples": [
+        "outgrow",
+        "outgoing"
+      ],
+      "text": "outgrow · outgoing"
+    },
+    {
+      "direction": "incoming",
+      "pair": "ug",
+      "kind": "word",
+      "examples": [
+        "ugly",
+        "sugar"
+      ],
+      "text": "ugly · sugar"
+    },
+    {
+      "direction": "incoming",
+      "pair": "vg",
+      "kind": "synthetic",
+      "examples": [
+        "havgan"
+      ],
+      "text": "havgan"
+    },
+    {
+      "direction": "incoming",
+      "pair": "wg",
+      "kind": "word",
+      "examples": [
+        "showgirl"
+      ],
+      "text": "showgirl"
+    },
+    {
+      "direction": "incoming",
+      "pair": "xg",
+      "kind": "synthetic",
+      "examples": [
+        "haxgan"
+      ],
+      "text": "haxgan"
+    },
+    {
+      "direction": "incoming",
+      "pair": "yg",
+      "kind": "word",
+      "examples": [
+        "oxygen",
+        "hygiene"
+      ],
+      "text": "oxygen · hygiene"
+    },
+    {
+      "direction": "incoming",
+      "pair": "zg",
+      "kind": "synthetic",
+      "examples": [
+        "hazgan"
+      ],
+      "text": "hazgan"
+    },
+    {
+      "direction": "outgoing",
+      "pair": "ga",
+      "kind": "word",
+      "examples": [
+        "garden",
+        "began"
+      ],
+      "text": "garden · began"
+    },
+    {
+      "direction": "outgoing",
+      "pair": "gb",
+      "kind": "word",
+      "examples": [
+        "rugby"
+      ],
+      "text": "rugby"
+    },
+    {
+      "direction": "outgoing",
+      "pair": "gc",
+      "kind": "word",
+      "examples": [
+        "dogcatcher"
+      ],
+      "text": "dogcatcher"
+    },
+    {
+      "direction": "outgoing",
+      "pair": "gd",
+      "kind": "word",
+      "examples": [
+        "kingdom"
+      ],
+      "text": "kingdom"
+    },
+    {
+      "direction": "outgoing",
+      "pair": "ge",
+      "kind": "word",
+      "examples": [
+        "gentle",
+        "page"
+      ],
+      "text": "gentle · page"
+    },
+    {
+      "direction": "outgoing",
+      "pair": "gf",
+      "kind": "word",
+      "examples": [
+        "bagful",
+        "dogfight"
+      ],
+      "text": "bagful · dogfight"
+    },
+    {
+      "direction": "outgoing",
+      "pair": "gg",
+      "kind": "word",
+      "examples": [
+        "egg",
+        "bigger"
+      ],
+      "text": "egg · bigger"
+    },
+    {
+      "direction": "outgoing",
+      "pair": "gh",
+      "kind": "word",
+      "examples": [
+        "light",
+        "doghouse"
+      ],
+      "text": "light · doghouse"
+    },
+    {
+      "direction": "outgoing",
+      "pair": "gi",
+      "kind": "word",
+      "examples": [
+        "give",
+        "begin"
+      ],
+      "text": "give · begin"
+    },
+    {
+      "direction": "outgoing",
+      "pair": "gj",
+      "kind": "word",
+      "examples": [
+        "logjam"
+      ],
+      "text": "logjam"
+    },
+    {
+      "direction": "outgoing",
+      "pair": "gk",
+      "kind": "synthetic",
+      "examples": [
+        "hagkan"
+      ],
+      "text": "hagkan"
+    },
+    {
+      "direction": "outgoing",
+      "pair": "gl",
+      "kind": "word",
+      "examples": [
+        "glass",
+        "ugly"
+      ],
+      "text": "glass · ugly"
+    },
+    {
+      "direction": "outgoing",
+      "pair": "gm",
+      "kind": "word",
+      "examples": [
+        "segment",
+        "pigment"
+      ],
+      "text": "segment · pigment"
+    },
+    {
+      "direction": "outgoing",
+      "pair": "gn",
+      "kind": "word",
+      "examples": [
+        "sign",
+        "signal"
+      ],
+      "text": "sign · signal"
+    },
+    {
+      "direction": "outgoing",
+      "pair": "go",
+      "kind": "word",
+      "examples": [
+        "going",
+        "ago"
+      ],
+      "text": "going · ago"
+    },
+    {
+      "direction": "outgoing",
+      "pair": "gp",
+      "kind": "word",
+      "examples": [
+        "bagpipes"
+      ],
+      "text": "bagpipes"
+    },
+    {
+      "direction": "outgoing",
+      "pair": "gq",
+      "kind": "synthetic",
+      "examples": [
+        "hagqan"
+      ],
+      "text": "hagqan"
+    },
+    {
+      "direction": "outgoing",
+      "pair": "gr",
+      "kind": "word",
+      "examples": [
+        "green",
+        "group"
+      ],
+      "text": "green · group"
+    },
+    {
+      "direction": "outgoing",
+      "pair": "gs",
+      "kind": "word",
+      "examples": [
+        "eggs",
+        "bags"
+      ],
+      "text": "eggs · bags"
+    },
+    {
+      "direction": "outgoing",
+      "pair": "gt",
+      "kind": "word",
+      "examples": [
+        "length",
+        "strength"
+      ],
+      "text": "length · strength"
+    },
+    {
+      "direction": "outgoing",
+      "pair": "gu",
+      "kind": "word",
+      "examples": [
+        "guide",
+        "argue"
+      ],
+      "text": "guide · argue"
+    },
+    {
+      "direction": "outgoing",
+      "pair": "gv",
+      "kind": "synthetic",
+      "examples": [
+        "hagvan"
+      ],
+      "text": "hagvan"
+    },
+    {
+      "direction": "outgoing",
+      "pair": "gw",
+      "kind": "word",
+      "examples": [
+        "dogwood",
+        "ragweed"
+      ],
+      "text": "dogwood · ragweed"
+    },
+    {
+      "direction": "outgoing",
+      "pair": "gx",
+      "kind": "synthetic",
+      "examples": [
+        "hagxan"
+      ],
+      "text": "hagxan"
+    },
+    {
+      "direction": "outgoing",
+      "pair": "gy",
+      "kind": "word",
+      "examples": [
+        "energy",
+        "baggy"
+      ],
+      "text": "energy · baggy"
+    },
+    {
+      "direction": "outgoing",
+      "pair": "gz",
+      "kind": "word",
+      "examples": [
+        "zigzag"
+      ],
+      "text": "zigzag"
+    }
+  ],
+  "capital_pairs": [
+    "Ag",
+    "Bg",
+    "Cg",
+    "Dg",
+    "Eg",
+    "Fg",
+    "Gg",
+    "Hg",
+    "Ig",
+    "Jg",
+    "Kg",
+    "Lg",
+    "Mg",
+    "Ng",
+    "Og",
+    "Pg",
+    "Qg",
+    "Rg",
+    "Sg",
+    "Tg",
+    "Ug",
+    "Vg",
+    "Wg",
+    "Xg",
+    "Yg",
+    "Zg"
+  ],
+  "boundaries": [
+    {
+      "label": "Spaces and word ends",
+      "runs": [
+        "g",
+        "g g",
+        "n g",
+        "g n",
+        "a dog went home",
+        "a big green bag"
+      ]
+    },
+    {
+      "label": "Punctuation at either side",
+      "runs": [
+        "(g)",
+        "[g]",
+        "{g}",
+        "‘g’",
+        "“g”",
+        "'g'",
+        "\"g\"",
+        "g, g.",
+        "g: g;",
+        "g! g?",
+        "g-g",
+        "g–g",
+        "g—g"
+      ]
+    },
+    {
+      "label": "Fixed outgoing spacing and unchanged incoming controls",
+      "runs": [
+        "ng hg mg ug",
+        "go ge gc gj",
+        "ngj ngo nge ngc"
+      ]
+    }
+  ],
+  "counts": {
+    "incoming_rows": 26,
+    "outgoing_rows": 26,
+    "unique_lowercase_pairs": 51,
+    "word_rows": 41,
+    "synthetic_rows": 11,
+    "capital_pairs": 26,
+    "boundary_runs": 22
+  },
+  "lexical_note": "Authored examples, not an exhaustive dictionary search. Afghan denotes a blanket; closed compounds deliberately preserve the tested adjacent letters. Test strings are explicitly labeled and make no word claim."
+}

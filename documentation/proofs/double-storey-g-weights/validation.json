@@ -1,0 +1,358 @@
+{
+  "scope": "Upright weight proof at Text/Friendly; plain lowercase g only",
+  "master_weights": [
+    100,
+    400,
+    900
+  ],
+  "sample_weights": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+  ],
+  "user_to_design_weight_map": [
+    [
+      100.0,
+      100.0
+    ],
+    [
+      400.0,
+      400.0
+    ],
+    [
+      500.0,
+      490.0
+    ],
+    [
+      600.0,
+      580.0
+    ],
+    [
+      700.0,
+      670.0
+    ],
+    [
+      800.0,
+      780.0
+    ],
+    [
+      900.0,
+      900.0
+    ]
+  ],
+  "corresponding_points_per_contour": [
+    71,
+    12,
+    13
+  ],
+  "integer_weights_geometry_checked": 801,
+  "geometry_checked_before_and_after_coordinate_rounding": true,
+  "approved_regular_source_and_compiled_outline_preserved": true,
+  "all_previous_study_files_and_referenced_release_fonts_sha256_unchanged": true,
+  "fonts": [
+    {
+      "weight": 100,
+      "style": "Thin",
+      "outline_source": "drawn master",
+      "advance": 1177,
+      "three_master_interpolated_advance": 1177.0,
+      "advance_adjustment_without_outline_scaling": 0.0,
+      "bounds": [
+        121,
+        -412,
+        1060,
+        1134
+      ],
+      "counter_bounds": [
+        [
+          219,
+          454,
+          875,
+          1088
+        ],
+        [
+          166,
+          -366,
+          1012,
+          183
+        ]
+      ],
+      "unchanged_other_glyph_outlines": 736,
+      "reference_sha256": "9d177a27b9dc50bd338371d493ffdd8b7c6ac1cec2a2dad5d3ca3d1ef32849b0",
+      "proof_sha256": "01ae7951799bc1f9e32891ab26e4c8addabe95d3cc7514fc406ac453feb7ac8d"
+    },
+    {
+      "weight": 200,
+      "style": "ExtraLight",
+      "outline_source": "interpolated",
+      "advance": 1199,
+      "three_master_interpolated_advance": 1199.0,
+      "advance_adjustment_without_outline_scaling": 0.0,
+      "bounds": [
+        115,
+        -412,
+        1082,
+        1133
+      ],
+      "counter_bounds": [
+        [
+          259,
+          484,
+          860,
+          1051
+        ],
+        [
+          205,
+          -330,
+          992,
+          149
+        ]
+      ],
+      "unchanged_other_glyph_outlines": 736,
+      "reference_sha256": "02c70a0efbd94555bd823512589923882dafaa733398e1f6f6ff84f6f162ceef",
+      "proof_sha256": "379d4687b38d1d49b04731d952ec0b0ce8c35823c7b639eb6f2ceef1c0679968"
+    },
+    {
+      "weight": 300,
+      "style": "Light",
+      "outline_source": "interpolated",
+      "advance": 1221,
+      "three_master_interpolated_advance": 1221.0,
+      "advance_adjustment_without_outline_scaling": 0.0,
+      "bounds": [
+        110,
+        -412,
+        1107,
+        1133
+      ],
+      "counter_bounds": [
+        [
+          299,
+          514,
+          845,
+          1015
+        ],
+        [
+          243,
+          -294,
+          973,
+          114
+        ]
+      ],
+      "unchanged_other_glyph_outlines": 736,
+      "reference_sha256": "b87c81b3200e97a99c3c32f6e7d69fe400004d54194d939024c0e48a30160694",
+      "proof_sha256": "a520c9ec2f973085c8a2bb441f7d7ae339e484602ef360da08d54940fdbe97b1"
+    },
+    {
+      "weight": 400,
+      "style": "Regular",
+      "outline_source": "drawn master",
+      "advance": 1243,
+      "three_master_interpolated_advance": 1243.0,
+      "advance_adjustment_without_outline_scaling": 0.0,
+      "bounds": [
+        104,
+        -412,
+        1131,
+        1132
+      ],
+      "counter_bounds": [
+        [
+          339,
+          544,
+          830,
+          978
+        ],
+        [
+          282,
+          -258,
+          953,
+          80
+        ]
+      ],
+      "unchanged_other_glyph_outlines": 736,
+      "reference_sha256": "bf24db6aa234ec1acedb34ce6a64f708aa09a171aef5bc90240e6f2319e2d310",
+      "proof_sha256": "6cd9cc85b3aff40de514598bbaaa1353d5fedd933e583a47f1184566ba311084"
+    },
+    {
+      "weight": 500,
+      "style": "Medium",
+      "outline_source": "interpolated",
+      "advance": 1255,
+      "three_master_interpolated_advance": 1255.42,
+      "advance_adjustment_without_outline_scaling": -0.42000000000007276,
+      "bounds": [
+        95,
+        -412,
+        1149,
+        1132
+      ],
+      "counter_bounds": [
+        [
+          360,
+          567,
+          817,
+          963
+        ],
+        [
+          309,
+          -244,
+          935,
+          81
+        ]
+      ],
+      "unchanged_other_glyph_outlines": 736,
+      "reference_sha256": "3be1233eacb702f6000cbe230e08cbdc7a895f31b2dba5b2d47e29500a315e76",
+      "proof_sha256": "ab4afd7f1ff91f023983bbcde1111b72b6d4bdad6874e8298173c70ad6a26072"
+    },
+    {
+      "weight": 600,
+      "style": "SemiBold",
+      "outline_source": "interpolated",
+      "advance": 1267,
+      "three_master_interpolated_advance": 1267.84,
+      "advance_adjustment_without_outline_scaling": -0.8399999999999181,
+      "bounds": [
+        86,
+        -412,
+        1167,
+        1132
+      ],
+      "counter_bounds": [
+        [
+          381,
+          589,
+          803,
+          948
+        ],
+        [
+          335,
+          -230,
+          917,
+          81
+        ]
+      ],
+      "unchanged_other_glyph_outlines": 736,
+      "reference_sha256": "e3923b584346afdd9fcb22790403ff3e9d8fef7f8e3d7e4e85726366a93b3a86",
+      "proof_sha256": "e72aefe92961f339d8be6bf505bda658f632de1a55a672c8655bc123066d3d6f"
+    },
+    {
+      "weight": 700,
+      "style": "Bold",
+      "outline_source": "interpolated",
+      "advance": 1280,
+      "three_master_interpolated_advance": 1280.26,
+      "advance_adjustment_without_outline_scaling": -0.2599999999999909,
+      "bounds": [
+        77,
+        -412,
+        1184,
+        1132
+      ],
+      "counter_bounds": [
+        [
+          402,
+          612,
+          790,
+          933
+        ],
+        [
+          362,
+          -216,
+          900,
+          82
+        ]
+      ],
+      "unchanged_other_glyph_outlines": 736,
+      "reference_sha256": "3ef6a31cab4febd935fa0a788a3cd09d6c640b3f158abebce2430dcf0b0413d9",
+      "proof_sha256": "c624891ac6f0314805449b1a290109a3c6cbf41438b84bfce2b42355deb97815"
+    },
+    {
+      "weight": 800,
+      "style": "ExtraBold",
+      "outline_source": "interpolated",
+      "advance": 1295,
+      "three_master_interpolated_advance": 1295.44,
+      "advance_adjustment_without_outline_scaling": -0.44000000000005457,
+      "bounds": [
+        66,
+        -412,
+        1206,
+        1132
+      ],
+      "counter_bounds": [
+        [
+          427,
+          640,
+          773,
+          914
+        ],
+        [
+          394,
+          -199,
+          878,
+          83
+        ]
+      ],
+      "unchanged_other_glyph_outlines": 736,
+      "reference_sha256": "f26c4bc3fd96cf7c8d3579e4ff76ea05b0f7178bdbc59e8c98823a9e3d528c02",
+      "proof_sha256": "e1f9392aba26dfe5d1ff85bd111d000ebed2386f24b4a1d54088bedb717e4605"
+    },
+    {
+      "weight": 900,
+      "style": "Black",
+      "outline_source": "drawn master",
+      "advance": 1312,
+      "three_master_interpolated_advance": 1312.0,
+      "advance_adjustment_without_outline_scaling": 0.0,
+      "bounds": [
+        54,
+        -412,
+        1230,
+        1132
+      ],
+      "counter_bounds": [
+        [
+          455,
+          670,
+          755,
+          894
+        ],
+        [
+          430,
+          -180,
+          854,
+          84.0679140370882
+        ]
+      ],
+      "unchanged_other_glyph_outlines": 736,
+      "reference_sha256": "aa620f1794fedd0e840dcda61446663f014e38afd13f9603db4d5d58db6d31c6",
+      "proof_sha256": "9f87bb3ba54098a58f82fcf5b7451f6bbc8dc7573d978e152862211b82ea73ec"
+    }
+  ],
+  "checks_passed": [
+    "All three masters have identical contour and segment structure",
+    "All integer weights 100\u2013900 retain three contours and two open counters",
+    "Overlap-removal area and topology checks pass before and after rounding",
+    "All 736 other outlines, including o and a, are preserved in every proof font",
+    "All release advances, mappings and GSUB/GPOS/GDEF tables are preserved",
+    "Four shaping samples have identical glyph sequences and positioning at each weight",
+    "Compiled g outlines exactly match their rounded interpolation results",
+    "Proof outlines fit existing vertical metrics; proof families are separately named"
+  ],
+  "limitations": [
+    "Nine static proof fonts, not a new variable font or a production ss04 feature",
+    "Three-master g model; source weight mapping is retained, not the original g drawings",
+    "Release advance widths override the three-master width interpolation without scaling outlines",
+    "No accent, oblique, optical-size or roundness integration",
+    "New g outlines are unhinted; existing glyphs keep release hinting",
+    "Advance widths and kerning are inherited; new sidebearings require optical review",
+    "Integer sampling does not constitute proof at every fractional weight"
+  ]
+}
