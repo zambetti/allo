@@ -18,6 +18,8 @@
     header h1, header .muted { flex-basis: 100%; }
     header p { margin: 0; }
     header .file { flex: 1 1 24rem; font-size: .875rem; }
+    #download-panel { flex-basis: 100%; font-size: .875rem; }
+    #download-fonts { font-weight: 600; }
     code, pre, output { font-family: ui-monospace, monospace; }
     .file { overflow-wrap: anywhere; }
     #font-status { padding: .5rem .75rem; border: 1px solid #888; border-radius: .4rem; background: white; font-size: .875rem; }
@@ -77,6 +79,7 @@
     <p class="muted">Two characters, one shaped text run. Explore the real variable axes, spacing, and optional g.</p>
     <p class="file"><strong id="font-name">Embedded variable font</strong> · <code id="font-filename"></code></p>
     <p id="font-status" role="status" aria-live="polite" aria-atomic="true" data-state="loading">Loading the embedded font… previews stay hidden until it is ready.</p>
+    <p id="download-panel" hidden><a id="download-fonts" download>Download Allo Custom (ZIP)</a> · Separate-name fonts, including obliques; the original g remains default.</p>
     <noscript><p class="warning">JavaScript is required to load the embedded font and operate the proof. No fallback preview is shown.</p></noscript>
   </header>
 
@@ -191,6 +194,12 @@
     byId('font-name').textContent = config.family;
     byId('font-filename').textContent = config.filename;
     document.title = config.family + ' · variable pair proof';
+    if (config.downloadFilename) {
+      const download = byId('download-fonts');
+      download.href = './' + encodeURIComponent(config.downloadFilename);
+      download.download = config.downloadFilename;
+      byId('download-panel').hidden = false;
+    }
     const missingFeatures = ['ss04', 'ss01'].filter(tag => !config.features.includes(tag));
     byId('feature-status').textContent = missingFeatures.length
       ? 'Not advertised by this font: ' + missingFeatures.join(', ') + '. Those switches have no effect; a font built with the corresponding alternates is needed.'

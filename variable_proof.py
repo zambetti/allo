@@ -14,6 +14,7 @@ The source font is read once, never rewritten, subsetted, or installed.
 
 from __future__ import annotations
 
+import argparse
 import base64
 import hashlib
 from io import BytesIO
@@ -78,7 +79,8 @@ def _script_json(value: dict) -> str:
             .replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026"))
 
 
-def write_variable_proof(font_path: str | Path, output_path: str | Path) -> Path:
+def write_variable_proof(font_path: str | Path, output_path: str | Path, *,
+                         download_filename: str | None = None) -> Path:
     """Embed the exact WOFF2 bytes and its fvar metadata; return the HTML Path.
 
     Accepts strings or Paths and creates missing output directories. Invalid,
@@ -86,8 +88,15 @@ def write_variable_proof(font_path: str | Path, output_path: str | Path) -> Path
     template, and output filesystem errors propagate as OSError subclasses.
     Validation precedes writing; an existing output is replaced atomically only
     after successful generation. The output must not alias the input font.
+    download_filename optionally links to a ZIP beside the HTML; no archive is
+    copied or fetched. Offline/bundled proofs omit that link by default.
     """
+    if download_filename is not None and (not isinstance(download_filename, str)
+            or not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._-]*\.zip", download_filename)):
+        raise ValueError("Download must be a local ZIP filename, not a path or URL.")
     font_path, output_path = Path(font_path), Path(output_path)
+    if download_filename == output_path.name:
+        raise ValueError("The proof output must not overwrite its download archive.")
     if (font_path.resolve() == output_path.resolve()
             or (output_path.exists() and font_path.exists() and output_path.samefile(font_path))):
         raise ValueError("The proof output must not overwrite its input font.")
@@ -104,6 +113,8 @@ def write_variable_proof(font_path: str | Path, output_path: str | Path) -> Path
         "fontFamily": "AlloVariableProof_" + digest[:16],
         "fontBase64": base64.b64encode(data).decode("ascii"),
     }
+    if download_filename is not None:
+        config["downloadFilename"] = download_filename
     template = TEMPLATE_PATH.read_text(encoding="utf-8")
     if template.count(DATA_PLACEHOLDER) != 1:
         raise ValueError("Variable proof template must contain exactly one data placeholder.")
@@ -122,3 +133,18 @@ def write_variable_proof(font_path: str | Path, output_path: str | Path) -> Path
         if temporary_path is not None:
             temporary_path.unlink(missing_ok=True)
     return output_path
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description="Generate a self-contained variable-font proof; no font is installed.")
+    parser.add_argument("font", type=Path, help="compiled full-variable WOFF2")
+    parser.add_argument("output", type=Path, help="HTML output path")
+    parser.add_argument("--download", metavar="ZIP_FILENAME", help="optional link to a ZIP already beside the output")
+    args = parser.parse_args(argv)
+    result = write_variable_proof(args.font, args.output, download_filename=args.download)
+    print(f"Wrote {result}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

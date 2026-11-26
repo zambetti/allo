@@ -271,6 +271,21 @@ async function main() {
         if (!config.features.includes('ss04')) assert.match(state.features, /Not advertised.*ss04/);
       });
 
+      await test('published download stays beside the page; bundled proofs have no dead download link', async () => {
+        const panel = page.locator('#download-panel');
+        if (config.downloadFilename) {
+          assert.ok(await panel.isVisible());
+          const link = page.locator('#download-fonts');
+          assert.equal(await link.getAttribute('href'), './' + encodeURIComponent(config.downloadFilename));
+          assert.equal(await link.getAttribute('download'), config.downloadFilename);
+          const archive = path.join(path.dirname(proof), config.downloadFilename);
+          assert.ok(fs.statSync(archive).isFile(), 'Published ZIP must exist beside the HTML');
+          assert.ok(fs.statSync(archive).size > 0, 'Published ZIP must not be empty');
+        } else {
+          assert.ok(await panel.count() === 0 || !await panel.isVisible());
+        }
+      });
+
       await test('laptop controls and both previews stay in view throughout real slider dragging', async () => {
         for (const width of [1365, 1200]) {
           await page.setViewportSize({width, height: 900});

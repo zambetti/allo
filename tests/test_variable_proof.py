@@ -7,6 +7,8 @@ from __future__ import annotations
 
 import base64
 import hashlib
+from contextlib import redirect_stdout
+from io import StringIO
 from html.parser import HTMLParser
 import json
 import math
@@ -185,6 +187,45 @@ class VariableProofTests(unittest.TestCase):
             self.assertNotIn(unsafe, payload)
         self.assertEqual(len([tag for tag, _ in Tags(html).tags if tag == "script"]), 2)
         self.assertIn(r"\u003c/script\u003e", payload)
+
+    def test_download_link_is_optional_and_preserves_embedded_font(self):
+        source = self.save_fixture()
+        write_variable_proof(source, self.output)
+        default = config_from(self.output.read_text())
+        self.assertNotIn("downloadFilename", default)
+        write_variable_proof(source, self.output, download_filename="AlloCustom-1.1.0.zip")
+        published = config_from(self.output.read_text())
+        self.assertEqual(published.pop("downloadFilename"), "AlloCustom-1.1.0.zip")
+        self.assertEqual(published, default)
+
+    def test_download_rejects_paths_urls_and_unsafe_names_without_replacing_output(self):
+        source = self.save_fixture()
+        self.output.parent.mkdir()
+        self.output.write_text("previous proof")
+        for filename in ("", "../font.zip", "/font.zip", "sub/font.zip", "sub\\font.zip",
+                         "https://example.com/font.zip", "//example.com/font.zip", "font.zip?x",
+                         "font.zip#x", "font<bad>.zip", "font.woff2", ".hidden.zip", 42):
+            with self.subTest(filename=filename), self.assertRaisesRegex(ValueError, "local ZIP filename"):
+                write_variable_proof(source, self.output, download_filename=filename)
+            self.assertEqual(self.output.read_text(), "previous proof")
+
+    def test_download_archive_cannot_be_the_output(self):
+        source = self.save_fixture()
+        archive = self.root / "font.zip"
+        archive.write_bytes(b"untouched archive")
+        with self.assertRaisesRegex(ValueError, "must not overwrite its download archive"):
+            write_variable_proof(source, archive, download_filename=archive.name)
+        self.assertEqual(archive.read_bytes(), b"untouched archive")
+
+    def test_command_line_generates_the_same_downloadable_proof(self):
+        source = self.save_fixture()
+        with redirect_stdout(StringIO()) as output:
+            self.assertEqual(variable_proof.main([str(source), str(self.output), "--download", "font.zip"]), 0)
+        self.assertIn(str(self.output), output.getvalue())
+        self.assertEqual(config_from(self.output.read_text())["downloadFilename"], "font.zip")
+        expected = self.output.read_bytes()
+        write_variable_proof(source, self.output, download_filename="font.zip")
+        self.assertEqual(self.output.read_bytes(), expected)
 
     def test_output_is_deterministic_and_replaces_only_html(self):
         source = self.save_fixture()

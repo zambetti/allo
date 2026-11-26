@@ -15,6 +15,10 @@ arrows that appear when you type them, a host of alternates and symbols, as well
 ![Allo: the typeface, and its character set](documentation/readme-row1.png)
 ![Allo: OpenType features, and interface icons and symbols](documentation/readme-row2.png)
 
+**This fork’s double-storey g:** [Interactive tester](https://zambetti.github.io/allo/) ·
+[Download Allo Custom](https://zambetti.github.io/allo/AlloCustom-1.1.0.zip).
+Enable `ss04`; the original single-storey g remains the default. This is a separate-name fork build, not an upstream release.
+
 ## Download
 
 Get `Allo-1.1.0.zip` from the [latest release](https://github.com/joshpuckett/allo/releases/latest):
@@ -179,6 +183,26 @@ The source at `templates/variable-proof.html.template` is a build input, not a p
 Watch the font-loading and character-coverage messages: unsupported characters may use fallback fonts. See the
 [authoring notes](sources/alternates/double-storey-g/README.md#baseline-and-provenance) for the approved Text / Friendly
 controls, subsequent interactive review, and its scope.
+
+#### Published preview
+
+The root `index.html` is a generated snapshot of the full custom variable font with a link to the adjacent
+`AlloCustom-1.1.0.zip`. It runs at <https://zambetti.github.io/allo/>. The ZIP includes the installable fonts and
+an offline proof without a download link, so it does not depend on the website.
+
+GitHub Pages publishes **`feature/double-storey-g` → `/`** with `.nojekyll`; no custom Actions workflow or font
+build runs on GitHub. `main` remains aligned with upstream. `build/custom/` stays ignored and is not the publishing
+source. To refresh the two published files after font changes, run from this branch:
+
+```sh
+.venv/bin/python build.py --custom
+cp build/custom/AlloCustom-1.1.0.zip AlloCustom-1.1.0.zip
+.venv/bin/python variable_proof.py build/custom/fonts/webfonts/AlloCustomVariable.woff2 index.html --download AlloCustom-1.1.0.zip
+```
+
+Commit and push the updated `index.html` and ZIP on this branch; Pages redeploys the static snapshot. If the custom
+build version changes, update the ZIP filename and download link together. Publishing from the repository root
+also makes its other tracked files available on the Pages site; ignored local files are not uploaded.
 
 ### Checks
 
