@@ -29,7 +29,8 @@
     .workspace { min-width: 0; }
     .controls { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
     fieldset, .panel { min-width: 0; margin: 0; padding: 1rem 1.25rem; border: 1px solid #ccc; border-radius: .6rem; background: white; }
-    legend { padding: 0 .35rem; }
+    legend { float: left; width: 100%; margin: 0 0 .75rem; padding: 0; }
+    legend + * { clear: left; }
     .characters { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
     label { display: block; line-height: 1.4; }
     input[type="text"] { display: block; width: 100%; min-height: 2.75rem; margin-top: .4rem; padding: .5rem .65rem; font: inherit; font-size: 1.25rem; border: 1px solid #777; border-radius: .3rem; }
@@ -248,11 +249,11 @@
     function update() {
       const text = left.value + right.value;
       const variations = controls.map(({axis, slider, value}) => {
-        value.value = slider.value;
-        return JSON.stringify(axis.tag) + ' ' + Number(slider.value);
+        value.value = Number(slider.value).toFixed(2);
+        return JSON.stringify(axis.tag) + ' ' + value.value;
       }).join(', ');
       const weight = controls.find(({axis}) => axis.tag === 'wght');
-      const fontWeight = weight ? weight.slider.value : '400';
+      const fontWeight = weight ? Number(weight.slider.value).toFixed(2) : '400';
       const features = alternate => '"ss04" ' + Number(alternate) + ', "ss01" ' + Number(ss01.checked) + ', "kern" ' + Number(kerning.checked);
       for (const [index, pair] of pairs.entries()) {
         // A single text node is essential: per-character elements can break kerning.
@@ -269,7 +270,7 @@
       byId('comparison-card').hidden = !comparison.checked;
       byId('previews').classList.toggle('without-comparison', !comparison.checked);
       byId('preview-size-value').value = size.value + ' px';
-      byId('axis-summary').value = controls.map(({axis, slider}) => axis.tag + ' ' + slider.value).join(' · ');
+      byId('axis-summary').value = controls.map(({axis, value}) => axis.tag + ' ' + value.value).join(' · ');
       byId('css-readout').textContent = [
         'font-family: ' + family + ';',
         'font-size: ' + size.value + 'px;',
