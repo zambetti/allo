@@ -564,7 +564,7 @@ async function main() {
     }
 
     await bounded(run(), RUN_TIMEOUT, 'Browser validation');
-    console.log(passed + ' browser checks passed. ss04 glyph-design assertions remain with parent integration.');
+    console.log(passed + ' browser checks passed. Run validate_g.py separately for compiled-font geometry and shaping checks.');
     if (options.screenshotDirectory) {
       const report = path.join(options.screenshotDirectory, 'variable-proof-layout.json');
       fs.writeFileSync(report, JSON.stringify({

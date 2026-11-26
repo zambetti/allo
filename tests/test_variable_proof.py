@@ -196,6 +196,11 @@ class VariableProofTests(unittest.TestCase):
         self.assertEqual(another.read_bytes(), expected)
         self.assertEqual(sorted(path.name for path in self.root.iterdir()), ["another.html", "fixture.woff2", "nested"])
 
+    def test_source_template_is_distinct_from_a_browsable_proof(self):
+        self.assertEqual(variable_proof.TEMPLATE_PATH, ROOT / "templates/variable-proof.html.template")
+        self.assertTrue(variable_proof.TEMPLATE_PATH.is_file())
+        self.assertFalse((ROOT / "documentation/variable-proof.html").exists())
+
     def test_template_has_balanced_markup(self):
         parsed = Tags(variable_proof.TEMPLATE_PATH.read_text(encoding="utf-8"))
         self.assertEqual(parsed.mismatches, [])

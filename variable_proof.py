@@ -29,7 +29,7 @@ from brotli import error as BrotliError
 from fontTools.ttLib import TTFont, TTLibError
 
 
-TEMPLATE_PATH = Path(__file__).resolve().parent / "documentation/variable-proof.html"
+TEMPLATE_PATH = Path(__file__).resolve().parent / "templates/variable-proof.html.template"
 DATA_PLACEHOLDER = "__VARIABLE_PROOF_DATA__"
 
 

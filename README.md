@@ -165,6 +165,8 @@ saved font identities against the shipped release files and writes `build/custom
 Open `build/custom/variable-proof.html` directly in a browser, including offline via `file://`. It embeds the full
 `build/custom/fonts/webfonts/AlloCustomVariable.woff2`, not the roundness-pinned Friendly font. No server, network
 access or font installation is needed; JavaScript must be enabled. The custom ZIP includes the same proof.
+The source at `templates/variable-proof.html.template` is a build input, not a page to open directly;
+`variable_proof.py` fills it with the font and axis metadata.
 
 - Enter any two characters or combining-mark clusters in the editable fields. They are joined without a separator
   as one shaped text run, so actual kerning and mark attachment apply, rather than separate character spans.
