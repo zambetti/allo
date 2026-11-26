@@ -116,6 +116,44 @@ python3 -m venv .venv
 Writes `fonts/` (variable TTF and WOFF2; 18 static OTFs and WOFF2s, autohinted with AFDKO), `fonts/SHA256SUMS` and
 `Allo-1.1.0.zip`. Dependencies are pinned and `release.json` fixes the timestamp, so builds are reproducible.
 
+### Separate-name custom build
+
+To use a modified build alongside an installed Allo release, use the same environment with:
+
+```sh
+.venv/bin/python build.py --custom
+```
+
+This compiles the current sources into the ignored `build/custom/` directory, without changing `sources/`, the
+shipped `fonts/`, or the normal release archive. Running `build.py` without `--custom` retains the release build
+behavior above.
+
+| Custom output | Family / use |
+|---|---|
+| `build/custom/fonts/otf/AlloCustom-*.otf` | **Allo Custom**, 18 static styles including obliques |
+| `build/custom/fonts/variable/AlloCustomVariable.ttf` | **Allo Custom Variable**, all three axes |
+| `build/custom/fonts/webfonts/AlloCustom*.woff2` | Web versions, including **Allo Custom Variable Friendly** |
+| `build/custom/AlloCustom-1.1.0.zip` | Fonts, CSS, license, README, checksums, and naming-validation report |
+
+Install the custom OTFs and/or variable TTF manually, then select **Allo Custom** or **Allo Custom Variable** in
+an app; the installed release keeps its existing name. No fonts are installed automatically. For websites, use
+`build/custom/allo-custom.css` **or** `build/custom/allo-custom-friendly.css` with `font-family: "Allo Custom"`;
+keep the adjacent `fonts/` directory when copying the CSS.
+
+The custom mode changes internal family, full, unique, PostScript, CFF, and variable-instance identities—not just
+filenames—while preserving style names, axis/feature labels, and original attribution/license metadata. It checks
+saved font identities against the shipped release files and writes `build/custom/naming-validation.json` and
+`build/custom/fonts/SHA256SUMS`. Keep the shipped `fonts/` tree available as the comparison reference.
+
+This is a naming/build option, not a glyph change: the existing single-storey `g` remains the default, and the
+planned `ss04` double-storey `g` is not implemented by this step.
+
+Run the naming and build-mode regression tests (no font installation or release rebuild):
+
+```sh
+.venv/bin/python -m unittest discover -s tests -v
+```
+
 ## Sources
 
 `sources/Allo.designspace` (designspace 5, UFO) has 48 masters: opsz 9, 14, 20, 32 × wght 100, 400, 580, 900 ×

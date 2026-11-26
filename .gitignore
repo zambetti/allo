@@ -1,5 +1,7 @@
 .venv/
 __pycache__/
 .DS_Store
+# Separate-name custom builds are generated locally.
+/build/
 # The download ZIP is attached to the GitHub release, not committed.
 Allo-*.zip
